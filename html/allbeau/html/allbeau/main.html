@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLBEAUCARE Therapy</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/animated.css" rel="stylesheet" type="text/css">
+    <link href="css/style_response.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/inc.js" type="text/javascript"></script>
+    <link href="js/slick/slick.css" rel="stylesheet" type="text/css" />
+    <script src="js/slick/slick.js" type="text/javascript"></script>
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js" type="text/javascript" defer="defer"></script>
+    <script src="js/placeholders.min.js" type="text/javascript" defer="defer"></script>
+    <script src="js/ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div id="header" class="main">
+        <div class="top_wrap">
+            <div class="box1 fl_wrap">
+                <h1 class="logo"><a href="main.html" class="vm_wrap"><img src="images/inc/logo_w.png" alt="로고이미지"></a></h1>
+                <div class="gnb_wrap">
+                    <ul class="gnb di_wrap">
+                        <li class="m_skin">
+                            <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">피부미용</span></a>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">페이스·체형관리</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">왁싱</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">네일아트·속눈썹</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_body">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">바디케어</span></a>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">스웨디시</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">타이</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">중국·스포츠·경락</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_event">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                        </li>
+                        <li class="m_partner">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="etc_wrap fl_wrap">
+                    <li class="mem en"><a href="#" class="vm_wrap"><span class="vm_tt">Login</span></a></li>
+                    <li class="mem en"><a href="#" class="vm_wrap"><span class="vm_tt">Join</span></a></li>
+                    <li class="btn search">
+                        <a href="javascript:void(0)" class="searchBtn vm_wrap"><span class="vm_tt"><i class="xi xi-search"></i></span></a>
+                    </li>
+                    <li class="btn all">
+                        <a href="javascript:void(0)" class="allBtn vm_wrap"><span class="vm_tt"><i class="ham"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--검색 -->
+        <div class="search_wrap">
+            <p class="bg"></p>
+            <div class="box1 pr">
+                <a href="javascript:void(0);" class="close"><i class="tt en">Close</i><i class="xi xi-close-thin"></i></a>
+                <div class="search">
+                    <div class="search_top">
+                        <input type="text" class="inp" name="searchKey" id="searchInput" placeholder="어디를 찾으시나요?" />
+                        <a href="store_list.html" class="btn vm_wrap"><i class="vm_tt xi xi-search"></i></a>
+                    </div>
+                    <div class="search_bottom fl_wrap sec2">
+                        <div>
+                            <div class="con">
+                                <p class="tit"><span class="tt">추천검색어</span></p>
+                                <ul class="list">
+                                    <li><a href="#">1. 키워드</a></li>
+                                    <li><a href="#">2. 키워드</a></li>
+                                    <li><a href="#">3. 키워드</a></li>
+                                    <li><a href="#">4. 키워드</a></li>
+                                    <li><a href="#">5. 키워드</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="con">
+                                <p class="tit"><span class="tt">최근검색어</span></p>
+                                <ul class="list">
+                                    <li><a href="#">검색어1</a></li>
+                                    <li><a href="#">검색어2</a></li>
+                                    <li><a href="#">검색어3</a></li>
+                                    <li><a href="#">검색어4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--전체메뉴 -->
+        <div class="siteMap_wrap">
+            <p class="bg bgL"></p>
+            <p class="bg bgR"></p>
+            <div class="scroll">
+                <div class="box1">
+                    <div class="siteMap fl_wrap sec2">
+                        <div class="siteL">
+                            <div class="inner">
+                                <p class="tit en">Store Search</p>
+                                <ul class="gnb di_wrap">
+                                    <li class="m_skin">
+                                        <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">피부미용</span></a>
+                                        <ul class="dp2 di_wrap">
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">페이스·체형관리</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">왁싱</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">네일아트·속눈썹</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_body">
+                                        <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">바디케어</span></a>
+                                        <ul class="dp2 di_wrap">
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">스웨디시</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">타이</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">중국·스포츠·경락</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_event">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                                    </li>
+                                    <li class="m_edu">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                                    </li>
+                                    <li class="partner">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="sns fl_wrap">
+                                    <li><a href="#"><i class="xi xi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-kakaostory"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-naver"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="siteR">
+                            <div class="inner">
+                                <p class="tit en">ALLBEAUCARE Service</p>
+                                <ul class="gnb di_wrap">
+                                    <li class="m_event">
+                                        <a href="sub2_event.html" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                                    </li>
+                                    <li class="m_edu">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                                    </li>
+                                    <li class="m_partner">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                                    </li>
+                                    <li class="m_mypage_store">
+                                        <a href="sub_store1.html" class="dp1 vm_wrap"><span class="vm_tt">제휴점 관리자</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="member en">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Join</a></li>
+                                    <li><a href="mypage_info.html">Mypage</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header ::E::-->
+    <div id="contents">
+        <div class="doc_main">
+            <div class="mainVisual_wrap">
+                <div class="mainVisual">
+                    <div class="img">
+                        <span class="bg" style="background-image:url(images/main/main_visual1.jpg)"></span>
+                        <div class="slogan_wrap">
+                            <div class="slogan">
+                                <p class="txt1 en"><span class="t1"><i class="c1">ALLBEAUCARE</i></span> <span class="t2">Therapy</span></p>
+                                <p class="txt2">관리의 시작은 <strong>올뷰케어에서</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <span class="bg" style="background-image:url(images/main/main_visual2.jpg)"></span>
+                        <div class="slogan_wrap">
+                            <div class="slogan">
+                                <p class="txt1 en"><span class="t1"><i class="c1">ALLBEAUCARE</i></span> <span class="t2">Therapy</span></p>
+                                <p class="txt2">두피에서 발끝까지  <strong>모든 관리가 가능한 곳</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <span class="bg" style="background-image:url(images/main/main_visual3.jpg)"></span>
+                        <div class="slogan_wrap">
+                            <div class="slogan">
+                                <p class="txt1 en"><span class="t1"><i class="c1">ALLBEAUCARE</i></span> <span class="t2">Therapy</span></p>
+                                <p class="txt2">관리가 힐링이 되는 곳  <strong>올뷰케어</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <span class="bg" style="background-image:url(images/main/main_visual4.jpg)"></span>
+                        <div class="slogan_wrap">
+                            <div class="slogan">
+                                <p class="txt1 en"><span class="t1"><i class="c1">ALLBEAUCARE</i></span> <span class="t2">Therapy</span></p>
+                                <p class="txt2">관리가 힐링이 되는 곳  <strong>올뷰케어</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainSearch">
+                    <div class="box1 inner">
+                        <p class="close"></p>
+                        <p class="bg"></p>
+                        <div class="slogan">
+                            <p class="t1"><span><strong>피부미용</strong>과</span></p>
+                            <p class="t1"><span><strong>바디케어</strong>를</span></p>
+                            <p class="t2"><span>한눈에</span></p>
+                        </div>
+                        <div class="search">
+                            <p class="tit vm_wrap"><span class="vm_tt">제휴매장</span></p>
+                            <div class="sel_wrap">
+                                <ul class="sel fl_wrap sec3">
+                                    <li>
+                                        <p class="txt1 vm_wrap"><span class="vm_tt">업종</span></p>
+                                        <p class="txt2 vm_wrap"><span class="vm_tt"><i class="t1" id="cate1Text">피부미용</i><i class="t2" id="cate2Text">페이스·체형관리</i></span></p>
+                                    </li>
+                                    <li>
+                                        <p class="txt1 vm_wrap"><span class="vm_tt">광역시/도</span></p>
+                                        <p class="txt2 vm_wrap"><span class="vm_tt"><i class="t1" id="addr1Text">서울</i></span></p>
+                                    </li>
+                                    <li>
+                                        <p class="txt1 vm_wrap"><span class="vm_tt">지역</span></p>
+                                        <p class="txt2 vm_wrap"><span class="vm_tt"><i class="t1" id="addr2Text">강남구</i></span></p>
+                                    </li>                                    
+                                </ul>
+                                <div class="search_detail">
+                                    <div class="con_wrap fl_wrap sec3">
+                                        <div>
+                                            <div class="detail">
+                                                <p class="sbj">피부미용</p>
+                                                <ul class="list">
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>페이스·체형관리</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>왁싱</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>네일아트·속눈썹</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="detail">
+                                                <p class="sbj">바디케어</p>
+                                                <ul class="list">
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>스웨디시</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>타이</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                        <input type="radio" value="피부미용" name="searchCate" class="searchCate" onclick="searchChange('cate1Text','텍스트1','cate2Text','텍스트2')">
+                                                        <span>중국·스포츠·경락</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="detail">
+                                                <p class="sbj">광역시/도</p>
+                                                <ul class="list di_wrap sec2">
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>서울</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>부산</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>대구</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>인천</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>광주</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>대전</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>울산</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>강원</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>경기</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>경남</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>경북</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>전남</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>전북</span>
+                                                        </label>     
+                                                    </li>
+                                                    <li>                                                   
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>충남</span>
+                                                        </label>      
+                                                    </li>
+                                                    <li>                                                  
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>충북</span>
+                                                        </label>   
+                                                    </li>
+                                                    <li>                                                     
+                                                        <label class="btn_location">
+                                                            <input type="radio" name="searchAddr" class="searchAddr" value="텍스트" onclick="">
+                                                            <span>제주</span>
+                                                        </label>                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="detail">
+                                                <p class="sbj">지역</p>
+                                                <ul class="list di_wrap sec2" id="addr2">
+                                                    <li><label class="btn_location"><input type="radio" /><span>강남구</span></label></li>
+                                                    <li><label class="btn_location"><input type="radio" /><span>강동구</span></label></li>
+                                                    <li><label class="btn_location"><input type="radio" /><span>강북구</span></label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="store_list.html" class="btn vm_wrap"><i class="vm_tt xi xi-search"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_con bg_gray">
+                <div class="box0" style="overflow:hidden">
+                    <div data-animation="fadeInUp" data-delay="0.3">
+                        <div class="moreview_btn_wrap">
+                            <p class="main_tit"><span class="t1"><i class="b1">피부미용</i> 제휴점</span></p>
+                            <p class="moreview_btn en c1">MORE VIEW<i class="circle"></i></p>
+                        </div>
+                        <div class="storeSlide_wrap type1">
+                            <div class="box2 pr oh">
+                                <div class="storeSlide">									
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img1.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">청담점</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">10</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img2.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">잠실새내역</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">9.5</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img3.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">노원점</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">9</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul class="arrow_wrap">
+                                    <li class="prev"><i class="xi xi-angle-left-thin"></i></li>
+                                    <li class="next"><i class="xi xi-angle-right-thin"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_con bg_gray">
+                <div class="box0" style="overflow:hidden">
+                    <div data-animation="fadeInUp" data-delay="0.3">
+                        <div class="moreview_btn_wrap">
+                            <p class="main_tit"><span class="t1"><i class="b1">바디케어</i> 제휴점</span></p>
+                            <p class="moreview_btn en c1">MORE VIEW<i class="circle"></i></p>
+                        </div>
+                        <div class="storeSlide_wrap type2">
+                            <div class="box2 pr oh">
+                                <div class="storeSlide">									
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img1.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">청담점</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">10</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img2.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">잠실새내역</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">9.5</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                    <a href="store_view.html" class="item">
+                                        <p class="resize s1"><span class="re img" style="background-image:url(images/main/store_img3.jpg)"></span></p>
+                                        <div class="overarea">
+                                            <p class="store_name">노원점</p>
+                                            <p class="tx">해당 매장의 간략한 한줄 설명이 들어가는 곳 입니다.</p>
+                                            <p class="star"><i class="xi xi-star"></i><i class="num en">9</i></p>
+                                            <p class="hashtag"><span># 스웨디시</span><span># 타이</span><span># 중국·스포츠·경락</span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul class="arrow_wrap">
+                                    <li class="prev"><i class="xi xi-angle-left-thin"></i></li>
+                                    <li class="next"><i class="xi xi-angle-right-thin"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_therapy main_therapy_slider">
+                <div class="slider_for">
+                    <div class="item bg1">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>페이스·체형관리</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item bg2">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>왁싱</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item bg3">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>네일아트·속눈썹</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item bg4">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>스웨디시</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item bg5">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>타이</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item bg6">
+                        <p class="main_tit3 en"><span class="t1 allbeaucare">ALLBEAUCARE<i class="b1"> Therapy</i></span></p>
+                        <div class="box1">
+                            <dl>
+                                <dt>중국·스포츠·경락</dt>
+                                <dd class="t1">해당 테라피의 한줄 설명이 간략하게 들어갑니다.</dd>
+                                <dd class="line"></dd>
+                                <dd class="t2">해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. 해당 테라피의 소개 내용이 들어갑니다. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_nav">
+                    <div class="item"><a href="#none" class="vm_wrap">페이스·체형관리</a></div>
+                    <div class="item"><a href="#none" class="vm_wrap">왁싱</a></div>
+                    <div class="item"><a href="#none" class="vm_wrap">네일아트·속눈썹</a></div>
+                    <div class="item"><a href="#none" class="vm_wrap">스웨디시</a></div>
+                    <div class="item"><a href="#none" class="vm_wrap">타이</a></div>
+                    <div class="item"><a href="#none" class="vm_wrap">중국·스포츠·경락</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_con event bg_gray">
+            <div class="box0">
+                <div class="box1">
+                    <div class="main_tit_wrap fl">
+                        <p class="main_tit2"><span class="t1">헤어힐 <i class="b1">이벤트</i></span></p>
+                        <p class="more_btn en" onclick="location.href=''">MORE<i class="xi xi-plus"></i></p>
+                    </div>
+                    <div class="notice fl">
+                        <ul class="tx_list">
+                            <li><p class="date en di">2025.00.00 ~ 2025.00.00</p><a href="#">해당 게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다.</a></li>
+                            <li><p class="date en di">2025.00.00 ~ 2025.00.00</p><a href="#">해당 게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다.</a></li>
+                            <li><p class="date en di">2025.00.00 ~ 2025.00.00</p><a href="#">해당 게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다.</a></li>
+                            <li><p class="date en di">2025.00.00 ~ 2025.00.00</p><a href="#">해당 게시판의 제목이 들어갑니다. 해당게시판의 제목이 들어갑니다.</a></li>
+                        </ul>
+                    </div>
+                    <p class="event_tt fr">EVENT</p>                   
+                    <div class="cl"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            UI.Slider.mainVisual();
+            UI.Layout.mainSearch();
+            UI.Slider.mainStoreImg1();
+            UI.Slider.mainStoreImg2();
+            UI.Slider.mainTherapy();
+        </script>
+    </div>
+    <!--contents ::E::-->
+    <div id="footer">
+        <a href="javascript:goTop();" class="goTop vm_wrap"><span class="vm_tt"><i class="xi xi-angle-up-thin"></i><i class="tt en">Top</i></span></a>
+        <div class="foot_wrap">
+            <div class="box1 fl_wrap">
+                <div class="info_wrap">
+                    <p class="logo"><a href="main.html"><img src="images/inc/logo_wAll.png" alt="로고이미지"></a></p>
+                    <ul class="info di_wrap">
+                        <li class="tit"><span class="tt">올뷰케어 (ALLBEAUCARE)</span></li>
+                        <li><span class="tt">대표 : 엄태권</span></li>
+                        <li><span class="tt">사업자등록번호 : 234-75-00047</span></li>
+                        <li><span class="tt">상표출원번호 : 40-2019-0193646</span></li>
+                        <li><span class="tt">주소 : 서울특별시 송파구 백제고분로7길 6-5, 2층 202호(잠실동)</span></li>
+                        <li class="cs"><span class="tt">고객센터 </span><strong class="tel en">1833-6185</strong><span class="tt"> (평일 오전 10시 ~ 오후 6시)</span></li>
+                        <li class="copy"><span class="tt en">COPYRIGHT(C) ALLBEAUCARE. ALL RIGHTS RESERVED.</span></li>
+                    </ul>
+                </div>
+                <div class="menu_wrap">
+                    <ul class="menu">
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">제휴점 관리자</a></li>
+                        <!--<li><a href="../ISAF/" target="_blank">관리자</a></li> -->
+                    </ul>
+                    <ul class="sns fl_wrap">
+                        <li><a href="#"><i class="xi xi-facebook"></i></a></li>
+                        <li><a href="#"><i class="xi xi-instagram"></i></a></li>
+                        <li><a href="#"><i class="xi xi-kakaostory"></i></a></li>
+                        <li><a href="#"><i class="xi xi-naver"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function gnbOn(){
+            var obj = $(".gnb");
+            obj.find(".gnb > li").addClass("on");
+        }
+        gnbOn();
+        UI.Layout.bodyLoad();
+        UI.Layout.bodyScroll();
+        UI.Motion.ieFixed(); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLBEAUCARE Therapy</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/animated.css" rel="stylesheet" type="text/css">
+    <link href="css/style_response.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/inc.js" type="text/javascript"></script>
+    <link href="js/slick/slick.css" rel="stylesheet" type="text/css" />
+    <script src="js/slick/slick.js" type="text/javascript"></script>
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js" type="text/javascript" defer="defer"></script>
+    <script src="js/placeholders.min.js" type="text/javascript" defer="defer"></script>
+    <script src="js/ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div id="header" class="black">
+        <div class="top_wrap">
+            <div class="box1 fl_wrap">
+                <h1 class="logo"><a href="main.html" class="vm_wrap"><img src="images/inc/logo_w.png" alt="로고이미지"></a></h1>
+                <div class="gnb_wrap">
+                    <ul class="gnb di_wrap">
+                        <li class="m_skin">
+                            <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">피부미용</span></a>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">페이스·체형관리</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">왁싱</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">네일아트·속눈썹</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_body">
+                            <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">바디케어</span></a>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">스웨디시</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">타이</span></a></li>
+                                <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">중국·스포츠·경락</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_event">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                        </li>
+                        <li class="m_partner">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="etc_wrap fl_wrap">
+                    <li class="mem en"><a href="#" class="vm_wrap"><span class="vm_tt">Login</span></a></li>
+                    <li class="mem en"><a href="#" class="vm_wrap"><span class="vm_tt">Join</span></a></li>
+                    <li class="btn search">
+                        <a href="javascript:void(0)" class="searchBtn vm_wrap"><span class="vm_tt"><i class="xi xi-search"></i></span></a>
+                    </li>
+                    <li class="btn all">
+                        <a href="javascript:void(0)" class="allBtn vm_wrap"><span class="vm_tt"><i class="ham"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--검색 -->
+        <div class="search_wrap">
+            <p class="bg"></p>
+            <div class="box1 pr">
+                <a href="javascript:void(0);" class="close"><i class="tt en">Close</i><i class="xi xi-close-thin"></i></a>
+                <div class="search">
+                    <div class="search_top">
+                        <input type="text" class="inp" name="searchKey" id="searchInput" placeholder="어디를 찾으시나요?">
+                        <a href="store_list.html" class="btn vm_wrap"><i class="vm_tt xi xi-search"></i></a>
+                    </div>
+                    <div class="search_bottom fl_wrap sec2">
+                        <div>
+                            <div class="con">
+                                <p class="tit"><span class="tt">추천검색어</span></p>
+                                <ul class="list">
+                                    <li><a href="#">1. 키워드</a></li>
+                                    <li><a href="#">2. 키워드</a></li>
+                                    <li><a href="#">3. 키워드</a></li>
+                                    <li><a href="#">4. 키워드</a></li>
+                                    <li><a href="#">5. 키워드</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="con">
+                                <p class="tit"><span class="tt">최근검색어</span></p>
+                                <ul class="list">
+                                    <li><a href="#">검색어1</a></li>
+                                    <li><a href="#">검색어2</a></li>
+                                    <li><a href="#">검색어3</a></li>
+                                    <li><a href="#">검색어4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--전체메뉴 -->
+        <div class="siteMap_wrap">
+            <p class="bg bgL"></p>
+            <p class="bg bgR"></p>
+            <div class="scroll">
+                <div class="box1">
+                    <div class="siteMap fl_wrap sec2">
+                        <div class="siteL">
+                            <div class="inner">
+                                <p class="tit en">Store Search</p>
+                                <ul class="gnb di_wrap">
+                                    <li class="m_skin">
+                                        <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">피부미용</span></a>
+                                        <ul class="dp2 di_wrap">
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">페이스·체형관리</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">왁싱</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">네일아트·속눈썹</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_body">
+                                        <a href="store_list.html" class="dp1 vm_wrap"><span class="vm_tt">바디케어</span></a>
+                                        <ul class="dp2 di_wrap">
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">스웨디시</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">타이</span></a></li>
+                                            <li><a href="store_list.html" class="vm_wrap"><span class="vm_tt">중국·스포츠·경락</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_event">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                                    </li>
+                                    <li class="m_edu">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                                    </li>
+                                    <li class="partner">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="sns fl_wrap">
+                                    <li><a href="#"><i class="xi xi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-kakaostory"></i></a></li>
+                                    <li><a href="#"><i class="xi xi-naver"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="siteR">
+                            <div class="inner">
+                                <p class="tit en">ALLBEAUCARE Service</p>
+                                <ul class="gnb di_wrap">
+                                    <li class="m_event">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">이벤트</span></a>
+                                    </li>
+                                    <li class="m_edu">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육</span></a>
+                                    </li>
+                                    <li class="m_partner">
+                                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">제휴신청</span></a>
+                                    </li>
+                                    <li class="m_mypage_store">
+                                        <a href="sub_store1.html" class="dp1 vm_wrap"><span class="vm_tt">제휴점 관리자</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="member en">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Join</a></li>
+                                    <li><a href="#">Mypage</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header ::E::-->
+    <div id="contents">
+        <div class="doc">
+            <div class="page_top_tit pd1 bg1">
+                <div class="box1">
+                    <p class="t3 c3"><i class="xi xi-shop"></i> <i class="tt">청담점</i></p>
+                </div>
+            </div>
+            <div class="storeSlide_wrap">
+                <div class="box0 pr oh">
+                    <div class="storeSlide">
+                        <div class="item"><!--최적 사이즈 900*600 List, View 공통 사이즈 -->
+                            <p class="resize s1"><span class="re img" style="background-image:url(images/temp/temp_img1.jpg);"></span></p>
+                        </div>
+                        <div class="item">
+                            <p class="resize s1"><span class="re img" style="background-image:url(images/temp/temp_img2.jpg);"></span></p>
+                        </div>
+                        <div class="item">
+                            <p class="resize s1"><span class="re img" style="background-image:url(images/temp/temp_img3.jpg);"></span></p>
+                        </div>
+                    </div>
+                    <ul class="arrow_wrap">
+                        <li class="prev"><i class="xi xi-angle-left-thin"></i></li>
+                        <li class="next"><i class="xi xi-angle-right-thin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+            UI.Slider.storeViewImg();
+            </script>
+            <div class="page_storeView">
+                <div class="box0 fixWrap">
+                    <div class="nav_fix_wrap fixIn">
+                        <ul class="storeView_nav fixObj">
+                            <li class="nav resize" data-no="0"><a href="javascript:UI.Motion.linkScroll(0)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-shop"></i><i class="tt">매장소개</i></span></a></li>
+                            <li class="nav resize" data-no="1"><a href="javascript:UI.Motion.linkScroll(1)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-money"></i><i class="tt">가격 &amp; 프로그램</i></span></a></li>
+                            <li class="nav resize" data-no="2"><a href="javascript:UI.Motion.linkScroll(2)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-users-o"></i><i class="tt">직원소개</i></span></a></li>
+                            <li class="nav resize" data-no="3"><a href="javascript:UI.Motion.linkScroll(3)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-gift-o"></i><i class="tt">이벤트</i></span></a></li>
+                            <li class="nav resize" data-no="4"><a href="javascript:UI.Motion.linkScroll(4)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-bell-o"></i><i class="tt">우리매장 소식</i></span></a></li>
+                            <li class="nav resize" data-no="5"><a href="javascript:UI.Motion.linkScroll(5)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-package"></i><i class="tt">시술제품</i></span></a></li>
+                            <li class="nav resize" data-no="6"><a href="javascript:UI.Motion.linkScroll(6)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-file-add-o"></i><i class="tt">추가정보</i></span></a></li>
+                            <li class="nav resize PHONE" data-no="7"><a href="javascript:UI.Motion.linkScroll(7)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-maker-drop"></i><i class="tt">위치정보</i></span></a></li>
+                            <li class="nav resize PHONE" data-no="8"><a href="javascript:UI.Motion.linkScroll(8)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-border-color"></i><i class="tt">이용후기</i></span></a></li>
+                        </ul>
+            <!--            <ul class="storeView_nav fixObj PHONE">
+                            <li class="nav resize" data-no="0"><a href="javascript:UI.Motion.linkScroll(0)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-shop"></i><i class="tt"><?=$storePageTit[0]?></i></span></a></li>
+                            <li class="nav resize" data-no="1"><a href="javascript:UI.Motion.linkScroll(1)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-money"></i><i class="tt"><?=$storePageTit[1]?></i></span></a></li>
+                            <li class="nav resize" data-no="2"><a href="javascript:UI.Motion.linkScroll(2)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-users-o"></i><i class="tt"><?=$storePageTit[2]?></i></span></a></li>
+                            <li class="nav resize" data-no="3"><a href="javascript:UI.Motion.linkScroll(3)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-gift-o"></i><i class="tt"><?=$storePageTit[3]?></i></span></a></li>
+                            <li class="nav resize" data-no="4"><a href="javascript:UI.Motion.linkScroll(4)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-bell-o"></i><i class="tt"><?=$storePageTit[4]?></i></span></a></li>
+                            <li class="nav resize" data-no="5"><a href="javascript:UI.Motion.linkScroll(5)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-package"></i><i class="tt"><?=$storePageTit[5]?></i></span></a></li>
+                            <li class="nav resize" data-no="6"><a href="javascript:UI.Motion.linkScroll(6)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-file-add-o"></i><i class="tt"><?=$storePageTit[6]?></i></span></a></li>
+                            <li class="nav resize" data-no="7"><a href="javascript:UI.Motion.linkScroll(7)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-file-add-o"></i><i class="tt"><?=$storePageTit[7]?></i></span></a></li>
+                            <li class="nav resize" data-no="8"><a href="javascript:UI.Motion.linkScroll(8)" class="re vm_wrap"><span class="vm_tt"><i class="xi xi-file-add-o"></i><i class="tt"><?=$storePageTit[8]?></i></span></a></li>
+                        </ul>-->
+                    </div>
+                    <div class="box1">
+                        <div class="detail_wrap">
+                            <div class="left">
+                                <div class="detail">
+                                    <div class="detail_con linkScroll" data-no="0">
+                                        <div class="detail_head">
+                                            <p class="tit">청담점</p>
+                                            <ul class="num_wrap di_wrap">
+                                                <li><p class="tel" onclick="location.href='tel:02.000.0000'"><i class="xi xi-call"></i><i class="num en">02.000.0000</i></p></li>
+                                                <li><p class="star"><i class="xi xi-star"></i><i class="num en">8.13</i></p></li>
+                                            </ul>
+                                            <p class="add">서울 강남구 청담동 000-00 지하1층</p>
+                                            <p class="item"><span>#페이스·체형관리</span><span>#왁싱</span><span>#네일아트·속눈썹</span></p>
+                                            <ul class="theme fl_wrap sec6">
+                                                <li><div class="resize"><p class="re vm_wrap in"><span class="vm_tt"><i class="xi xi-wifi"></i><i class="tt en">WIFI</i></span></p></div></li>
+                                                <li><div class="resize"><p class="re vm_wrap in"><span class="vm_tt"><i class="xi xi-park"></i><i class="tt en">Parking</i></span></p></div></li>
+                                                <li><div class="resize"><p class="re vm_wrap in"><span class="vm_tt"><i class="xi xi-gift-o"></i><i class="tt en">Event</i></span></p></div></li>
+                                                <li><div class="resize"><p class="re vm_wrap in"><span class="vm_tt"><i class="xi xi-hotel"></i><i class="tt en">수면가능</i></span></p></div></li>
+                                                <li><div class="resize"><p class="re vm_wrap in"><span class="vm_tt"><i class="xi xi-tint-o"></i><i class="tt en">샤워가능</i></span></p></div></li>
+                                            </ul>
+                                            <div class="txt">
+                                                <p class="t1 vm_wrap"><span class="vm_tt">매장설명</span></p>
+                                                <p class="t2">해당 매장의 간략한 한줄 설명이 들어가는 곳입니다. 해당 매장의 간략한 한줄 설명이 들어가는 곳입니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="1">
+                                        <div class="page_tit2"><span class="t1">가격 &amp; 프로그램</span></div>
+                                        <dl class="detail_program">
+                                            <dt>1차 프로그램명</dt>
+                                            <dd>
+                                                <ul class="program di_wrap">
+                                                    <li class="course_wrap">
+                                                        <p class="tit">2차 프로그램명 - 60분</p>
+                                                        <p class="desc">해당 프로그램에 관한 간략한 설명이 들어갑니다.</p>
+                                                    </li>
+                                                    <li class="price_wrap">
+                                                        <p class="priceS"><span class="per en">50%</span><span class="won">\</span><span class="price en">60,000</span></p>
+                                                        <p class="priceB"><span class="won">\</span><span class="price en">30,000</span></p>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                            <dd>
+                                                <ul class="program di_wrap">
+                                                    <li class="course_wrap">
+                                                        <p class="tit">2차 프로그램명 - 30분</p>
+                                                        <p class="desc">해당 프로그램에 관한 간략한 설명이 들어갑니다.</p>
+                                                    </li>
+                                                    <li class="price_wrap">
+                                                        <p class="priceS"><span class="per en">50%</span><span class="won">\</span><span class="price en">60,000</span></p>
+                                                        <p class="priceB"><span class="won">\</span><span class="price en">30,000</span></p>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl class="detail_program">
+                                            <dt>1차 프로그램명</dt>
+                                            <dd>
+                                                <ul class="program di_wrap">
+                                                    <li class="course_wrap">
+                                                        <p class="tit">2차 프로그램명 - 60분</p>
+                                                        <p class="desc">해당 프로그램에 관한 간략한 설명이 들어갑니다.</p>
+                                                    </li>
+                                                    <li class="price_wrap">
+                                                        <p class="priceS"><span class="per en">50%</span><span class="won">\</span><span class="price en">60,000</span></p>
+                                                        <p class="priceB"><span class="won">\</span><span class="price en">30,000</span></p>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <!-- <dl class="detail_program">
+                                            <dd class="no_con ac">등록된 프로그램이 없습니다.</dd>
+                                        </dl> -->
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="2">
+                                        <div class="page_tit2"><span class="t1">직원소개</span></div>
+                                        <div class="listHealer_wrap">
+                                            <ul class="listHealer fl_wrap"><!--최적 사이즈 410*600px -->
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_healer.html');" class="link">
+                                                        <div class="img_wrap"><p class="resize s2"><span class="re img" style="background-image:url(images/temp/healer_img1.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p class="name">김보라</p>
+                                                            <p class="t1">여 / 24세 / 164cm</p>
+                                                            <p class="t1">스웨디시 / 왁싱 / 마사지</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_healer.html');" class="link">
+                                                        <!--<div class="img_wrap"><p class="resize s2"><span class="re img" style="background-image:url(../images/temp/healer_img1.jpg);"></span></p></div>-->         
+                                                        <div class="img_wrap"><p class="resize s2"><span class="re vm_wrap"><i class="xi noimg"></i></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p class="name">김보라</p>
+                                                            <p class="t1">여 / 24세 / 164cm</p>
+                                                            <p class="t1">스웨디시 / 왁싱 / 마사지</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_healer.html');" class="link">
+                                                        <!--<div class="img_wrap"><p class="resize s2"><span class="re img" style="background-image:url(../images/temp/healer_img1.jpg);"></span></p></div>-->         
+                                                        <div class="img_wrap"><p class="resize s2"><span class="re vm_wrap"><i class="xi noimg"></i></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p class="name">김보라</p>
+                                                            <p class="t1">여 / 24세 / 164cm</p>
+                                                            <p class="t1">스웨디시 / 왁싱 / 마사지</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_healer.html');" class="link">
+                                                        <!--<div class="img_wrap"><p class="resize s2"><span class="re img" style="background-image:url(../images/temp/healer_img1.jpg);"></span></p></div>-->         
+                                                        <div class="img_wrap"><p class="resize s2"><span class="re vm_wrap"><i class="xi noimg"></i></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p class="name">김보라</p>
+                                                            <p class="t1">여 / 24세 / 164cm</p>
+                                                            <p class="t1">스웨디시 / 왁싱 / 마사지</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- <p class="no_con ac">등록된 직원이 없습니다.</p> -->
+                                            <div class="board_paging">
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                                <button class="on">1</button>
+                                                <button onclick="javascript:location.href='#'">2</button>
+                                                <button onclick="javascript:location.href='#'">3</button>
+                                                <button onclick="javascript:location.href='#'">4</button>
+                                                <button onclick="javascript:location.href='#'">5</button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="3">
+                                        <div class="page_tit2"><span class="t1">이벤트</span></div>
+                                        <div class="board_event_wrap st1">
+                                            <!--이벤트 게시판 -->
+                                            <ul class="board_event">
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link"><!--최적사이즈 600*400px -->
+                                                        <div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(images/temp/temp_img1.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c3">공지</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>                
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link">
+                                                        <div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(images/temp/temp_img2.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c1">진행중</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link">
+                                                        <div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(images/temp/temp_img3.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c2">종료</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link">
+                                                        <div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(images/temp/temp_img1.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c2">종료</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link">
+                                                        <div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(images/temp/temp_img2.jpg);"></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c1">진행중</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:layerOpen('pop_event_v.html')" class="link">
+                                                        <!--<div class="img_wrap"><p class="resize"><span class="re img" style="background-image:url(../images/temp/temp_img3.jpg);"></span></p></div> -->
+                                                        <div class="img_wrap"><p class="resize"><span class="re vm_wrap"><i class="xi noimg"></i></span></p></div>
+                                                        <div class="con_wrap">
+                                                            <p><label class="label_st"><input type="checkbox" /><i class="xi"></i></label></p>
+                                                            <p class="t1">해당 게시판의 제목이 들어갑니다.</p>
+                                                            <p class="t2"><strong class="c2">종료</strong><span class="date en">2025.00.00 ~ 2025.00.00</span></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- <p class="no_con ac">등록된 게시글이 없습니다.</p> -->
+                                            <!--관리자 페이지에서만 노출 -->
+                                            <!-- <div class="board_btn_wrap ar">    	
+                                                <label class="label_st"><input type="checkbox" /><i class="xi"></i> <span>전체선택</span></label>
+                                                <span class="input_sec"></span>
+                                                <button class="input_st c3 re" onclick=''><i class="xi xi-check"></i><i class="tt">선택 삭제</i></button>
+                                                <button class="input_st c3 re" onclick=''><i class="xi xi-trash-o"></i><i class="tt">전체 삭제</i></button>
+                                            </div>
+                                            <div class="board_paging">
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                                <button class="on">1</button>
+                                                <button onclick="javascript:location.href='#'">2</button>
+                                                <button onclick="javascript:location.href='#'">3</button>
+                                                <button onclick="javascript:location.href='#'">4</button>
+                                                <button onclick="javascript:location.href='#'">5</button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                                <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="4">
+                                        <div class="page_tit2"><span class="t1">우리매장 소식</span></div>
+                                        <div class="board_slide_list">
+                                            <ul class="list">
+                                                <li class="BStit">        	
+                                                    <div class="BSbtn">
+                                                        <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                        <p class="board_date en">2025.00.00</p>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                </li>
+                                                <li class="BScon">
+                                                    <div class="con">
+                                                        상세내용이 입력됩니다.<br /><br /><img src="images/inc/logo.png" />
+                                                        
+                                                        <div class="board_btn_wrap ar"><!--관리자 페이지에서만 노출 -->              			
+                                                            <button class="input_st s2 c2 re" onclick="location.href='?mode=write'"><i class="tt">수정</i></button>
+                                                            <button class="input_st s2 c2 re" onclick=""><i class="tt">삭제</i></button>                           
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="BStit">        	
+                                                    <div class="BSbtn">
+                                                        <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                        <p class="board_date en">2025.00.00</p>
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                </li>
+                                                <li class="BScon">
+                                                    <div class="con">
+                                                        상세내용이 입력됩니다.<br />
+                                                        상세내용이 입력됩니다.<br />
+                                                        상세내용이 입력됩니다.<br />
+                                                        상세내용이 입력됩니다.<br /><br /><img src="images/inc/logo.png" />
+                                                        
+                                                        <div class="board_btn_wrap ar"><!--관리자 모드에서만 노출 -->              			
+                                                            <button class="input_st s2 c2 re" onclick="location.href=''"><i class="tt">수정</i></button>
+                                                            <button class="input_st s2 c2 re" onclick=""><i class="tt">삭제</i></button>                           
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="board_slide_list">
+                                            <ul class="list">
+                                                <li>        	
+                                                    <p class="no_con ac">등록된 소식이 없습니다.</p>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+                                        <div class="board_paging">
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                            <button class="on">1</button>
+                                            <button onclick="javascript:location.href='#'">2</button>
+                                            <button onclick="javascript:location.href='#'">3</button>
+                                            <button onclick="javascript:location.href='#'">4</button>
+                                            <button onclick="javascript:location.href='#'">5</button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="5">
+                                        <div class="page_tit2"><span class="t1">시술제품</span></div>
+                                        <div class="board_slide_list st1">
+                                            <ul class="list">
+                                                <li class="BStit">        	
+                                                    <div class="BSbtn">
+                                                        <p class="img board_img"><img src="images/temp/prod_img1.jpg"></p>
+                                                        <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>                          	
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                </li>
+                                                <li class="BScon">
+                                                    <div class="con">
+                                                        상세내용이 입력됩니다.<br /><br /><img src="images/temp/prod_img1.jpg">
+                                                        
+                                                        <div class="board_btn_wrap ar"><!--관리자 페이지에서만 노출 -->              			
+                                                            <button class="input_st s2 c2 re" onclick="location.href=''"><i class="tt">수정</i></button>
+                                                            <button class="input_st s2 c2 re" onclick=""><i class="tt">삭제</i></button>                           
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="BStit">        	
+                                                    <div class="BSbtn">
+                                                        <p class="img board_img"><i class="xi noimg"></i></p>
+                                                        <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>                          	
+                                                    </div>
+                                                    <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                </li>
+                                                <li class="BScon">
+                                                    <div class="con">
+                                                        상세내용이 입력됩니다.<br /><br /><img src="images/inc/logo.png" />
+                                                        
+                                                        <div class="board_btn_wrap ar"><!--관리자 페이지에서만 노출 -->              			
+                                                            <button class="input_st s2 c2 re" onclick="location.href=''"><i class="tt">수정</i></button>
+                                                            <button class="input_st s2 c2 re" onclick=""><i class="tt">삭제</i></button>                           
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="board_slide_list">
+                                            <ul class="list">
+                                                <li>        	
+                                                    <p class="no_con ac">등록된 제품이 없습니다.</p>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+                                        <div class="board_paging">
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                            <button class="on">1</button>
+                                            <button onclick="javascript:location.href='#'">2</button>
+                                            <button onclick="javascript:location.href='#'">3</button>
+                                            <button onclick="javascript:location.href='#'">4</button>
+                                            <button onclick="javascript:location.href='#'">5</button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con linkScroll" data-no="6">
+                                        <div class="page_tit2"><span class="t1">추가정보</span></div>
+                                        <div class="detail_desc">
+                                            <div>추가정보 내용이 들어갑니다.<br />추가정보 내용이 들어갑니다.</div>
+                                            <!-- <div class="no_con ac">등록된 내용이 없습니다.</div> -->
+                                        </div>
+                                    </div>
+                                    <ul class="detail_tx">
+                                        <span class="tt">꼭 확인해주세요!</span>
+                                        <li><span class="c1">예약시 올뷰케어 회원</span> 이라고 반드시 말씀해 주셔야 회원가 적용이 가능합니다.</li>
+                                        <li>궁금하신 사항이나 예약문의 등 전화주시면 상세하게 설명해 드리겠습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="detail">
+                                    <div class="detail_con linkScroll" data-no="7">
+                                        <div class="detail_loacation">
+                                            <div class="map_wrap">
+                                                <div id="map">
+                                                    <div id="daumRoughmapContainer1749616038484" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                                    <script charset="UTF-8">
+                                                        new daum.roughmap.Lander({
+                                                            "timestamp" : "1749616038484",
+                                                            "key" : "3d5c5z6kod7",
+                                                            "mapWidth" : "100%",
+                                                            "mapHeight" : "360"
+                                                        }).render();
+                                                    </script>
+                                                </div>
+                                                <ul class="map_btn fl_wrap">
+                                                    <li><a href="javascript:void(0)" target="_blank" onclick="moveKakaoMap(this)"><i class="xi xi-arrows-alt"></i> <i>큰지도</i></a></li>
+                                                    <!--<li><a href="javascript:void(0)" target="_blank" onclick="resetKakaoMap()"><i class="xi xi-redo"></i> <i>초기화</i></a></li> -->
+                                                </ul>
+                                                <ul class="map_btn type fl_wrap">
+                                                    <li><a href="javascript:void(0)" id="btnRoadmap" onclick="setMapType('roadmap')" class="selected_btn"><i class="xi xi-map"></i> <i>지도</i></a></li>
+                                                    <li><a href="javascript:void(0)" id="btnSkyview" onclick="setMapType('skyview')" class="btn"><i class="xi xi-flight-on"></i> <i>스카이뷰</i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="page_tit2"><span class="t1">위치 및 주차안내</span></div>
+                                            <div class="detail_desc st1">
+                                                위치 및 주차안내 내용이 들어갑니다.<br />
+                                                위치 및 주차안내 내용이 들어갑니다.<br />
+                                                위치 및 주차안내 내용이 들어갑니다.
+                                                <!-- <p class="no_con ac">등록된 정보가 없습니다.</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con reviewCon_size pr PC">
+                                        <div class="review_fix_wrap fixIn">
+                                            <div class="review_fix fixObj">
+                                                <div class="page_tit2"><span class="t1">이용후기 (10)</span></div>
+                                                <div class="board_slide_write">
+                                                    <ul class="list">
+                                                        <li class="BStit ar">          
+                                                            <button class="BSbtn input_st s2 c3 re"><i class="xi xi-pen"></i><i class="tt">후기작성</i></button>    
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                <div class="star_wrap fl_wrap sec5">
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">1</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">2</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">3</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">4</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">5</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">6</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">7</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">8</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">9</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">10</span></label>
+                                                                </div>
+                                                                <div><input type="text" class="input_st s2 w100" placeholder="아이디" /></div>
+                                                                <div><input type="text" class="input_st s2 w100" placeholder="제목" /></div>
+                                                                <div><textarea class="input_st s2" placeholder="내용 입력"></textarea></div>
+                                                                <div class="board_btn_wrap ac">
+                                                                    <input type="button" value="등록하기" class="input_st c1" onclick="" />
+                                                                    <input type="button" value="취소하기" class="input_st c2" onclick="$(this).parents('.BScon').hide();" />
+                                                                </div>
+                                                            </div>            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="board_review_list board_slide_list">
+                                                    <ul class="list">
+                                                        <!-- <li class="BCtit">
+                                                            <a href="javascript:layerOpen('pop_review.html')">        	
+                                                            <div class="">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p class="name">홍길동</p></li>
+                                                                    <li><p class="board_date en">2025.00.00</p></li>
+                                                                </ul>
+                                                            </div>
+                                                            </a>       
+                                                        </li> -->
+                                                        <li class="BStit">        	
+                                                            <div class="BSbtn">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p><i class="name">홍길동</i></p></li> 
+                                                                    <li><p class="board_date en">2025.00.00</p></li>               
+                                                                </ul>               
+                                                            </div>
+                                                            <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.
+                                                            </div>
+                                                        </li>
+                                                                                                                <li class="BStit">        	
+                                                            <div class="BSbtn">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p><i class="name">홍길동</i></p></li> 
+                                                                    <li><p class="board_date en">2025.00.00</p></li>               
+                                                                </ul>               
+                                                            </div>
+                                                            <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <div class="board_slide_list">
+                                                    <ul class="list">
+                                                        <li>        	
+                                                            <p class="no_con ac">등록된 후기가 없습니다.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div> -->
+                                                <div class="board_paging">
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                                    <button class="on">1</button>
+                                                    <button onclick="javascript:location.href='#'">2</button>
+                                                    <button onclick="javascript:location.href='#'">3</button>
+                                                    <button onclick="javascript:location.href='#'">4</button>
+                                                    <button onclick="javascript:location.href='#'">5</button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail_con reviewCon_size pr PHONE linkScroll" data-no="8">
+                                        <div class="review_fix_wrap">
+                                            <div class="review_fix">
+                                                <div class="board_slide_write">
+                                                    <ul class="list">
+                                                        <li class="BStit ar">          
+                                                            <button class="BSbtn input_st s2 c3 re"><i class="xi xi-pen"></i><i class="tt">후기작성</i></button>    
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                <div class="star_wrap fl_wrap sec5">
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">1</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">2</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">3</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">4</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">5</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">6</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">7</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">8</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">9</span></label>
+                                                                    <label class="label_st star"><input type="radio" /><i class="xi"></i><span class="en">10</span></label>
+                                                                </div>
+                                                                <div><input type="text" class="input_st s2 w100" placeholder="아이디" /></div>
+                                                                <div><input type="text" class="input_st s2 w100" placeholder="제목" /></div>
+                                                                <div><textarea class="input_st s2" placeholder="내용 입력"></textarea></div>
+                                                                <div class="board_btn_wrap ac">
+                                                                    <input type="button" value="등록하기" class="input_st c1" onclick="" />
+                                                                    <input type="button" value="취소하기" class="input_st c2" onclick="$(this).parents('.BScon').hide();" />
+                                                                </div>
+                                                            </div>            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="board_review_list board_slide_list">
+                                                    <ul class="list">
+                                                        <!-- <li class="BCtit">
+                                                            <a href="javascript:layerOpen('pop_review.html')">        	
+                                                            <div class="">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p class="name">홍길동</p></li>
+                                                                    <li><p class="board_date en">2025.00.00</p></li>
+                                                                </ul>
+                                                            </div>
+                                                            </a>       
+                                                        </li> -->
+                                                        <li class="BStit">        	
+                                                            <div class="BSbtn">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p><i class="name">홍길동</i></p></li> 
+                                                                    <li><p class="board_date en">2025.00.00</p></li>               
+                                                                </ul>               
+                                                            </div>
+                                                            <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.
+                                                            </div>
+                                                        </li>
+                                                        <li class="BStit">        	
+                                                            <div class="BSbtn">
+                                                                <p class="tt board_tt1">제목이 입력됩니다.제목이 입력됩니다.제목이 입력됩니다.</p>
+                                                                <ul class="info di_wrap">
+                                                                    <li><p class="star en"><i class="xi xi-star"></i><i class="num">10</i></p></li>
+                                                                    <li><p><i class="name">홍길동</i></p></li> 
+                                                                    <li><p class="board_date en">2025.00.00</p></li>               
+                                                                </ul>               
+                                                            </div>
+                                                            <a href="javascript:void(0)" class="BSbtn board_more"><i class="xi"></i></a>       
+                                                        </li>
+                                                        <li class="BScon">
+                                                            <div class="con">
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.<br />
+                                                                상세내용이 입력됩니다.
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <div class="board_slide_list">
+                                                    <ul class="list">
+                                                        <li>        	
+                                                            <p class="no_con ac">등록된 후기가 없습니다.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div> -->
+                                                <div class="board_paging">
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                                                    <button class="on">1</button>
+                                                    <button onclick="javascript:location.href='#'">2</button>
+                                                    <button onclick="javascript:location.href='#'">3</button>
+                                                    <button onclick="javascript:location.href='#'">4</button>
+                                                    <button onclick="javascript:location.href='#'">5</button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                                                    <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            UI.Layout.storeReviewSize();
+            UI.Motion.scrollFix('#contents .storeView_nav');
+            UI.Motion.scrollFix('#contents .review_fix');
+            UI.Motion.scrollCheck('#contents .linkScroll','#contents .fixWrap .nav');
+            $(".BSbtn").click(function(event){
+                var BSbtn = $(event.target);
+                boardFaq(BSbtn);
+            })
+            </script>
+        </div>
+    </div>
+    <!--contents ::E::-->
+    <div id="footer">
+        <a href="javascript:goTop();" class="goTop vm_wrap"><span class="vm_tt"><i class="xi xi-angle-up-thin"></i><i class="tt en">Top</i></span></a>
+        <div class="foot_wrap">
+            <div class="box1 fl_wrap">
+                <div class="info_wrap">
+                    <p class="logo"><a href="main.html"><img src="images/inc/logo_wAll.png" alt="로고이미지"></a></p>
+                    <ul class="info di_wrap">
+                        <li class="tit"><span class="tt">올뷰케어 (ALLBEAUCARE)</span></li>
+                        <li><span class="tt">대표 : 엄태권</span></li>
+                        <li><span class="tt">사업자등록번호 : 234-75-00047</span></li>
+                        <li><span class="tt">상표출원번호 : 40-2019-0193646</span></li>
+                        <li><span class="tt">주소 : 서울특별시 송파구 백제고분로7길 6-5, 2층 202호(잠실동)</span></li>
+                        <li class="cs"><span class="tt">고객센터 </span><strong class="tel en">1833-6185</strong><span class="tt"> (평일 오전 10시 ~ 오후 6시)</span></li>
+                        <li class="copy"><span class="tt en">COPYRIGHT(C) ALLBEAUCARE. ALL RIGHTS RESERVED.</span></li>
+                    </ul>
+                </div>
+                <div class="menu_wrap">
+                    <ul class="menu">
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">제휴점 관리자</a></li>
+                        <!--<li><a href="../ISAF/" target="_blank">관리자</a></li> -->
+                    </ul>
+                    <ul class="sns fl_wrap">
+                        <li><a href="#"><i class="xi xi-facebook"></i></a></li>
+                        <li><a href="#"><i class="xi xi-instagram"></i></a></li>
+                        <li><a href="#"><i class="xi xi-kakaostory"></i></a></li>
+                        <li><a href="#"><i class="xi xi-naver"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer ::E::-->
+    <script type="text/javascript">
+        function gnbOn(){
+            var obj = $(".gnb");
+            obj.find(".gnb > li").addClass("on");
+        }
+        gnbOn();
+        UI.Layout.bodyLoad();
+        UI.Layout.bodyScroll();
+        UI.Motion.ieFixed(); 
+    </script>
+</body>
+</html>

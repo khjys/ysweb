@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한컴 말랑말랑 행복케어</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_response.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/inc.js" type="text/javascript"></script>
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <script src="js/slick.js" type="text/javascript"></script>
+    <script src="js/placeholders.min.js" type="text/javascript" defer="defer"></script>
+    <link rel="stylesheet" type="text/css" href="js/animated/animated.css" />
+    <script type="text/javascript" src="js/animated/jquery.waypoints.min.js"></script>
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js" type="text/javascript" defer="defer"></script>
+</head>
+<body class="sub">
+    <!-- header :: s :: -->
+    <div id="header">
+        <div class="box1 pr">
+            <h1 class="logo"><a href="index.html" class="vm_wrap"><img src="images/inc/logo.png" /></a></h1>
+            <div class="search_wrap PC">
+                <div class="inp_wrap vm_wrap">
+                    <input type="text" msg="검색어를" name="allKeyword" class="search_inp" placeholder="검색어를 입력하세요.">
+                    <button type="submit" class="search_btn"><i class="xi xi-search"></i></button>
+                </div>
+            </div>
+            <div class="search_wrap PHONE">
+                <div class="inp_wrap vm_wrap">
+                    <button type="button" class="search_btn"><i class="xi xi-search"></i></button>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="vm_wrap mobileBtn PHONE" id="sitemapBtn"><span class="vm_tt"><i class="ham"></i></span></a><!--모바일nav-->
+        </div>
+        <div class="gnb_wrap">
+            <div class="box1">
+                <!--gnb start-->
+                <ul class="gnb di_wrap">
+                    <li>
+                        <a href="sub1.html" class="dp1 vm_wrap"><span class="vm_tt">행복케어</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                                <p class="gnb_tit">hancom smart senior daycare center</p>
+                                <p class="gnb_info">한컴 말랑말랑 행복케어는 행복한 시니어 라이프를 위한 선택, 행복한 시설을 설계합니다.</p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon1.png" /></i>행복케어란</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon14.png" /></i>미션비전</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon2.png" /></i>프로그램 운영 및 활동</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon4.png" /></i>이용시설 및 요금안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub2.html" class="dp1 vm_wrap"><span class="vm_tt">창업안내</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                            <p class="gnb_tit">hancom care</p>
+                            <p class="gnb_info">한컴 말랑말랑 행복케어는 국내 최초 스마트데이케어로 체계적인 치매 예방 교육과정과 초보창업도 문제없는 운영지원 시스템을 갖추고 있습니다. </p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon13.png" /></i>창업안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon15.png" /></i>사업설명회</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon5.png" /></i>상담신청</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon6.png" /></i>개설절차</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon7.png" /></i>자주하는질문</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon8.png" /></i>센터검색</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub3.html" class="dp1 vm_wrap"><span class="vm_tt">행복케어소식</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                                <p class="gnb_tit">hancom news</p>
+                                <p class="gnb_info">한컴 말랑말랑 행복케어의 새로운 소식들을 확인하실 수 있습니다.</p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon9.png" /></i>공지사항</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon10.png" /></i>보도자료</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon11.png" /></i>홍보자료실</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon12.png" /></i></i>갤러리</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon16.png" /></i>인재채용</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub4.html" class="dp1 vm_wrap"><span class="vm_tt">청리움</span></a>
+                    </li>
+                    <li>
+                        <a href="sub5.html" class="dp1 vm_wrap"><span class="vm_tt">한컴그룹</span></a>
+                    </li>
+                </ul>
+                <!--gnb end-->
+                <ul class="link_wrap di_wrap">
+                    <li class="go_btn1"><a href="#" target="_blank" class="vm_wrap"><i class="xi xi-external-link"></i><i class="vm_tt">행복케어몰</i></a></li>
+                    <li class="go_btn2"><a href="#" class="vm_wrap"><i class="xi xi-comment-o"></i><i class="vm_tt">상담신청</i></a></li>
+                </ul>
+            </div>
+        </div><!--gnb_wrap end-->
+        <span class="gnbBg"></span>
+        <div class="siteMap_wrap">
+            <div class="box1">
+                <div class="inner">
+                    <p class="tt vm_wrap"><img src="images/inc/logo.png" /></p>
+                    <a href="javascript:void(0);" class="vm_wrap close_btn" id="sitemapBtn"><span class="vm_tt"><i class="xi xi-close"></i></span></a>
+                    <ul class="gnb di_wrap">
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">행복케어</span></a>
+                            <div class="gnb_draw">
+                                <div class="draw_title">
+                                    <p class="gnb_tit">hancom smart senior daycare center</p>
+                                    <p class="gnb_info">한컴 말랑말랑 행복케어는 행복한 시니어 라이프를 위한 선택, 행복한 시설을 설계합니다.</p>
+                                </div>
+                                <ul class="dp2 di_wrap">
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon1.png" /></i>행복케어란</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon14.png" /></i>미션비전</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon2.png" /></i>프로그램 운영 및 활동</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon4.png" /></i>이용시설 및 요금안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">창업안내</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                            <p class="gnb_tit">hancom care</p>
+                            <p class="gnb_info">한컴 말랑말랑 행복케어는 국내 최초 스마트데이케어로 체계적인 치매 예방 교육과정과 초보창업도 문제없는 운영지원 시스템을 갖추고 있습니다. </p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon13.png" /></i>창업안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon15.png" /></i>사업설명회</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon5.png" /></i>상담신청</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon6.png" /></i>개설절차</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon7.png" /></i>자주하는질문</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon8.png" /></i>센터검색</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">행복케어소식</span></a>
+                            <div class="gnb_draw">
+                                <div class="draw_title">
+                                    <p class="gnb_tit">hancom news</p>
+                                    <p class="gnb_info">한컴 말랑말랑 행복케어의 새로운 소식들을 확인하실 수 있습니다.</p>
+                                </div>
+                                <ul class="dp2 di_wrap">
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon9.png" /></i>공지사항</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon10.png" /></i>보도자료</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon11.png" /></i>홍보자료실</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon12.png" /></i></i>갤러리</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon16.png" /></i>인재채용</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">청리움</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">한컴그룹</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sns_right_dv">
+        <div class="open_btn">
+            <span class="circleAni c1"></span>
+            <span class="circleAni c2"></span>
+            <span class="circleAni c3"></span>
+            <a class="in_sns" href="in_sns">상담문의</a>
+        </div>
+    </div>
+    <!-- header :: e :: -->
+    <!-- contents :: s :: -->
+    <div id="contents">
+        <div class="doc doc_pd">
+            <div class="sub2_1wrap">
+                <div class="conSection page_cover vm_wrap box0 page_sec1" data-no="0">
+                    <p class="cover_bg bg_info"></p>
+                    <p class="cover_layer"></p>
+                    <div class="cover_cell vm_tt">
+                        <p class="tt t1 en ani aniL delay1"><span>hancom smart senior daycare center</span></p>
+                        <p class="tt t2 en ani aniR delay2"><img src="images/sub/sub_logo_w.png" /></p>
+                        <p class="tt t4 ani aniT delay3">Don't worry, Be happy! <span class="c1">행복한 시니어 라이프를 위한 선택</span><br /><span class="c2">한컴 말랑말랑과 함께라면</span> <span class="c3">행복해요!</span></p>
+                        <a href="javascript:goDown()" class="goDown vm_wrap" title="아래로 이동"><span class="vm"><i class="xi xi-arrow-bottom"></i><i class="tt">scroll down</i></span></a>
+                    </div>
+                </div><!--data0 end-->
+                <div class="conSection"  data-no="1">
+                    <div class="page_con about_wrap fl_wrap ani aniT box1">
+                        <div class="about_tit">
+                            <div class="page_tit">
+                                <p class="tit_b"><strong>About Us</strong></p>
+                                <p class="tit_s">한컴 말랑말랑 <br>행복케어</p>
+                            </div>
+                            <p class="img"><img src="images/sub/2_1img1.png"></p>
+                        </div>
+                        <dl class="about_txt">
+                            <dt><strong>한컴 말랑말랑 행복케어</strong><span>는</span></dt>
+                            <dd class="t1">ICT기술과 체계적 운영프로세스를 적용한 데이케어센터 브랜드입니다.<br />
+                             디지털 소외계층인 시니어를 대상으로 전문의들과 함께 개발한 인지훈련 치매예방 가상현실(VR)과 상호교감이 가능한 인공지능 로봇 활용 프로그램을 제공하며, 
+                            24시간 실시간으로 노인들의 바이탈 체크 및 위치 확인이 가능한 웨어러블 기반의 보호자 안심 서비스 제공 등 첨단 ICT기술을 활용한 스마트 헬스케어 서비스를 제공합니다.<br />
+                            한컴위드의 뛰어난 기술력이 여러분의 행복한 인생을 약속합니다.
+                            </dd>
+                            <dd class="t2">※ <span class="c1">ICT</span><span class="c2">(Information&amp;Communication Technology</span>)는 정보기술(<span class="c2">IT</span>)과 통신기술(<span class="c2">CT</span>)의 합성어로
+                            하드웨어와 기기의 운영 / 정보관리에 필요한 소프트웨어 기술, 그것을 이용한 정보수집 / 생산 / 전달 / 활용 등의 모든 방법을 의미합니다.
+                            </dd>
+                        </dl>
+                    </div>
+                </div><!--data1 end-->
+                <div class="conSection" data-no="2">
+                    <div class="page_con choice_wrap page_sec1">
+                        <div class="box1">
+                            <div class="sub_page_tit3 ani aniT">
+                                <div class="tit_wrap">
+                                    <p class="t1"><span><i class="krL">행복케어</i><i class="kr">소개</i></span></p>
+                                </div>
+                            </div>
+                            <ul class="list fl_wrap">
+                                <li class="ani aniL delay1">
+                                    <div class="in">
+                                        <div class="img resize"><span class="re"><img src="images/sub/2_1img1.jpg"></span></div>
+                                        <div class="con">
+                                            <p class="num"><i class="xi xi-lightbulb-o"></i></p>
+                                            <p class="tit">혁신</p>
+                                            <p class="txt">ICT 기반 다양한 플렛폼 구축이 가능한 한컴만의 기술력을 갖추고 있으며 미래 시니어케어 기준을 제시하는 ICT 기반의 디지털 헬스케어 플랫폼</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ani aniL delay2">
+                                    <div class="in">
+                                        <div class="img resize"><span class="re"><img src="images/sub/2_1img2.jpg"></span></div>
+                                        <div class="con">
+                                            <p class="num"><i class="xi xi-pen"></i></p>
+                                            <p class="tit">전문성</p>
+                                            <p class="txt">체계화된 운영 프로세스와 전문적인 커리큘럼을 제공하는 스마트케어 시스템을 구축과 치매예방 전문가들이 연구한 노인 건강관리 솔루션, 
+                                                전문 강사 지원시스템을 통한 다양한 커리큘럼</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ani aniL delay3">
+                                    <div class="in">
+                                        <div class="img resize"><span class="re"><img src="images/sub/2_1img3.jpg"></span></div>
+                                        <div class="con">
+                                            <p class="num"><i class="xi xi-group"></i></p>
+                                            <p class="tit">협업</p>
+                                            <p class="txt">각 분야의 전문기업/기관들과의 협업을 통한 다양하고 새로운 케어 서비스 실현과 광범위한 업무협력 네트워크를 통한 운영관리 지원시스템</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--data2 end-->
+                <div class="conSection" data-no="3">
+                    <div class="page_con program_con page_step_wrap page_sec">
+                        <div class="box1">
+                            <div class="sub_page_tit3 ani aniT">
+                                <div class="tit_wrap">
+                                    <p class="t1"><span><i class="krL">행복케어</i><i class="kr">이용절차</i></span></p>
+                                </div>
+                            </div>
+                            <div class="page_txt icon icon2 ani aniT">
+                                <p class="tt t2 c2">어르신들의 생활 안정과 신체적, 심리적, 사회적 기능을 유지 및 향상시킬 수 있도록 <strong>케어 및 서비스를</strong>제공합니다.</p>
+                                <p class="tt t4">※ 이용상담시 <span class="c1">건강진단서1부, 질병진단서(1부)</span>를 지참해주십시오.</p>
+                            </div>
+                            <div class="program_step_wrap ani aniT delay1">
+                                <ul class="program_step pro1_1 fl_wrap sec4">
+                                    <li class="h1">
+                                        <div class="inner">
+                                            <p class="num">Step 01</p>
+                                            <p class="icon_img"><img src="images/sub/2_1icon2.png" /></p>
+                                            <p class="icon"><i class="xi"></i></p>
+                                            <p class="txt"><span class="t4 t_bd">전화 및 방문상담</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="h1">
+                                        <div class="inner line lineL">
+                                            <p class="num">Step 02</p>
+                                            <p class="icon_img"><img src="images/sub/2_1icon4.png" /></p>
+                                            <p class="icon"><i class="xi"></i></p>
+                                            <p class="txt"><span class="t4 t_bd">이용신청 및 대기자 등록</span></p>
+                                        </div>
+                                    </li>
+                                    <li class="h1">
+                                        <div class="inner line lineL">
+                                            <p class="num">Step 03</p>
+                                            <p class="icon_img"><img src="images/sub/2_1icon3.png" /></p>
+                                            <p class="icon"><i class="xi"></i></p>
+                                            <p class="txt">
+                                                <span class="t4 t_bd">이용상담 및 계획</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="h1">
+                                        <div class="inner line lineL">
+                                            <p class="num">Finish</p>
+                                            <p class="icon_img"><img src="images/sub/2_1icon5.png" /></p>
+                                            <p class="icon"><i class="xi"></i></p>
+                                            <p class="txt"><span class="t4 t_bd">서비스 제공</span></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--data3 end-->
+                <div class="conSection" data-no="4">
+                    <div class="page_con skill_wrap">
+                        <div class="box1">
+                            <div class="sub_page_tit3 ani aniT">
+                                <div class="tit_wrap">
+                                    <p class="t1"><span><i class="krL">행복케어</i><i class="kr">주요기능</i></span></p>
+                                </div>
+                            </div>
+                            <div class="program_desc_wrap ani aniT delay1">
+                                <ul class="program_desc sec3">
+                                    <li>
+                                        <div class="in">
+                                            <div class="tit"><div class="resize s1"><p class="re vm_wrap"><span class="vm_tt tt">스마트케어</span></p></div></div>
+                                            <div class="con">
+                                                 <p class="img"><img src="images/sub/2_1img6.jpg" /></p>
+                                                <ul class="page_ex_list">
+                                                    <li>VR(가상현실) 프로그램을 사용하여 노인 정신건강과 치매예방을 중점적으로 관리합니다. 한컴의 소프트웨어 개발 인프라를 통해 지속적으로 전문적인 교육 프로그램을 개발, 공급하여 치매예방에 특화된 경쟁력을 부여합니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="in">
+                                            <div class="tit"><div class="resize s1"><p class="re vm_wrap"><span class="vm_tt tt">유니버셜 디자인</span></p></div></div>
+                                            <div class="con">
+                                                <p class="img"><img src="images/sub/2_1img7.jpg" /></p>
+                                                <ul class="page_ex_list">
+                                                    <li>노인의 건강과 안전을 최우선으로 적용한 유니버셜 디자인을 도입하여 교육과 휴식, 취미활동을 안전하게 할 수 있도록 기능적인 설계를 하였습니다. 
+                                                    노인복지법 허가 기준에 부합되면서도 공간의 기능과 디자인의 퀄리티를 모두 향상시켜 시설의 경쟁력을 확보하였습니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="in">
+                                            <div class="tit"><div class="resize s1"><p class="re vm_wrap"><span class="vm_tt tt">매니지먼트</span></p></div></div>
+                                            <div class="con">
+                                                <p class="img"><img src="images/sub/2_1img8.jpg" /></p>
+                                                <ul class="page_ex_list">
+                                                    <li>노인복지시설은 복잡한 과정과 까다로운 시설 기준 때문에 창업 난이도가 높은 업종입니다. 입지선정, 용도변경, 설계 디자인, 인허가, 인테리어 등 100여가지에 가까운 창업 준비 항목을 전문적인 매니지먼트 시스템으로 해결하여 드립니다.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--data4 end-->
+            </div><!--sub2_1wrap end-->
+        </div> 
+    </div>
+    <!-- contents :: e :: -->
+    <script type="text/javascript">
+        mainVisual();
+        bannerVisual();
+        layoutDiv();
+        familySlide();
+        function mainVisual(){
+            var Wrap = $(".mainVisual_wrap");
+            var SlideWrap = $(".mainVisual_wrap .mainVisual");
+            SlideWrap.slick({
+                fade: true,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next')
+            });
+            $(window).bind('ready resize', function(){
+                var winW = $(window).width();
+                var winH = $(window).height();
+                //var topBnH = $(".topBanner").outerHeight();
+                var headerH = $("#header").outerHeight();
+                var footerH = $("#footer").outerHeight();
+                var H = winH-topBnH-headerH-60;
+        
+                //SlideWrap.find(".slick-track, .item").css({"height":H, "min-height":"590px"});
+            });
+        }
+        function bannerVisual(){
+            var Wrap = $(".bannerVisual_wrap");
+            var SlideWrap = $(".bannerVisual_wrap .bannerVisual");
+            SlideWrap.slick({
+                fade:true,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                //pauseOnHover: true,
+                autoplaySpeed: 4000,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next')
+            });
+        
+        //controlbox 일시정지
+            Wrap.find('.control_box .btn').clickToggle(function(){
+                SlideWrap .slick('slickPause');
+                $(this).find(".xi").removeClass("xi-pause").addClass("xi-play");
+            },function(){
+                SlideWrap .slick('slickPlay');
+                $(this).find(".xi").removeClass("xi-play").addClass("xi-pause");
+            });
+        
+        }
+        //    
+        function familySlide(){
+            var Wrap = $("#section5 .family_wrap");
+            var SlideWrap = $(".family_wrap .family");
+            SlideWrap.slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                pauseOnHover: true,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next'),
+                        responsive: [
+                        {
+                        breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 5,
+                        }
+                        },
+                        {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                        },
+                        {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                        }
+                        ]
+
+                });
+                Wrap.find('.arrow_wrap .btn').clickToggle(function(){
+                    SlideWrap.slick('slickPause');
+                    $(this).find(".xi").removeClass("xi-pause").addClass("xi-play");
+                },function(){
+                    SlideWrap.slick('slickPlay');
+                    $(this).find(".xi").removeClass("xi-play").addClass("xi-pause");
+                });
+
+        }
+        function toggleClass(obj,wrap,Class){
+            if(!wrap){
+                var wrap = (".toggleWrap");
+            };
+            if(!Class){
+                var Class = "on";
+            };
+            $(obj).parents(wrap).toggleClass(Class);
+        }
+            
+            jQuery(function(){
+            jQuery(".bla-1").YouTubePopUp();
+            });
+        
+        
+        </script>
+        <!--footer 시작 -->
+        <div id="footer">
+            <div class="foot_wrap">
+                <div class="box1">
+                    <div class="con menu_wrap fl_wrap">
+                        <ul class="menu di_wrap">
+                            <li><a href="#">한컴그룹</a></li>
+                            <li><a href="#">행복케어</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                        </ul>
+                        <p class="hanwithLogo"><img src="images/inc/footer_logo.png" /></p>
+                        <div class="family">
+                            <p class="tit"><i class="tt">Family Site</i><i class="xi"></i></p>
+                            <ul class="list">
+                                <li><a href="#" target="_blank">한컴위드</a></li>
+                                <li><a href="#" target="_blank">한컴그룹</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:goTop()" class="goTop vm_wrap" title="맨 위로 이동"><span class="vm"><i class="xi xi-arrow-top"></i><i class="tt">TOP</i></span></a>
+                    </div>
+                    <div class="bottom_wrap">
+                        <ul class="con info_wrap fl_wrap">
+                            <li><span class="tit">한컴 말랑말랑 행복케어</span></li>
+                            <li><span class="tt">사업자등록번호. 338-88-01955</span></li>
+                            <li class="cl"><span class="tt">Add. 경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 1층</span></li>
+                            <li><span class="tt">Tel. 031-626-7000</span></li>
+                            <li class="cl"><p class="copy">Copyright (C) SMART SENIOR DAYCARE CENTER. All Rights Reserved.</p></li>
+                        </ul>
+                        <div class="sns_wrap">
+                            <ul class="snsList fl_wrap">
+                                <li><a href="#" class="vm_wrap in face" target="_blank" title="페이스북"><span class="vm_tt"><i class="xi xi-facebook"></i></span></a></li>
+                                <li><a href="#" class="vm_wrap in blog" target="_blank" title="네이버블로그"><span class="vm_tt"><i class="xi xi-naver"></i></span></a></li>
+                                <li><a href="#" class="vm_wrap in yout" title="유튜브"><span class="vm_tt"><i class="xi xi-youtube-play"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer 끝 -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var scrollst = $(".scrollst")
+                scrollst.mCustomScrollbar({
+                    theme:"minimal-dark"
+                });
+            })
+            
+            $(window).load(function(){
+                $("body").addClass("load");
+            })
+            
+            $(".conSection").eq(0).addClass("secAni");
+            $(window).scroll(function(){
+                var ST = $(window).scrollTop();
+                var WH = $(window).height();
+                var HH = $("#header").outerHeight();
+                if(ST > 0){
+                    $("body").addClass("scroll");
+                }else{
+                    $("body").removeClass("scroll");
+                }
+                $(".conSection").each(function(){
+                    var idx = $(this).data("no");
+                    var Off = $(this).offset().top;
+                    var VA = ST+((WH-HH)/2);
+                    var H = $(this).outerHeight();
+            
+                    if(VA > Off && VA < Off+H){
+                        $(".conSection[data-no='"+idx+"']").addClass("secAni");
+                    }
+                })
+                stepAni();
+            })
+            $(window).resize(function(){
+                stepAni();
+            })
+        </script>
+    </body>
+</html>

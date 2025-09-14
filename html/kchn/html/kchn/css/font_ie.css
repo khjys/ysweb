@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */ 
+
+@font-face{
+font-family: "ng"; 
+src:url('../font/NanumGothic.eot');
+}
+
+@font-face {
+font-family: 'notokrB';
+src: url('../font/notokr-bold.eot');
+}
+
+@font-face {
+font-family: 'notokrM';
+src: url('../font/notokr-medium.eot');
+}
+
+@font-face {
+font-family: 'notokrR';
+src: url('../font/notokr-regular.eot');
+}
+
+@font-face {
+font-family: 'nsR';
+src: url('../font/NanumSquareOTFR.eot');
+}
+
+@font-face {
+font-family: 'nsB';
+src: url('../font/NanumSquareOTFB.eot');
+}

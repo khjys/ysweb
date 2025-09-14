@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+body{}
+.box1{}
+.PC{ display:none !important}
+.PHONE{ display:block !important}
+
+@media screen and (max-width:1600px){
+#contents{ min-height:auto !important}
+}
+
+
+@media screen and (max-width:1280px){
+body{ font-size:14px}
+}
+
+@media screen and (max-width:1024px){
+body{ font-size:13px}
+
+#header .gnb_wrap .box1{ position:relative}
+#header .gnb_wrap .gnb{ display:none}
+#header .top_wrap .user_wrap{ display:none}
+#contents .sub_layout{ width:100%}
+
+
+.main_tit .t0{ font-size:1.750em}
+.main_con.section0 .main_tit{ margin-top:3em}
+
+.main_con_wrap, .main_slide, .main_slide .el{ height:450px}
+
+/*.main_board{ flex-wrap:wrap; margin-top:0}
+.main_board > li{ width:100%; margin-left:0; flex:1 0 100%;}*/
+.main_list_col .tab.st1 > li .tt{ padding-left:1em; padding-right:1em}
+.main_edu_btn{}
+
+.main_edu_con{ flex-wrap:wrap}
+.main_edu_con li .cnt{ line-height:1.6; height:5em}
+.main_edu_con li{ height:auto; margin-bottom:5%; flex:1 0 48%; max-width:48%}
+.main_edu_con li + li{ margin-left:0}
+.main_edu_con li a{ padding:1.8em 1.5em}
+
+#header .gnb_wrap .util{ display:block; position:absolute; right:0}
+#header .nav_layer{ overflow-y:hidden;}
+#header .nav_layer .nav_wrap2{ position:absolute; top:0; left:3%; right:3%; bottom:0; padding:0;}
+#header .nav_layer .nav_wrap2 .nav_logo img{ width:21.5em}
+#header .nav_layer .nav_wrap2 .nav_logo{ margin-bottom:1em; padding:2.5em 0 1.5em 0;}
+#header .nav_layer .nav_wrap2 .nav_mem > li a{ background:#00aaad; border-color:#00aaad; color:#fff; margin-left:1px}
+#header .nav_layer .nav_wrap2 .nav_mem > li:nth-child(1) a{ background:#2956a5 !important; border-color:#2956a5 !important}
+#header .nav_layer .nav_wrap2 .nav_gnb{ position:sticky; position: -webkit-sticky; top:11em; left:0; width:100%; height:calc(100% - 11em); /*overflow-y:scroll; -webkit-overflow-scrolling:touch;*/}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb{ padding-bottom:3em;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li{ padding:1em 2em; background:#f9f9f9}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp1{ float:none; position:relative; padding:0 2em 0 0; font-size:1.250em;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp1:after{ content:"\e941";font-family:xeicon!important; position:absolute; right:-.5em; top:50%; margin-top:-.875em; width:1.75em; height:1.75em; line-height:1.75em; background:#fff; border:1px solid #ddd; border-radius:100%; color:#222; text-align:center; transition:.3s; display:none;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp1.arrow:after{ display:block;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp2{ margin-left:0; padding:1em 0 1em 0; font-size:1.063em; display:none;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp2 > li{ float:none; width:100%; border-top:1px dashed #ddd; padding-top:1em}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp3{ padding-bottom:1em; font-size:1.125em;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp3 > li > a{ font-weight:400;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp2 > li.on.on > a .vm_tt{ text-decoration:underline;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li .dp3 > li.on > a{ color:#ffbc1c;}
+
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li.active .dp1.plus:after{ transform:rotate(180deg);}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li.on .dp1.plus:after{ transform:rotate(0);}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li.active .dp2{ display:block;}
+#header .nav_layer .nav_wrap2 .nav_gnb .gnb > li.on .dp2{ display:block;}
+
+#header.m_nav_open .gnb_wrap .util .btnAll{ font-size:.688em; top:1.5em; right:3%;}
+
+#header.m_nav_open .gnb_wrap .util .btnAll{ font-size:.750em; top:3em;}
+#header.m_nav_open .gnb_wrap .util .btnAll .in{ background:#2956a5; border-radius:100%;}
+#header.m_nav_open .gnb_wrap .util .btnAll .ham:before,
+#header.m_nav_open .gnb_wrap .util .btnAll .ham:after { left:15%; width:70% !important;}
+	
+
+.page_step_wrap .step{ font-size:.875em;}
+.page_step_wrap .step > li .in{ min-width:5em;}
+
+
+
+}
+
+@media screen and (max-width:768px){
+body{ font-size:12px}
+
+#header .gnb_wrap .logo .mark img{}
+#header .gnb_wrap .logo .txt{ margin:-.2em 0 -8px .5em;}
+#header .gnb_wrap .logo .txt .t1{ font-size:.938em}
+#header .top_wrap .menu_wrap .menu{ padding:0}
+#header .top_wrap .menu_wrap .menu > li .in{ padding:0 .3em}
+
+#contents .sub_layout{ padding:0 0 5em 0}
+#contents .doc_wrap .doc_tit{ margin:0 1em 2em 1em}
+
+.main_con_wrap, .main_slide, .main_slide .el{ height:520px}
+.main_con.section0 .main_tit .img > img{ max-width:20%}
+
+.main_tit{ margin-right:1.5em}
+.main_more{ margin-top:5px}
+
+
+.main_quick_wrap .main_quick{ flex-wrap:wrap; height:auto}
+.main_quick_wrap .main_link{ width:100%}
+.main_edu{ width:100%}
+.main_edu_btn{ justify-content:center}
+.main_edu_btn li{ flex:1 0 25%; max-width:25%}
+.main_edu_btn li a{ height:12em}
+.main_edu_btn li a > .img{ width:60%; margin:0 auto}
+.main_edu_list{ margin-bottom:2em}
+
+.main_con.section1 > .flex{ flex-wrap:wrap;}
+.main_con.section1 .con_box{ flex:1 0 100% !important; max-width:100% !important}
+
+
+.page_search_wrap{ display:block;}
+.page_search_wrap .btn_wrap{ margin-left:6.5em; border-left:none;}
+.page_search_wrap .btn_wrap.w2{ max-width:none;}
+.page_search_wrap .input_st{ font-size:1.063em;}
+.page_search_wrap .in{ align-items:flex-start; margin:0 0; flex:1 0 100%; max-width:100%; flex-wrap:wrap;}
+.page_search_wrap .in.in2{ flex:1 0 100%; max-width:100%; flex-wrap:wrap}
+.page_search_wrap .inp_row{ padding:0; flex-wrap:wrap;}
+.page_search_wrap .inp_row .tit{ padding-top:.75em;}
+.page_search_wrap .btn_wrap .input_st,
+.page_search_wrap .inp_row .inp .input_st,
+.page_search_wrap .inp_row .inp .label_select,
+.page_search_wrap .inp_row .inp .label_select .input_st{ width:100% !important; margin:.125em 0;}
+.page_search_wrap .inp_row .inp .label_select .input_st{ margin:0;}
+.page_search_wrap .inp_row .inp .input_st.hasDatepicker{ width:calc(100% - 3em) !important;}
+
+
+
+
+.main_board{ flex-wrap:wrap; margin-top:0}
+.main_board > li{ width:100%; margin-left:0; flex:1 0 100%;}
+
+.main_more.mgL{ margin-left:0}
+.main_more.st1{ width:auto}
+.main_more.st1 > .xi{ display:none}
+.main_list_col .date_wrap .t1{ font-size:1.375em}
+.main_board > li.main_notice{ margin-top:1em}
+.main_board .tit_wrap{ padding:.5em 0}
+.main_list_col .list_wrap.edu .list > li .in{ padding:1em 1em}
+.main_notice .list > li .link{ height:2em}
+
+.main_tit .t1{ font-size:1.570em}
+.main_tit .t2{ font-size:1em}
+
+/*.main_edu_con{ flex-wrap:wrap}
+.main_edu_con li .cnt{ line-height:1.6; height:5em}
+.main_edu_con li{ height:auto; margin-bottom:5%; flex:1 0 48%; max-width:48%}
+.main_edu_con li + li{ margin-left:0}
+.main_edu_con li a{ padding:1.8em 1.5em}*/
+
+.section1 .main_tit{ flex-wrap:wrap;}
+.section1 .main_tit > .tit{ flex:1 0 100% !important;}
+.section1 .main_tit.st2 .txt{ padding-left:0; border-left:none; margin:1em 0 0 0;}
+.main_more{ width:auto}
+
+.main_edu_con li .date1,
+.main_edu_con li .loca{ font-size:1em}
+
+.member_wrap{ padding:0 3%}
+.member_wrap .member_form{ padding:1em}
+.member_wrap .member_tit .txt{ padding:0 10%}
+
+.member_wrap .member_tit{ padding-bottom:1.5em;}
+.member_wrap .member_tit .tit { font-size:2.125em; letter-spacing:-1px !important;}
+.member_wrap .member_tit .tit2{ font-size:1.875em;}
+.member_wrap .member_tit .txt br{ display:none;}
+
+.member_wrap .form .pw_wrap{ font-size:1em; line-height:1.4;}
+
+.member_wrap .form .cer_wrap{}
+.member_wrap .form .cer_wrap > li{ float:none; width:100%; text-align:left;}
+.member_wrap .form .cer_wrap > li .inner{ margin:1px 0; display:flex; justify-content:space-between; align-items:center;}
+.member_wrap .form .cer_wrap .txt{ flex:1; margin-top:0; height:auto; padding-left:.75em; font-size:1.125em;}
+.member_wrap .form .cer_wrap .btn{ max-width:6em;}
+
+.join_cer_wrap{ display:block;}
+.join_cer_wrap > li{ padding:1em 1em; border-top:1px dashed #d4d5d8; border-left:none; text-align:left;}
+.join_cer_wrap > li:first-child{ border-top:none;}
+.join_cer_wrap > li .inner{ position:relative; padding-left:6em;}
+.join_cer_wrap .icon{ position:absolute; top:0; left:0; font-size:.813em;}
+.join_cer_wrap .tit{ padding:.5em 0 .5em 0; font-weight:500;}
+.join_cer_wrap .txt{ min-height:auto; font-size:1em;}
+.join_cer_wrap .btn{ margin-top:1em; max-width:8em; font-size:1em;}
+
+.join_table,
+.join_table thead,
+.join_table tbody,
+.join_table tr,
+.join_table th,
+.join_table td{ display:block;}
+.join_table{ border-top:none;}
+.join_table tr{ margin-top:.5em; border:1px solid #666;}
+.join_table tr:first-child{ margin-top:0;}
+.join_table th,
+.join_table td{ height:auto;}
+.join_table th{ padding:1em .75em; background:#ecf0f4; font-size:1.125em; color:#000;}
+.join_table td,
+.join_table .checkShow td{ padding:.6em .75em; border-bottom:none;}
+.join_table .checkShow{ margin-top:0; border-top:none;}
+.join_table .input_st.w3[type=text],
+.join_table .input_st.w6{ width:calc(100% - 8.5em)}
+.join_table .input_st.w3[type=button]{ width:8em;}
+
+.join_finish .tit{ font-size:1.500em;}
+.join_finish .join_table{ width:100%;}
+.join_finish .join_table td{ padding:1em .75em; font-size:1.125em;}
+
+body.pop .popWrap .popVideo{ min-width:100%}
+
+
+.privacy_area .privacy_box{ padding:1em;}
+.privacy_area .privacy_box .privacy_in{ padding:1em}
+.terms_area{ padding:1em}
+.page_email{ padding:1em}
+.page_email .email_con .con_wrap{ margin-top:2em}
+
+.pop .pop_page_print{ height:600px;}
+
+
+}
+
+
+@media screen and (max-width:460px){
+body{ font-size:11px}
+
+#header .top_wrap{ display:none}
+
+.main_con_wrap, .main_slide, .main_slide .el{ height:450px;}
+.main_tit .t0 > br{ display:none}
+
+.main_tit .t0{ font-size:1.570em}
+.main_list_col .tab.st1 > li .tt{ padding-left:.3em; padding-right:.3em;}
+.main_list_col .date_wrap .date_inner{ width:2em; padding:0; border:none}
+.main_board .tit_wrap{ padding:0 0 .5em 0}
+.main_edu_con li{ flex:1 0 100%; max-width:100%;}
+.main_edu_con li .cnt{ height:auto; -webkit-line-clamp:2;}
+
+.in_edu_write > li .con .in{ padding:5px 0 5px 0}
+.in_edu_write > li .con .in > *{ display:flex}
+.in_edu_write > li .con .in span{ font-size:1em; padding-left:3px; line-height:1.5}
+
+
+}

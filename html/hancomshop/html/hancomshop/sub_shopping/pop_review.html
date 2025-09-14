@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>한컴 말랑말랑 행복케어 쇼핑몰</title>
+        <link rel="stylesheet" type="text/css" href="../css/inc.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/font.css" />
+        <link rel="stylesheet" type="text/css" href="../css/board.css" />
+        <link rel="stylesheet" type="text/css" href="../css/xeicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/icomoon.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_response.css" media="screen and (min-width:1px)" />
+        <link rel="stylesheet" type="text/css" href="../js/slick/slick.css" />
+        <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../js/inc.js"></script>
+        <script type="text/javascript" src="../js/slick/slick.js"></script>
+        <script type="text/javascript" src="../js/placeholders.min.js" defer="defer"></script>
+        <link rel="stylesheet" type="text/css" href="../js/scrollbar/jquery.mCustomScrollbar.css" />
+        <script type="text/javascript" src="../js/scrollbar/jquery.mCustomScrollbar.js" defer="defer"></script>
+        <script src="../js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <link rel="stylesheet" href="../js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css" />
+        <script src="../js/counterup/waypoints.min.js" type="text/javascript"></script>
+        <script src="../js/counterup/jquery.counterup.js" type="text/javascript"></script>
+        <script src="../js/imgzoom/image_zoom.js" type="text/javascript"></script>
+        <link href="../js/imgzoom/image_zoom.css" rel="stylesheet" type="text/css">
+        <script src="../js/imgmap/jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/jquery.validate.min.js" defer="defer"></script>
+        <script type="text/javascript" src="../js/inputType.js" defer="defer"></script>
+    </head>
+    <body class="pop">
+        <div class="popWrap">
+            <div class="popIn scrollst" data-tit="상품리뷰작성" style="width:700px">
+                <div class="popCon">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st form">
+                    <col class="w_form_tit" />
+                    <col class="w_form" />
+                    <tr>
+                        <td colspan="2">
+                            <div class="prod_info_wrap">
+                                <div class="img"><div class="resize"><span class="va_wrap"><a href="../sub_shopping/view.php"><img src="../images/temp/prod_01.jpg" /></a></span></div></div>
+                                <div class="tt">
+                                    <p class="t1">Product Title</p>
+                                    <p class="t2">선택옵션 : </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>만족도 <i class="xi ess"></i></th>
+                        <td>
+                            <label class="label_select">
+                            <select class="input_st">
+                                <option>선택하세요</option>
+                                <option>5점 (★★★★★)</option>
+                                <option>4점 (★★★★☆)</option>
+                                <option>3점 (★★★☆☆)</option>
+                                <option>2점 (★★☆☆☆)</option>
+                                <option>1점 (★☆☆☆☆)</option>
+                            </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>제목 <i class="xi ess"></i></th>
+                        <td><input type="text" class="input_st w100" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding:0">
+                            <textarea class="input_st" style="height:20em"></textarea>
+                        </td>
+                    </tr>
+                    </table>
+                    <div class="board_btn_wrap ac">
+                        <button type="button" class="input_st s1 c3"><i class="xi xi-border-color"></i> 리뷰작성</button>
+                        <input type="button" class="input_st s1 c2" value="취소" onclick="parent.layerClose()" />
+                    </div>
+                </div>
+                <a href="javascript:parent.layerClose()" class="popClose">⨯</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(window).load(function(){
+                $("body").addClass("load");
+                var scrollst = $(".scrollst")
+                scrollst.mCustomScrollbar({
+                    theme:"minimal-dark"
+                });
+                var scrollstX = $(".scrollstX")
+                scrollstX.mCustomScrollbar({
+                    theme:"dark-thin",
+                    axis:"x",
+                    scrollbarPosition:"outside"
+                });
+            })
+            $(window).scroll(function(){
+                var scrollY = $(window).scrollTop()
+                if(scrollY > 0){
+                    $("body").addClass("scroll")
+                }else{
+                    $("body").removeClass("scroll")
+                }
+            });
+        </script>
+    </body>
+</html>

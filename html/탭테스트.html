@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta chareset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes, target-densitydpi=device-dpi">
+        <meta name="format-detection" content="telephone=no,email=no,address=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="포트폴리오">
+        <meta property="og:description" content="포트폴리오">
+        <title>YEONGSEON PORTFOLIO</title>
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="../css/xeicon.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/inc.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../js/inc.js"></script>
+        <script type="text/javascript" src="../js/swiper/swiper.css"></script>
+        <script type="text/javascript" src="../js/swiper/swiper.js"></script>
+        <script type="text/javascript" src="../js/gsap/gsap.min.js"></script>
+        <script type="text/javascript" src="../js/gsap/ScrollTrigger.min.js"></script>
+        <script type="text/javascript" src="../js/gsap/ScrollToPlugin.min.js"></script>
+    </head>
+<body>
+<div id="section1" class="section">
+  <div class="mainBox mainTreatment bg1 h100">
+    <div class="boxN1 wrapF vc h100">
+      <div class="tabW">
+        <div class="swiperControl" data-label="mainTreatmentSlide">
+          <div class="mainTreatmentSlide-prev swiperBtn prev round s1"></div>
+          <div class="mainTreatmentSlide-pagination paging"></div>
+          <div class="tab mainTreatmentSlideTab">
+            <div class="li">진료과목</div>
+            <div class="li">진료센터</div>
+            <div class="bg"></div>
+          </div>
+          <div class="mainTreatmentSlide-next swiperBtn next round s1"></div>
+        </div>
+      </div>
+      <div class="slideWrap">
+        <div class="mainTreatmentSlide swiper-container swiperEach" data-label="mainTreatmentSlide" data-auto="none" data-motion="fade" data-height="1" data-callback="mainTreatmentSlide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide el">
+                  <ul class="treatmentList">  
+                      <li>내용1</li>
+                  </ul>
+              </div>
+            <div class="swiper-slide el">
+                  <ul class="treatmentList">  
+                      <li>내용2</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+    visualSlide = new Swiper('.visualSlide', {
+    slidesPerView: 'auto',
+    effect: 'fade',
+    speed: 0,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+      nextEl: '.visualSlide-next',
+      prevEl: '.visualSlide-prev',
+    },
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+      waitForTransition: false,
+    },
+    pagination: {
+      el: '.visualSlide-pagination',
+      clickable: true,
+      type: 'progressbar'
+    },
+    on: {
+      init: function() {
+        const activeSlideVod = this.slides[this.activeIndex].querySelector('video')
+        if (activeSlideVod) {
+          this.autoplay.stop();
+        }
+      },
+      slideChange: function() {
+        const videos = document.querySelectorAll('.visualSlide video');
+        videos.forEach(video => {
+          video.pause();
+        });
+        activeSlideVod = this.slides[this.activeIndex].querySelector('video')
+
+        const pauseW = document.querySelector('.visualSlide_wrap .swiperPauseWrap.pause');
+        if (pauseW) {
+          this.autoplay.stop();
+        } else {
+          if (activeSlideVod) {
+            this.autoplay.stop();
+            activeSlideVod.play();
+            activeSlideVod.onended = () => {
+              this.autoplay.start();
+              this.slideNext()
+            };
+
+
+          } else {
+            this.autoplay.start();
+          }
+        }
+
+      },
+    }
+  });
+  var mainTreatmentSlideObj = $(".mainTreatmentSlideTab .li");
+
+  function mainTreatmentSlideAni(n) {
+    var p = mainTreatmentSlideObj.eq(n).position();
+    $(".mainTreatmentSlideTab .bg").css("left", p.left);
+  }
+
+  function mainTreatmentSlide(currentIndex) {
+    var n = currentIndex;
+    mainTreatmentSlideObj.eq(n).addClass("on");
+    mainTreatmentSlideObj.eq(n).siblings().removeClass("on");
+    mainTreatmentSlideAni(n);
+  }
+  mainTreatmentSlideObj.on("click", function() {
+    var n = $(this).index();
+    $(".mainTreatmentSlide-pagination > span:eq(" + n + ")").trigger("click");
+    mainTreatmentSlideAni(n);
+  })
+
+  var popSlide = new Swiper('.popSlide', {
+    slidesPerView: 1,
+    effect: 'slide',
+    speed: 1000,
+    spaceBetween: 0,
+    loop: $('.popSlide .swiper-slide').length > 1,
+    navigation: {
+      nextEl: '.popSlide-next',
+      prevEl: '.popSlide-prev',
+    },
+    pagination: {
+      el: '.popSlide-pagination',
+      clickable: true
+      // type: 'fraction'
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
+
+  $(".popSlide .swiperPauseWrap .pause").click(function() {
+    $(".popSlide .swiperPauseWrap").addClass("pause");
+    popSlide.autoplay.stop();
+  });
+  $(".popSlide .swiperPauseWrap .play").click(function() {
+    $(".popSlide .swiperPauseWrap").removeClass("pause");
+    popSlide.autoplay.start();
+  });
+
+  var noticeSlide = new Swiper('.noticeSlide', {
+    slidesPerView: '1',
+    direction: 'vertical',
+    speed: 1000,
+    spaceBetween: 10,
+    loop: $('.noticeSlide .swiper-slide').length > 1,
+    navigation: {
+      nextEl: '.noticeSlide-next',
+      prevEl: '.noticeSlide-prev',
+    },
+    pagination: {
+      el: '.noticeSlide-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+  });
+</script>
+<script>
+swiperEach();
+</script>
+  </body>
+  </html>

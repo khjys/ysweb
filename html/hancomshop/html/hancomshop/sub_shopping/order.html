@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>한컴 말랑말랑 행복케어 쇼핑몰</title>
+        <link rel="stylesheet" type="text/css" href="../css/inc.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/font.css" />
+        <link rel="stylesheet" type="text/css" href="../css/board.css" />
+        <link rel="stylesheet" type="text/css" href="../css/xeicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/icomoon.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style_response.css" media="screen and (min-width:1px)" />
+        <link rel="stylesheet" type="text/css" href="../js/slick/slick.css" />
+        <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../js/inc.js"></script>
+        <script type="text/javascript" src="../js/slick/slick.js"></script>
+        <script type="text/javascript" src="../js/placeholders.min.js" defer="defer"></script>
+        <link rel="stylesheet" type="text/css" href="../js/scrollbar/jquery.mCustomScrollbar.css" />
+        <script type="text/javascript" src="../js/scrollbar/jquery.mCustomScrollbar.js" defer="defer"></script>
+        <script src="../js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <link rel="stylesheet" href="../js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css" />
+        <script src="../js/counterup/waypoints.min.js" type="text/javascript"></script>
+        <script src="../js/counterup/jquery.counterup.js" type="text/javascript"></script>
+        <script src="../js/imgzoom/image_zoom.js" type="text/javascript"></script>
+        <link href="../js/imgzoom/image_zoom.css" rel="stylesheet" type="text/css">
+        <script src="../js/imgmap/jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/jquery.validate.min.js" defer="defer"></script>
+        <script type="text/javascript" src="../js/inputType.js" defer="defer"></script>
+    </head>
+    <body class="shopping">
+        <div class="l-wrapper">
+            <!-- l-main :: s :: -->
+            <div class="l-main" id="divMain">
+                <!--header start-->
+                <div id="header">
+                    <div class="banner_top toggleWrap" style="background-color:#3db4b3">
+                        <div class="box1 pr">
+                            <a href="#" class="in"><img src="../images/inc/banner_topS.jpg" alt="" /></a>
+                            <a href="javascript:void(0)" onClick="toggleClass(this); banner_top_toggle('2');" class="btn va_wrap"><span class="va"><i class="xi"></i><i class="tt"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="top_wrap">
+                        <div class="box1 fl_wrap">
+                            <p class="all_btn PHONE">                
+                                <a href="javascript:void(0);" class="vm_wrap btn PHONE" id="sitemapPhone" title="전체메뉴"><span class="vm_tt"><i class="ham"></i></span></a>        
+                            </p>
+                            <h1 class="logo"><a href="#" class="in"><img src="../images/inc/logo.svg" alt="" /></a></h1>
+                            <ul class="menu fl_wrap">
+                                <li><a href="#" class="in"><i class="xi xi-log-out"></i><i class="tt">로그아웃</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-truck"></i><i class="tt">배송조회</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-log-in"></i><i class="tt">로그인</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">회원가입</i></a></li>             
+                                <li class="down"><a href="#" class="in"><i class="tt">고객센터</i><i class="xi arrow"></i></a>
+                                    <ul class="down_menu">
+                                        <li><a href="#"><i class="tt">공지사항</i></a></li>
+                                        <li><a href="#"><i class="tt">FAQ</i></a></li>                        
+                                        <li><a href="#"><i class="tt">상품후기</i></a></li>
+                                        <li><a href="#"><i class="tt">이벤트</i></a></li>
+                                        <li><a href="#"><i class="tt">쿠폰</i></a></li>                         
+                                        <li><a href="#"><i class="tt">당첨자 발표</i></a></li>
+                                        <li><a href="#"><i class="tt">1:1문의</i></a></li>
+                                        <li><a href="#"><i class="tt">이용안내</i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="go_hancom"><a href="#" class="in"><i class="tt">행복케어</i><i class="xi arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_wrap">
+                        <div class="box1 fl_wrap">
+                            <div class="all toggleWrap">
+                                <a href="javascript:void(0)" class="all_btn va_wrap" onclick="toggleClass(this)">
+                                    <span class="va">
+                                        <span class="icon">
+                                            <i class="ham"></i>
+                                        </span>
+                                        <i class="tt">제품 카테고리</i>
+                                        <i class="xi xi-caret-down arrow"></i>
+                                    </span>
+                                </a>
+                                <div class="all_wrap">
+                                    <div class="box1">
+                                        <!-- 제품 gnb :: s :: -->
+                                        <ul class="gnb di_wrap">
+                                            <li class="m_0001_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴1</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0002_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴2</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="테스트">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0012_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0003_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴3</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0004_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴4</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0005_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴5</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0006_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴6</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- 제품 gnb :: e :: -->
+                                        <a href="javascript:void(0)" onclick="toggleClass(this)" class="moreClose">
+                                            <i class="tt">카테고리 창닫기</i>
+                                            <i class="xi xi-close"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="menu fl_wrap">
+                                <li class="on"><a href="#" class="va_wrap"><span class="va"><i class="tt">신상품</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">특가</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">베스트</i></span></a></li>                
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">이벤트</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">쿠폰</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">리뷰</i></span></a></li>
+                            </ul>
+                            <div class="etc va_wrap">
+                                <div class="va fl_wrap">
+                                    <div class="search_wrap">
+                                        <div class="detail_box">
+                                            <div class="search">
+                                                <input type="text" class="inp" name="searchKeyword" value="" msg="검색어를"/>
+                                                <button type="submit" class="btn"><i class="xi xi-search"></i></button>
+                                            </div>
+                                            <div class="keyword">
+                                                <div class="item"><a href="#link" class="in"><i class="num">1</i><i class="tt">인기검색어1</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">2</i><i class="tt">인기검색어2</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">3</i><i class="tt">인기검색어3</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">4</i><i class="tt">인기검색어4</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">5</i><i class="tt">인기검색어5</i></a></div>
+                                            </div>
+                                            <div class="btn_close"><a href="javascript:void(0);" class="in"><i class="xi xi-close"></i></a></div>
+                                        </div>
+                                    </div>                    
+                                    <ul class="icon_menu fl_wrap">
+                                        <li><a href="#" class="in"><i class="xi xi-user-o"></i><i class="tt">마이페이지</i></a></li>                        
+                                        <li><a href="#" class="in"><i class="xi xi-alarm-o"></i><i class="tt">오늘 본 상품</i></a></li>
+                                        <li class="cart"><a href="#" class="in"><i class="xi xi-cart-o"></i><i class="tt">장바구니</i><i class="no cartNo">0</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    searchEvent();
+                    function searchEvent(){
+                        var Wrap = $("#header .menu_wrap .etc .search_wrap");
+                        var Inp = Wrap.find(".search .inp");
+                        var SlideWrap = Wrap.find(".keyword");		
+                        var settings = {
+                            vertical: true,
+                            verticalSwiping: true,
+                            arrows: false,
+                            dots: false,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            autoplaySpeed: 4000
+                        };
+                        SlideWrap.slick(settings);
+                        valEvent();
+                        Inp.on("click",function(){
+                            Wrap.addClass("active");
+                        });
+                        $("html").click(function(e) {
+                            if(Wrap.hasClass("active")){
+                                if(!Wrap.has(e.target).length){
+                                    Wrap.removeClass("active");						
+                                    SlideWrap.slick(settings);					
+                                    valEvent();
+                                }else{					
+                                    SlideWrap.slick("unslick");
+                                    SlideWrap.show();
+                                }				
+                            }
+                        });	
+                        Wrap.find(".btn_close .in").on("click",function(){
+                            Wrap.removeClass("active");
+                            SlideWrap.slick(settings);
+                            valEvent();
+                        });		
+                        function valEvent(){			
+                            if(Inp.val() === ''){
+                                SlideWrap.show();
+                            }else{					
+                                SlideWrap.hide();
+                            }			
+                        };
+                    };
+                    </script>	
+                    <div id="quick" class="quickWrap">
+                        <div class="quick_menu scrollst">
+                            <div class="box">
+                                <a href="javascript:void(0)" class="bookmark"><i class="xi xi-library-bookmark"></i><i class="tt en">Add Bookmark</i></a>
+                            </div>
+                            <div class="cs en">
+                                <div class="box">
+                                    <p class="cs_tit">CS CENTER</p>
+                                    <dl class="info">
+                                    <dt class="tit">대표전화.</dt>
+                                    <dd><a onClick="telLink('031-626-7000',this)" class="t1">031-626-7000</a></dd>
+                                    </dl>
+                                    <dl class="info">
+                                    <dt class="tit">Email.</dt>
+                                    <dd><a href="#" class="t2">naver.com</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="today en">
+                                <div class="box">
+                                    <p class="today_tit"><i class="tt">Today's</i><i class="no">3</i></p>
+                                    <div class="todaySlide">
+                                        <div class="slides">
+                                            <div class="img">
+                                                <a href="#" class="in"><div class="resize"><div class="re va_wrap"><img src="../images/temp/prod_01.jpg"><div class="layer va_wrap"><div class="va"><p class="tit">제품명</p></div></div></div></div></a>
+                                            </div>
+                                            <div class="img">
+                                                <a href="#" class="in"><div class="resize"><div class="re va_wrap"><img src="../images/temp/prod_01.jpg"><div class="layer va_wrap"><div class="va"><p class="tit">제품명</p></div></div></div></div></a>
+                                            </div>
+                                        </div>
+                                        <ul class="arrow_wrap">
+                                            <li class="prev"><i class="xi"></i></li>
+                                            <li class="next"><i class="xi"></i></li>
+                                        </ul>
+                                        <div class="dot_wrap"></div>
+                                    </div>                    
+                                </div>
+                            </div>
+                            <div class="link">
+                                <div class="box">
+                                    <ul class="list fl_wrap">
+                                        <li class="st1"><a href="#"><i class="xi xi-cart-o"></i><i>장바구니</i></a></li>
+                                        <li><a href="#"><i class="xi xi-heart-o"></i><i>관심상품</i></a></li>
+                                        <li><a href="#">로그아웃</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <li><a href="#">로그인</a></li>
+                                        <li><a href="#">회원가입</a></li>   
+                                        <li class="st2"><a href="javascript:goTop()"><i class="xi xi-arrow-top"></i>TOP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="quickBtn" onClick="toggleClass(this,'.quickWrap')"><i class="xi"></i></a>
+                    </div>
+                    <!-- 모바일 퀵 -->
+                    <div class="mQuick pc_hide">
+                        <ul class="di_wrap">
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-home-o"></i><i class="tt">홈</i></span></a></li>        
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-log-in"></i><i class="tt">로그인</i></span></a></li>
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-user"></i><i class="tt">마이페이지</i></span></a></li>
+                            <li><a href="#" class="quickBtn"><span><i class="xi xi-external-link"></i><i class="tt">행복케어</i></span></a></li>
+                            <li><a href="javascript:goTop()" class="vm_wrap"><span><i class="xi xi-arrow-top"></i><i class="tt">TOP</i></span></a></li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                    todaySlide();
+                    function todaySlide(){
+                        var Wrap = $("#quick .quick_menu .today .todaySlide");
+                        var SlideWrap = Wrap.find(".slides");
+                        SlideWrap.slick({			
+                            dots: false,
+                            arrows: true,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            prevArrow: Wrap.find('.arrow_wrap .prev'),
+                            nextArrow: Wrap.find('.arrow_wrap .next'),
+                            appendDots: Wrap.find('.dot_wrap')
+                        });
+                    };
+                
+                    $(window).load(function(){
+                    quickShow;
+                    var quickShow = setTimeout(function(){
+                    $("#quick").addClass("on");
+                    },500);
+                    })
+                    </script>
+                </div>
+                <!--header end-->
+                <!--contents start-->
+                <div id="contents">
+                    <!--본문 -->
+                    <div class="doc">
+                        <div class="box1">
+                            <p class="page_tit mb0">주문/결제</p>
+                            <ul class="step_st fl_wrap">
+                                <li>
+                                    <div class="in">
+                                        <span class="line"></span>
+                                        <i class="xi xi-cart-o icon"></i>
+                                        <p class="t1 en">STEP 01.</p>
+                                        <p class="t2">장바구니</p>
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <div class="in">
+                                        <span class="line"></span>
+                                        <i class="xi xi-library-books-o icon"></i>
+                                        <p class="t1 en">STEP 02.</p>
+                                        <p class="t2">주문/결제</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="in">
+                                        <span class="line"></span>
+                                        <i class="xi xi-credit-card icon"></i>
+                                        <p class="t1 en">STEP 03.</p>
+                                        <p class="t2">주문완료</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--//-->
+                            <div class="order_wrap fixWrap">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st response">
+                                    <col class="w_prod" />
+                                    <col class="w_price" />
+                                    <col class="w_vol" />
+                                    <col class="w_price" />
+                                    <tr>
+                                        <th class="w_prod">상품정보</th>
+                                        <th class="w_price">상품금액</th>
+                                        <th class="w_vol">수량</th>
+                                        <th class="w_price">주문금액</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="w_prod al" data-th="상품정보">
+                                            <div class="prod_info_wrap">
+                                                <div class="img">
+                                                    <div class="resize"><span class="va_wrap re"><img src="../images/temp/prod_05.jpg"></span></div>
+                                                </div>
+                                                <div class="tt">
+                                                    <p class="t1">상품명이 들어갑니다</p>
+                                                    <p class="t2">옵션옵션</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="w_price" data-th="상품금액">
+                                            <span class="tt_price"><i class="no">35,000</i> <i class="tt">원</i></span>
+                                        </td>
+                                        <td class="w_vol" data-th="수량">
+                                            <div class="vol_st">
+                                                <input type="text" class="inp" value="1" disabled="disabled" />
+                                            </div>
+                                        </td>
+                                        <td class="w_price" data-th="주문금액">
+                                            <span class="tt_price"><i class="no">35,000</i> <i class="tt">원</i></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <input type="hidden" name="total_price" value="<?=$sum_price?>">
+                                <input type="hidden" name="get_point" value="<?=$sum_point?>">
+                        
+                                <input type="hidden" name="deli_basic" id="deli_basic" value="<?=$deli_fee?>">
+                                <input type="hidden" name="deli_add" id="deli_add" value="<?=$deli_add?>">
+                                <input type="hidden" id="basic_delifee" value="<?=$deli_fee?>">
+                                <!--비회원인 경우 노출-->
+                                <p class="page_tit2 page_sec"><i class="xi"></i>비회원 구매하기</p>
+                                <div class="agree_box">
+                                    <div class="con scrollst h1">
+                                        <strong>1. 수집하는 개인정보의 항목 및 수집방법</strong><br /><br />
+                                        ① 수집하는 개인정보의 항목 <br /><br />
+                                        주식회사 삼흥과학은 원활한 사이트 이용 및 서비스 제공을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br /><br />
+                                        주문정보: 이름,연락처,주소,E-mail<br /><br />
+                                        컨텐츠 이용정보: 이름,연락처<br /><br />
+                                        ② 개인정보 수집방법 주식회사 삼흥과학의 이용자가 자발적으로, 구체적으로 기입할 때만 개인정보를 수집하고 있습니다.<br /><br />
+                                        2. 개인정보 수집 및 이용목적<br /><br />
+                                        주식회사 삼흥과학은 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br /><br />
+                                        ① 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송<br /><br />
+                                        ② 회원 관리 회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 가입 의사 확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인 , 불만처리 등 민원처리 , 고지사항 전달<br /><br />
+                                        ③ 마케팅 및 광고에 활용 이벤트 등 광고성 정보 전달<br /><br />
+                                        3. 개인정보의 보유 및 이용기간<br /><br />
+                                        ① 주식회사 삼흥과학의 개인정보의 보유 및 이용기간은 회원가입 시점부터 탈퇴 완료시로 합니다. <br /><br />
+                                        ② 주문정보는 5년간 보관 후 삭제됩니다. <br /><br />
+                                        ③ 서비스 제공 후 개인정보는 암호화되어 보관되며 일정기간 경과 후 삭제됩니다.
+                                    </div>
+                                    <div class="btn">
+                                        <label class="label_st de"><input type="checkbox" name="memagree" id="memagree" value="Y"/><i class="xi"></i> <span>비회원 개인정보 처리방침에 동의합니다.</span></label>
+                                    </div>
+                                </div>
+                                <!--//-->
+                                <div class="order_fix_wrap fixIn">
+                                    <div class="order_fix fixObj">
+                                        <div class="in">
+                                            <p class="orderfix_tit">총 주문금액</p>
+                                            <ul class="orderfix_con">
+                                                <li>
+                                                    <p class="tit">주문금액</p>
+                                                    <p class="con"><span class="tt_price"><i class="no">35,000</i> <i class="tt">원</i></span></p>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">배송비</p>
+                                                    <p class="con">
+                                                        <i class="xi xi-plus-circle"></i> <span class="tt_price"><i class="no" id="span_deli_fee">3,000</i> <i class="tt">원</i></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">쿠폰할인</p>
+                                                    <p class="con">
+                                                        <i class="xi xi-minus-circle"></i> <span class="tt_price"><i class="no" id="span_use_coupon">0</i> <i class="tt">원</i></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="tit">적립금</p>
+                                                    <p class="con">
+                                                        <i class="xi xi-minus-circle"></i> <span class="tt_price"><i class="no" id="span_use_point">0</i> <i class="tt">원</i></span>
+                                                    </p>
+                                                </li>
+                                                <li class="st1">
+                                                    <p class="tit">총 결제금액</p>
+                                                    <p class="con">
+                                                        <span class="tt_price"><i class="no" id="tto_price">38,000</i> <i class="tt">원</i></span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <ul class="orderfix_agree">
+                                                <li>
+                                                    <label class="label_st de">
+                                                        <input type="checkbox" />
+                                                        <i class="xi"></i><span>주문할 상품의 상품정보, 배송 및 결제정보를 확인하였으며 구매에 동의합니다.</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="input_st s1 c3 orderfix_btn"><i class="xi xi-money"></i> 결제하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="page_tit2 page_sec"><i class="xi"></i>주문자 정보</p>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st form">
+                                    <col class="w_form_tit" />
+                                    <col class="w_form" />
+                                    <tr>
+                                        <th>주문자 <i class="xi ess"></i></th>
+                                        <td><input type="text" class="input_st w1" name="" value="홍길동" msg="이름을" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰 <i class="xi ess"></i></th>
+                                        <td>
+                                            <input type="text" class="input_st w2" name="" value="010" maxlength="4" msg="핸드폰번호를" />
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" value="0000" maxlength="4" msg="핸드폰번호를"/>
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" value="0000" maxlength="4" msg="핸드폰번호를"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>이메일 <i class="xi ess"></i></th>
+                                        <td>
+                                            <input type="text" class="input_st w1" name="" value="abc123" msg="이메일을"/>
+                                            <span class="input_sec">@</span>
+                                            <input type="text" class="input_st w1" name="" value="gmail.com" msg="이메일을"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                        
+                                <p class="page_tit2 page_sec"><i class="xi"></i>배송 정보</p>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st form">
+                                    <col class="w_form_tit" />
+                                    <col class="w_form" />
+                                    <tr>
+                                        <th>받는분 <i class="xi ess"></i></th>
+                                        <td>
+                                            <input type="text" class="input_st w1" name="" value="" msg="수령인 명을"/>
+                                            <span class="input_sec"></span>
+                                            <label class="label_st de">
+                                                <input type="checkbox" id=""/><i class="xi"></i><span>주문자 정보와 동일</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>일반전화 </th>
+                                        <td>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" />
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" />
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰 <i class="xi ess"></i></th>
+                                        <td>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" msg="핸드폰번호를"/>
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" msg="핸드폰번호를"/>
+                                            <span class="input_sec">-</span>
+                                            <input type="text" class="input_st w2" name="" maxlength="4" msg="핸드폰번호를"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>주소 <i class="xi ess"></i></th>
+                                        <td>
+                                            <input type="text" class="input_st w2" name="" msg="우편번호를" /><span class="input_sec s1"></span>
+                                            <input type="button" class="input_st" value="우편번호찾기" /><br />
+                                            <input type="text" class="input_st w3 mt5" name="" id="" msg="주소를" /><br />
+                                            <input type="text" class="input_st w3 mt5" placeholder="상세주소" name="" msg="상세주소를"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송요청사항</th>
+                                        <td><textarea class="input_st" name="re_comment"></textarea></td>
+                                    </tr>
+                                </table>                        
+                                <p class="page_tit2 page_sec"><i class="xi"></i>할인 정보</p>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st form">
+                                    <col class="w_form_tit" />
+                                    <col class="w_form" />
+                                      <tr>
+                                        <th>쿠폰 할인</th>
+                                        <td>
+                                            <p class="input_row"><input type="button" class="input_st s2 c1 re" value="사용가능 쿠폰확인" onclick="layerOpen('../sub_shopping/pop_coupon.php')"></p>
+                                            <p class="tt_price mt5"><i class="tt">쿠폰명이 들어갑니다.</i></p><!--쿠폰 선택시에 노출 -->
+                                            <p class="tt_price mt5"><i class="no">0</i> <i class="tt">원 할인</i></p>
+                                            <input type="hidden" name="use_coupon" class="input_st w1" value="" readonly/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>사용가능 포인트</th>
+                                        <td>
+                                            <span class="tt_price"><i class="no">3,000</i> <i class="tt">Point</i></span><span class="input_sec"></span>
+                                            <input type="text" name="use_point" value="1000" class="input_st w1" />
+                                            <span class="input_tt">P (1000</strong> P 이상부터 사용가능)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>적립예정 포인트</th>
+                                        <td>
+                                            <span class="tt_point">100 P</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="page_tit2 page_sec"><i class="xi"></i>결제 정보</p>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st bg1 form">
+                                    <tr>
+                                        <td>
+                                            <ul class="di_wrap sec6 ac">
+                                                <li>
+                                                    <label class="label_st de fs15"><input type="radio" name="" checked="checked" /><i class="xi"></i><span><strong>무통장입금</strong></span></label>
+                                                </li>
+                                                <li><label class="label_st de fs15"><input type="radio" name="" /><i class="xi"></i><span><strong>신용카드</strong></span></label></li>
+                                                <li><label class="label_st de fs15"><input type="radio" name="" /><i class="xi"></i><span><strong>계좌이체</strong></span></label></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="labelCheck" data-no="0">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_st form noline">
+                                        <col class="w_form_tit" />
+                                        <col class="w_form" />
+                                        <tr>
+                                            <th class="w_form_tit">배송비<i class="xi ess"></i></th>
+                                            <td>
+                                                <label class="label_select w1">
+                                                    <select name="deli_fee" onChange="chk_chak(this.value); deli(this.form);" class="input_st w1">
+                                                        <option value="">주문시결제(+3,000)</option>
+                                                        <option value="">착불(상품수령시 결제)</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>입금계좌<i class="xi ess"></i></th>
+                                            <td>
+                                                <label class="label_select w100">
+                                                    <select class="input_st w100" name="pay_bank">
+                                                        <option value="">기업은행 000-00000-00-000</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>입금기한</th>
+                                            <td>2021.00.00 <p class="tt_st1 mt5">(주문일 기준 다음날(24시간 이내)까지 입금이 되지 않으면 주문 취소 처리됩니다.)</p></td>
+                                        </tr>
+                                        <tr>
+                                            <th>입금자명 <i class="xi ess"></i></th>
+                                            <td><input type="text" class="input_st w1" name="pay_name"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="2">현금영수증 <i class="xi ess"></i></th>
+                                            <td>
+                                                <label class="label_st de"><input type="radio" name="" value="" onclick="labelShow(this,'','.wrap0')" checked="checked" /><i class="xi"></i><span><strong>신청안함</strong></span></label>
+                                                <label class="label_st de ml30"><input type="radio" name="tax_type" id="taxM" value="M" onclick="labelShow(this,'0','.wrap0')" /><i class="xi"></i><span><strong>소득공제용(개인)</strong></span></label>
+                                                <label class="label_st de ml30"><input type="radio" name="tax_type" id="taxC" value="C" onclick="labelShow(this,'1','.wrap0')" /><i class="xi"></i><span><strong>지출증빙용(사업자)</strong></span></label>
+                                            </td>
+                                        </tr>
+                                        <tr class="wrap0" data-no="0" style="display:none">
+                                            <td>
+                                                <input type="text" class="input_st w3" placeholder="휴대폰번호 (- 하이픈 생략)" name="tax0"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="wrap0" data-no="1" style="display:none">
+                                            <td>
+                                                <input type="text" class="input_st w3" placeholder="사업자번호 (- 하이픈 생략)" name="tax1"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--총주문금액-->
+                        <script type="text/javascript">
+                        scrollFix('#contents .order_fix');
+                        </script>
+                        <!--//-->
+                    </div>
+                    <!--본문 end-->
+                </div>
+                <!-- contents :: e :: -->
+                <!-- footer :: s :: -->
+                <div id="footer">
+                    <div class="menu_wrap">
+                        <div class="box1 fl_wrap">
+                            <ul class="menu fl_wrap">
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="xi xi-home"></i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va tt">회사소개</span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va tt">이용약관</span></a></li>
+                                <li class="point"><a href="#" class="va_wrap"><span class="va tt">개인정보처리방침</span></a></li>                
+                                <li><a href="#" class="va_wrap"><span class="va tt">고객센터</span></a></li>   
+                                <li><a href="#" class="va_wrap"><span class="va tt">이용안내</span></a></li>                         
+                            </ul>
+                            <div class="sns_menu va_wrap">
+                                <div class="va"><!--SNS-->
+                                    <ul class="sns fl_wrap">
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-facebook"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-kakaostory"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs_wrap">
+                        <div class="box1 flex stretch">
+                            <div class="cs_box st1">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">CS CENTER</span></p>
+                                    <div class="cs_con">
+                                        <a class="txt t1 c1 en" onClick="telLink('<?=$site_tel?>',this)"><?=$site_tel?></a>
+                                        <p class="txt t2 cs_sec">평일 : 09:00 ~ 18:00 / 점심시간 : 12:00 ~ 13:00</p>
+                                        <p class="txt t2">토, 일요일, 공휴일 휴무</p>  	
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs_box st2">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">BANK INFO</span></p>
+                                    <div class="cs_con">
+                                        <p class="txt t3 c1 en cs_sec">국민은행 000000</p>
+                                        <p class="txt t2 cs_sec">예금주 : 홍길동</p>  
+                                        <a href="#" class="foot_btn" target="_blank"><i class="tt">국민은행 바로가기</i><i class="xi xi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs_box st3">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">STORE GUIDE</span></p>
+                                    <ul class="link flex">
+                                        <li><a href="#" class="in"><i class="xi xi-basket"></i><span class="tt">장바구니</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-truck"></i><span class="tt">주문배송</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-pen"></i><span class="tt">상품후기</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-gift-o"></i><span class="tt">이벤트</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-comment"></i><span class="tt">1:1문의</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-profile"></i><span class="tt">Mypage</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                    <div class="info_wrap">
+                        <div class="box1 fl_wrap">
+                            <ul class="info fl_wrap">
+                                <li>상호. 한컴 말랑말랑 행복케어</li>
+                                <li>대표. 한컴</li>
+                                <li>사업자등록번호. 000-00-00000</li>
+                                <li>통신판매신고번호. 000-00-00000</li>
+                                <li class="br">주소. 경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 1층</li>
+                                <li>전화. <a onclick="telLink('000-000-0000',this)">000-000-0000</a></li>
+                                <li>팩스. 000-000-0000</li>
+                                <li class="br">개인정보보호책임자. 한컴</li>
+                                <li>E-mail. <a href="#">www.naver.com</a></li>
+                                <li class="copy en">Copyright (C) SMART SENIOR DAYCARE CENTER. All Rights Reserved.</li>
+                            </ul>
+                            <div class="etc">
+                                <div class="inner flex">
+                                    <div class="mark"><img src="../images/inc/mark_escrow.png" /></div>
+                                    <div class="txt">
+                                        <p class="t1">구매안전(에스크로) 서비스</p>
+                                        <p class="t2">고객님은 안전거래를 위해 현금등으로 결제시 구매자가 보호를 받을 수 있는 구매안전서비스(에스크로)를 이용하실 수 있습니다.</p>
+                                        <a href="#" class="foot_btn"><i class="tt">서비스 가입사실 확인</i><i class="xi xi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer :: e :: -->
+                <script type="text/javascript">
+                    $(window).load(function(){
+                        $("body").addClass("load");
+                        var scrollst = $(".scrollst")
+                        scrollst.mCustomScrollbar({
+                            theme:"minimal-dark"
+                        });
+                        var scrollstX = $(".scrollstX")
+                        scrollstX.mCustomScrollbar({
+                            theme:"dark-thin",
+                            axis:"x",
+                            scrollbarPosition:"outside"
+                        });
+                    })
+                    $(window).scroll(function(){
+                        var scrollY = $(window).scrollTop()
+                        if(scrollY > 0){
+                            $("body").addClass("scroll")
+                        }else{
+                            $("body").removeClass("scroll")
+                        }
+                    });
+                </script>
+            </div>
+            <!-- l-main :: e :: -->
+        </div>
+    </body>
+</html>

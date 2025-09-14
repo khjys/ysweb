@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>한컴 말랑말랑 행복케어 쇼핑몰</title>
+        <link rel="stylesheet" type="text/css" href="css/inc.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/font.css" />
+        <link rel="stylesheet" type="text/css" href="css/board.css" />
+        <link rel="stylesheet" type="text/css" href="css/xeicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_response.css" media="screen and (min-width:1px)" />
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/inc.js"></script>
+        <script type="text/javascript" src="js/slick/slick.js"></script>
+        <script type="text/javascript" src="js/placeholders.min.js" defer="defer"></script>
+        <link rel="stylesheet" type="text/css" href="js/scrollbar/jquery.mCustomScrollbar.css" />
+        <script type="text/javascript" src="js/scrollbar/jquery.mCustomScrollbar.js" defer="defer"></script>
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <link rel="stylesheet" href="js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css" />
+        <script src='"js/counterup/waypoints.min.js' type='text/javascript'></script>
+        <script src='"js/counterup/jquery.counterup.js' type='text/javascript'></script>
+        <script src='"js/imgzoom/image_zoom.js' type='text/javascript'></script>
+        <link href='"js/imgzoom/image_zoom.css' rel='stylesheet' type='text/css'>
+        <script src='"js/imgmap/jquery.rwdImageMaps.min.js' type='text/javascript'></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js" defer="defer"></script>
+        <script type="text/javascript" src="js/inputType.js" defer="defer"></script>
+    </head>
+    <body class="main shopping">
+        <div class="l-wrapper">
+            <!-- l-main :: s :: -->
+            <div class="l-main" id="divMain">
+                <!-- header :: s :: -->
+                <div id="header">
+                    <div class="banner_top toggleWrap" style="background-color:#3db4b3">
+                        <div class="box1 pr">
+                            <a href="#" class="in"><img src="images/inc/banner_topS.jpg" alt="" /></a>
+                            <a href="javascript:void(0)" onClick="toggleClass(this); banner_top_toggle('2');" class="btn va_wrap"><span class="va"><i class="xi"></i><i class="tt"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="top_wrap">
+                        <div class="box1 fl_wrap">
+                            <p class="all_btn PHONE">                
+                                <a href="javascript:void(0);" class="vm_wrap btn PHONE" id="sitemapPhone" title="전체메뉴"><span class="vm_tt"><i class="ham"></i></span></a>        
+                            </p>
+                            <h1 class="logo"><a href="index.html" class="in"><img src="images/inc/logo.svg" alt="" /></a></h1>
+                            <ul class="menu fl_wrap">
+                                <li><a href="#" class="in" target="doquery"><i class="xi xi-log-out"></i><i class="tt">로그아웃</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-truck"></i><i class="tt">배송조회</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-log-in"></i><i class="tt">로그인</i></a></li>
+                                <li><a href="#" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">회원가입</i></a></li>             
+                                <li class="down"><a href="#" class="in"><i class="tt">고객센터</i><i class="xi arrow"></i></a>
+                                    <ul class="down_menu">
+                                        <li><a href="#"><i class="tt">공지사항</i></a></li>
+                                        <li><a href="#"><i class="tt">FAQ</i></a></li>                        
+                                        <li><a href="#"><i class="tt">상품후기</i></a></li>
+                                        <li><a href="#"><i class="tt">이벤트</i></a></li>
+                                        <li><a href="#"><i class="tt">쿠폰</i></a></li>                         
+                                        <li><a href="#"><i class="tt">당첨자 발표</i></a></li>
+                                        <li><a href="#"><i class="tt">1:1문의</i></a></li>
+                                        <li><a href="#"><i class="tt">이용안내</i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="go_hancom"><a href="#" class="in" target="_blank"><i class="tt">행복케어</i><i class="xi arrow"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_wrap">
+                        <div class="box1 fl_wrap">
+                            <div class="all toggleWrap">
+                                <a href="javascript:void(0)" class="all_btn va_wrap" onclick="toggleClass(this)">
+                                    <span class="va">
+                                        <span class="icon">
+                                            <i class="ham"></i>
+                                        </span>
+                                        <i class="tt">제품 카테고리</i>
+                                        <i class="xi xi-caret-down arrow"></i>
+                                    </span>
+                                </a>
+                                <div class="all_wrap">
+                                    <div class="box1">
+                                        <!-- 제품 gnb :: s :: -->
+                                        <ul class="gnb di_wrap">
+                                            <li class="m_0001_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴1</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0002_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴2</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="테스트">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0012_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0003_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴3</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0004_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴4</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0005_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴5</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m_0006_"><a href="#" class="dp1 va_wrap"><span class="va">메뉴6</span><i class="xi arrow"></i></a>
+                                                <ul class="dp2 di_wrap" data-th="LNB">
+                                                    <li class="sm_0001_0010_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                    <li class="sm_0001_0011_"><a href="#" class="va_wrap"><span class="va">test2</span><i class="xi arrow"></i></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- 제품 gnb :: e :: -->
+                                        <a href="javascript:void(0)" onclick="toggleClass(this)" class="moreClose">
+                                            <i class="tt">카테고리 창닫기</i>
+                                            <i class="xi xi-close"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="menu fl_wrap">
+                                <li class="on"><a href="#" class="va_wrap"><span class="va"><i class="tt">신상품</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">특가</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">베스트</i></span></a></li>                
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">이벤트</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">쿠폰</i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="tt">리뷰</i></span></a></li>
+                            </ul>
+                            <div class="etc va_wrap">
+                                <div class="va fl_wrap">
+                                    <div class="search_wrap">
+                                        <div class="detail_box">
+                                            <div class="search">
+                                                <input type="text" class="inp" name="searchKeyword" value="" msg="검색어를"/>
+                                                <button type="submit" class="btn"><i class="xi xi-search"></i></button>
+                                            </div>
+                                            <div class="keyword">
+                                                <div class="item"><a href="#link" class="in"><i class="num">1</i><i class="tt">인기검색어1</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">2</i><i class="tt">인기검색어2</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">3</i><i class="tt">인기검색어3</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">4</i><i class="tt">인기검색어4</i></a></div>
+                                                <div class="item"><a href="#link" class="in"><i class="num">5</i><i class="tt">인기검색어5</i></a></div>
+                                            </div>
+                                            <div class="btn_close"><a href="javascript:void(0);" class="in"><i class="xi xi-close"></i></a></div>
+                                        </div>
+                                    </div>                    
+                                    <ul class="icon_menu fl_wrap">
+                                        <li><a href="#" class="in"><i class="xi xi-user-o"></i><i class="tt">마이페이지</i></a></li>                        
+                                        <li><a href="#" class="in"><i class="xi xi-alarm-o"></i><i class="tt">오늘 본 상품</i></a></li>
+                                        <li class="cart"><a href="#" class="in"><i class="xi xi-cart-o"></i><i class="tt">장바구니</i><i class="no cartNo">0</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    searchEvent();
+                    function searchEvent(){
+                        var Wrap = $("#header .menu_wrap .etc .search_wrap");
+                        var Inp = Wrap.find(".search .inp");
+                        var SlideWrap = Wrap.find(".keyword");		
+                        var settings = {
+                            vertical: true,
+                            verticalSwiping: true,
+                            arrows: false,
+                            dots: false,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            autoplaySpeed: 4000
+                        };
+                        SlideWrap.slick(settings);
+                        valEvent();
+                        Inp.on("click",function(){
+                            Wrap.addClass("active");
+                        });
+                        $("html").click(function(e) {
+                            if(Wrap.hasClass("active")){
+                                if(!Wrap.has(e.target).length){
+                                    Wrap.removeClass("active");						
+                                    SlideWrap.slick(settings);					
+                                    valEvent();
+                                }else{					
+                                    SlideWrap.slick("unslick");
+                                    SlideWrap.show();
+                                }				
+                            }
+                        });	
+                        Wrap.find(".btn_close .in").on("click",function(){
+                            Wrap.removeClass("active");
+                            SlideWrap.slick(settings);
+                            valEvent();
+                        });		
+                        function valEvent(){			
+                            if(Inp.val() === ''){
+                                SlideWrap.show();
+                            }else{					
+                                SlideWrap.hide();
+                            }			
+                        };
+                    };
+                    </script>	
+                    <div id="quick" class="quickWrap">
+                        <div class="quick_menu scrollst">
+                            <div class="box">
+                                <a href="javascript:void(0)" class="bookmark"><i class="xi xi-library-bookmark"></i><i class="tt en">Add Bookmark</i></a>
+                            </div>
+                            <div class="cs en">
+                                <div class="box">
+                                    <p class="cs_tit">CS CENTER</p>
+                                    <dl class="info">
+                                    <dt class="tit">대표전화.</dt>
+                                    <dd><a onClick="telLink('031-626-7000',this)" class="t1">031-626-7000</a></dd>
+                                    </dl>
+                                    <dl class="info">
+                                    <dt class="tit">Email.</dt>
+                                    <dd><a href="#" class="t2">naver.com</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="today en">
+                                <div class="box">
+                                    <p class="today_tit"><i class="tt">Today's</i><i class="no">3</i></p>
+                                    <div class="todaySlide">
+                                        <div class="slides">
+                                            <div class="img">
+                                                <a href="#" class="in"><div class="resize"><div class="re va_wrap"><img src="images/temp/prod_01.jpg"><div class="layer va_wrap"><div class="va"><p class="tit">제품명</p></div></div></div></div></a>
+                                            </div>
+                                            <div class="img">
+                                                <a href="#" class="in"><div class="resize"><div class="re va_wrap"><img src="images/temp/prod_01.jpg"><div class="layer va_wrap"><div class="va"><p class="tit">제품명</p></div></div></div></div></a>
+                                            </div>
+                                        </div>
+                                        <ul class="arrow_wrap">
+                                            <li class="prev"><i class="xi"></i></li>
+                                            <li class="next"><i class="xi"></i></li>
+                                        </ul>
+                                        <div class="dot_wrap"></div>
+                                    </div>                    
+                                </div>
+                            </div>
+                            <div class="link">
+                                <div class="box">
+                                    <ul class="list fl_wrap">
+                                        <li class="st1"><a href="#"><i class="xi xi-cart-o"></i><i>장바구니</i></a></li>
+                                        <li><a href="#"><i class="xi xi-heart-o"></i><i>관심상품</i></a></li>
+                                        <li><a href="#">로그아웃</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <li><a href="#">로그인</a></li>
+                                        <li><a href="#">회원가입</a></li>   
+                                        <li class="st2"><a href="javascript:goTop()"><i class="xi xi-arrow-top"></i>TOP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="quickBtn" onClick="toggleClass(this,'.quickWrap')"><i class="xi"></i></a>
+                    </div>
+                    <!-- 모바일 퀵 -->
+                    <div class="mQuick pc_hide">
+                        <ul class="di_wrap">
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-home-o"></i><i class="tt">홈</i></span></a></li>        
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-log-in"></i><i class="tt">로그인</i></span></a></li>
+                            <li><a href="#" class="vm_wrap"><span><i class="xi xi-user"></i><i class="tt">마이페이지</i></span></a></li>
+                            <li><a href="http://hancomcare.co.kr/" class="quickBtn" target="_blank"><span><i class="xi xi-external-link"></i><i class="tt">행복케어</i></span></a></li>
+                            <li><a href="javascript:goTop()" class="vm_wrap"><span><i class="xi xi-arrow-top"></i><i class="tt">TOP</i></span></a></li>
+                        </ul>
+                    </div>                
+                    <script type="text/javascript">
+                    todaySlide();
+                    function todaySlide(){
+                        var Wrap = $("#quick .quick_menu .today .todaySlide");
+                        var SlideWrap = Wrap.find(".slides");
+                        SlideWrap.slick({			
+                            dots: false,
+                            arrows: true,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            prevArrow: Wrap.find('.arrow_wrap .prev'),
+                            nextArrow: Wrap.find('.arrow_wrap .next'),
+                            appendDots: Wrap.find('.dot_wrap')
+                        });
+                    };
+                
+                    $(window).load(function(){
+                    quickShow;
+                    var quickShow = setTimeout(function(){
+                    $("#quick").addClass("on");
+                    },500);
+                    })
+                    //배너
+                    // function banner_top_toggle(i) {
+                    //     $.post('../dev/banner_top_toggle.php', {
+                    //         val: i
+                    //     }, function(ex) {
+                
+                    //     });
+                    // }
+                    </script>
+                </div>
+                <!-- header :: e :: -->
+                <!-- contents :: s :: -->
+                <div id="contents">
+                    <div class="mainVisual_wrap">
+                        <div class="mainVisual">
+                            <div class="item">
+                                <p class="img" style="background-image:url(images/main/main_visual1.jpg);"></p>
+                                <a href="javascript:void(0)" class="link box1"></a>
+                            </div>
+                            <div class="item">
+                                <p class="img" style="background-image:url(images/main/main_visual1.jpg);"></p>
+                                <a href="javascript:void(0)" class="link box1"></a>
+                            </div>
+                        </div>
+                        <div class="main_arrow_wrap"> 
+                            <ul class="box1 pr">
+                                <li class="prev"><i class="xi"></i></li>
+                                <li class="next"><i class="xi"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!--카테고리 배너 -->
+                    <div class="main_con main_banner">
+                        <div class="box0">
+                            <div class="inner slide fl_wrap"><!--size 310*310px -->
+                                <div class="el">
+                                    <a href="#" class="link" style="background-image:url(images/main/cate_banner1.jpg);">
+                                        <div class="resize">
+                                            <div class="re">
+                                                <dl class="con_wrap">
+                                                    <dt>카테고리</dt>
+                                                    <dd>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>            
+                                <div class="el">
+                                    <a href="javascript:void(0)" class="link" style="background-image:url(images/main/cate_banner2.jpg);">
+                                        <div class="resize">
+                                            <div class="re">
+                                                <dl class="con_wrap">
+                                                    <dt>카테고리</dt>
+                                                    <dd>내용이 들어갑니다. 내용이 들어갑니다.</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  	
+                                <div class="el">
+                                    <a href="javascript:void(0)" class="link" style="background-image:url(images/main/cate_banner3.jpg);">
+                                        <div class="resize">
+                                            <div class="re">
+                                                <dl class="con_wrap">
+                                                    <dt>카테고리</dt>
+                                                    <dd>내용이 들어갑니다.</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                                <div class="el">
+                                    <a href="javascript:void(0)" class="link" style="background-image:url(images/main/cate_banner4.jpg);">
+                                        <div class="resize">
+                                            <div class="re">
+                                                <dl class="con_wrap">
+                                                    <dt>카테고리</dt>
+                                                    <dd>내용이 들어갑니다.</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                                <div class="el">
+                                    <a href="javascript:void(0)" class="link" style="background-image:url(images/main/cate_banner5.jpg);">
+                                        <div class="resize">
+                                            <div class="re">
+                                                <dl class="con_wrap">
+                                                    <dt>카테고리</dt>
+                                                    <dd>내용이 들어갑니다.</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>        
+                    <!--베스트 -->
+                    <div class="main_con main_best">
+                        <div class="box1">
+                            <div class="main_tit"><span class="tt t1">베스트 상품</span></div>
+                            <div class="list_prod_wrap st1">        	
+                                <div class="list_prod">
+                                    <div class="prod di_wrap">
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="best_num">
+                                                    <i class="no en">1</i>
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_20.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <ul class="prod_icon en">
+                                                        <li class="icon c1">New</li>
+                                                        <li class="icon c2">Best</li>
+                                                        <li class="icon c3">Sale</li>
+                                                        <li class="icon c4">Sold Out</li>
+                                                    </ul>
+                                                    <em class="t1">카테고리</em>
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                            <em class="per">30%</em>
+                                                            <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                        <em class="discount">3,000원</em><? }?>  
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="best_num">
+                                                    <i class="no en">2</i>
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_08.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <ul class="prod_icon en">
+                                                        <li class="icon c1">New</li>
+                                                        <li class="icon c2">Best</li>
+                                                        <li class="icon c3">Sale</li>
+                                                        <li class="icon c4">Sold Out</li>
+                                                    </ul>
+                                                    <em class="t1">카테고리</em>
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                            <em class="per">30%</em>
+                                                            <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                        <em class="discount">3,000원</em><? }?>  
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="best_num">
+                                                    <i class="no en">3</i>
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_06.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <ul class="prod_icon en">
+                                                        <li class="icon c1">New</li>
+                                                        <li class="icon c2">Best</li>
+                                                        <li class="icon c3">Sale</li>
+                                                        <li class="icon c4">Sold Out</li>
+                                                    </ul>
+                                                    <em class="t1">카테고리</em>
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                            <em class="per">30%</em>
+                                                            <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                        <em class="discount">3,000원</em><? }?>  
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="best_num">
+                                                    <i class="no en">4</i>
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_09.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <ul class="prod_icon en">
+                                                        <li class="icon c1">New</li>
+                                                        <li class="icon c2">Best</li>
+                                                        <li class="icon c3">Sale</li>
+                                                        <li class="icon c4">Sold Out</li>
+                                                    </ul>
+                                                    <em class="t1">카테고리</em>
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                            <em class="per">30%</em>
+                                                            <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                        <em class="discount">3,000원</em><? }?>  
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="no_cart"><i class="xi xi-document"></i>등록된 내역이 없습니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--신상품 -->
+                    <div class="main_con main_new">
+                        <div class="in_wrap flex">
+                            <div class="inner tit_wrap" style="background-image:url(images/main/new_bg.jpg);">
+                                <div class="con">
+                                    <p class="txt t1">신상품</p>
+                                    <p class="txt t2 en">New Arrivals<i class="line"></i></p>
+                                    <p class="txt t3">한컴 말랑말랑 행복케어의 새로운 상품들을 확인하세요.</p>
+                                    <a href="#" class="main_btn"><i class="tt">신상품 더보기</i><i class="xi arrow"></i></a>
+                                </div>
+                                <div class="main_arrow_wrap">            	
+                                    <p class="page en"></p>
+                                    <ul>      
+                                        <li class="prev"><i class="xi"></i></li>
+                                        <li class="next"><i class="xi"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="inner list_prod_wrap st2">
+                                <div class="list_prod">
+                                    <div class="prod di_wrap">
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_20.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                    <em class="per">10%</em>
+                                                        <em class="price">
+                                                            <i class="no">15,000</i>
+                                                            <i class="won">원</i>
+                                                        </em>
+                                                        <em class="discount">3,000원</em>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>     
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_18.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                    <em class="per">10%</em>
+                                                        <em class="price">
+                                                            <i class="no">15,000</i>
+                                                            <i class="won">원</i>
+                                                        </em>
+                                                        <em class="discount">3,000원</em>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>     
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_13.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                    <em class="per">10%</em>
+                                                        <em class="price">
+                                                            <i class="no">15,000</i>
+                                                            <i class="won">원</i>
+                                                        </em>
+                                                        <em class="discount">3,000원</em>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>   
+                                        <div class="el">
+                                            <a href="#" class="in fl_wrap">
+                                                <div class="img_wrap">
+                                                    <em class="resize">
+                                                        <i class="va_wrap re">
+                                                            <img src="images/temp/prod_06.jpg">
+                                                        </i>
+                                                    </em>
+                                                </div>
+                                                <div class="con_wrap">
+                                                    <em class="t2">제품명</em>
+                                                    <div class="priceBox en">
+                                                    <em class="per">10%</em>
+                                                        <em class="price">
+                                                            <i class="no">15,000</i>
+                                                            <i class="won">원</i>
+                                                        </em>
+                                                        <em class="discount">3,000원</em>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>                  
+                                        <!-- <div class="no_cart"><i class="xi xi-document"></i>등록된 내역이 없습니다.</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--슬라이드 배너 -->
+                    <div class="main_con main_event_slide">
+                        <div class="box1 pr">
+                            <div class="event_slide">
+                                <div class="el">
+                                    <a href="#" class="in">
+                                        <p class="resize img">
+                                            <span class="re">
+                                                <img src="images/main/slide_event1.jpg">
+                                            </span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="el">
+                                    <a href="javascript:void(0)" class="in">
+                                        <p class="resize img">
+                                            <span class="re">
+                                                <img src="images/main/slide_event2.jpg">
+                                            </span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="el">
+                                    <a href="#" class="in">
+                                        <p class="resize img">
+                                            <span class="re">
+                                                <img src="images/main/slide_event1.jpg">
+                                            </span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main_dot_wrap"></div> 
+                            <ul class="main_arrow_wrap">      
+                                <li class="prev"><i class="xi"></i></li>
+                                <li class="next"><i class="xi"></i></li>
+                            </ul>
+                        </div>
+                    </div>        
+                    <!--추천상품 -->
+                    <div class="main_con main_md">
+                        <div class="main_tit"><span class="tt t2">카테고리별</span> <span class="tt t1">추천상품</span></div>
+                        <div class="main_tab">
+                            <div class="box0">  	
+                                <ul class="tab fl_wrap">
+                                    <li class="el">
+                                        <a href="javascript:void(0);" class="in va_wrap">
+                                            <span class="va tt">카테고리1</span>
+                                        </a>
+                                    </li>
+                                    <li class="el">
+                                        <a href="javascript:void(0);" class="in va_wrap">
+                                            <span class="va tt">카테고리2</span>
+                                        </a>
+                                    </li>
+                                    <li class="el">
+                                        <a href="javascript:void(0);" class="in va_wrap">
+                                            <span class="va tt">카테고리3</span>
+                                        </a>
+                                    </li>
+                                    <li class="el">
+                                        <a href="javascript:void(0);" class="in va_wrap">
+                                            <span class="va tt">카테고리4</span>
+                                        </a>
+                                    </li>
+                                </ul>  
+                            </div>    
+                        </div>
+                        <div class="list_prod_wrap st1">
+                            <div class="box1">
+                                <div id="ProList">
+                                    <div class="list_prod">
+                                        <div class="prod di_wrap">
+                                            <div class="el">
+                                                <a href="#" class="in fl_wrap">
+                                                    <div class="best_num">
+                                                        <i class="no en">1</i>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <em class="resize">
+                                                            <i class="va_wrap re">
+                                                                <img src="images/temp/prod_05.jpg">
+                                                            </i>
+                                                        </em>
+                                                    </div>
+                                                    <div class="con_wrap">
+                                                        <ul class="prod_icon en">
+                                                            <li class="icon c1">New</li>
+                                                            <li class="icon c2">Best</li>
+                                                            <li class="icon c3">Sale</li>
+                                                            <li class="icon c4">Sold Out</li>
+                                                        </ul>
+                                                        <em class="t1">카테고리</em>
+                                                        <em class="t2">제품명</em>
+                                                        <div class="priceBox en">
+                                                                <em class="per">30%</em>
+                                                                <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                            <em class="discount">3,000원</em><? }?>  
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="el">
+                                                <a href="#" class="in fl_wrap">
+                                                    <div class="best_num">
+                                                        <i class="no en">2</i>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <em class="resize">
+                                                            <i class="va_wrap re">
+                                                                <img src="images/temp/prod_04.jpg">
+                                                            </i>
+                                                        </em>
+                                                    </div>
+                                                    <div class="con_wrap">
+                                                        <ul class="prod_icon en">
+                                                            <li class="icon c1">New</li>
+                                                            <li class="icon c2">Best</li>
+                                                            <li class="icon c3">Sale</li>
+                                                            <li class="icon c4">Sold Out</li>
+                                                        </ul>
+                                                        <em class="t1">카테고리</em>
+                                                        <em class="t2">제품명</em>
+                                                        <div class="priceBox en">
+                                                                <em class="per">30%</em>
+                                                                <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                            <em class="discount">3,000원</em><? }?>  
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="el">
+                                                <a href="#" class="in fl_wrap">
+                                                    <div class="best_num">
+                                                        <i class="no en">3</i>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <em class="resize">
+                                                            <i class="va_wrap re">
+                                                                <img src="images/temp/prod_03.jpg">
+                                                            </i>
+                                                        </em>
+                                                    </div>
+                                                    <div class="con_wrap">
+                                                        <ul class="prod_icon en">
+                                                            <li class="icon c1">New</li>
+                                                            <li class="icon c2">Best</li>
+                                                            <li class="icon c3">Sale</li>
+                                                            <li class="icon c4">Sold Out</li>
+                                                        </ul>
+                                                        <em class="t1">카테고리</em>
+                                                        <em class="t2">제품명</em>
+                                                        <div class="priceBox en">
+                                                                <em class="per">30%</em>
+                                                                <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                            <em class="discount">3,000원</em><? }?>  
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="el">
+                                                <a href="#" class="in fl_wrap">
+                                                    <div class="best_num">
+                                                        <i class="no en">4</i>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <em class="resize">
+                                                            <i class="va_wrap re">
+                                                                <img src="images/temp/prod_02.jpg">
+                                                            </i>
+                                                        </em>
+                                                    </div>
+                                                    <div class="con_wrap">
+                                                        <ul class="prod_icon en">
+                                                            <li class="icon c1">New</li>
+                                                            <li class="icon c2">Best</li>
+                                                            <li class="icon c3">Sale</li>
+                                                            <li class="icon c4">Sold Out</li>
+                                                        </ul>
+                                                        <em class="t1">카테고리</em>
+                                                        <em class="t2">제품명</em>
+                                                        <div class="priceBox en">
+                                                                <em class="per">30%</em>
+                                                                <em class="price"><i class="no">150,000</i><i class="won">원</i><? }?></em>
+                                                            <em class="discount">3,000원</em><? }?>  
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="no_cart"><i class="xi xi-document"></i>등록된 내역이 없습니다.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--리뷰 -->
+                    <div class="main_con main_review">
+                        <div class="box1">
+                            <div class="main_tit"><span class="tt t1">상품후기<span></div>
+                            <div class="review_wrap flex">
+                                <div class="inner w1">
+                                    <div class="list st1">
+                                        <a href="#link" class="in">
+                                            <div class="img_wrap"><em class="resize"><i class="re"><img src="images/temp/prod_06.jpg" /></i></em></div>
+                                            <div class="con_wrap">
+                                                <div class="tt_star"><span class="star"><i class="xi on"></i><i class="xi on"></i><i class="xi on"></i><i class="xi"></i><i class="xi"></i></span></div>
+                                                <div class="tit">제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.</div>
+                                                <div class="txt">내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="inner w1">
+                                    <div class="list st1">
+                                        <a href="#link" class="in">
+                                            <div class="img_wrap"><em class="resize"><i class="re"><img src="images/temp/prod_07.jpg" /></i></em></div>
+                                            <div class="con_wrap">
+                                                <div class="tt_star"><span class="star"><i class="xi on"></i><i class="xi on"></i><i class="xi on"></i><i class="xi"></i><i class="xi"></i></span></div>
+                                                <div class="tit">제목이 들어갑니다.</div>
+                                                <div class="txt">내용이 들어갑니다.</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="inner w2">
+                                    <div class="list st2">
+                                        <div class="el">
+                                            <a href="#link" class="in fl_wrap">
+                                                <div class="img_wrap"><em class="resize"><i class="va_wrap re"><img src="images/temp/prod_08.jpg" /></i></em></div>
+                                                <div class="con_wrap">
+                                                    <div class="tt_star"><span class="star"><i class="xi on"></i><i class="xi on"></i><i class="xi on"></i><i class="xi"></i><i class="xi"></i></span></div>
+                                                    <div class="tit">제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.제목이 들어갑니다.</div>
+                                                    <div class="txt">내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.내용이 들어갑니다.</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="el">
+                                            <a href="#link" class="in fl_wrap">
+                                                <div class="img_wrap"><em class="resize"><i class="va_wrap re"><img src="images/temp/prod_09.jpg" /></i></em></div>
+                                                <div class="con_wrap">
+                                                    <div class="tt_star"><span class="star"><i class="xi on"></i><i class="xi on"></i><i class="xi on"></i><i class="xi"></i><i class="xi"></i></span></div>
+                                                    <div class="tit">제목이 들어갑니다.</div>
+                                                    <div class="txt">내용이 들어갑니다.</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="el">
+                                            <a href="#link" class="in fl_wrap">
+                                                <div class="img_wrap"><em class="resize"><i class="va_wrap re"><img src="images/temp/prod_10.jpg" /></i></em></div>
+                                                <div class="con_wrap">
+                                                    <div class="tt_star"><span class="star"><i class="xi on"></i><i class="xi on"></i><i class="xi on"></i><i class="xi"></i><i class="xi"></i></span></div>
+                                                    <div class="tit">제목이 들어갑니다.</div>
+                                                    <div class="txt">내용이 들어갑니다.</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--고객센터 -->
+                    <div class="main_con main_customer">
+                        <div class="box1">
+                            <div class="customer_wrap fl_wrap">
+                                <div class="inner">
+                                    <div class="in_wrap notice">
+                                        <div class="tit"><span class="tt en">Notice</span><a href="#" class="more"><i class="xi xi-plus"></i></a></div>
+                                        
+                                        <ul class="list">
+                                            <li><a href="#" class="in"><span class="tt">타이틀이 들어갑니다. 타이틀이 들어갑니다. 타이틀이 들어갑니다.</span><span class="date en">2020.00.00</span></a></li>
+                                            <li><a href="#" class="in"><span class="tt">타이틀이 들어갑니다. 타이틀이 들어갑니다. 타이틀이 들어갑니다.</span><span class="date en">2020.00.00</span></a></li>
+                                            <li><a href="#" class="in"><span class="tt">타이틀이 들어갑니다. 타이틀이 들어갑니다. 타이틀이 들어갑니다.</span><span class="date en">2020.00.00</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inner">
+                                    <div class="in_wrap cs">
+                                        <div class="cs_wrap">
+                                            <div class="tit">
+                                                <span class="tt"><i class="t1 c1">고객센터</i></span>
+                                                <span class="tt"><i class="xi xi-call c1"></i><a class="t2 c2 en" onclick="telLink('031-626-7000',this)">031-626-7000</a></span>
+                                            </div>
+                                            <div class="txt">
+                                                <span class="tt"><i class="t3 c1">운영시간</i><i class="xi xi-alarm-o c1"></i><i class="t4 c2 en">09:00~18:00</i></span>
+                                                <span class="tt"><i class="t3 c3">점심시간. 12:00~13:00 / 토, 일요일, 공휴일 휴무</i></span>
+                                            </div>
+                                        </div>
+                                        <div class="etc_wrap fl_wrap">
+                                            <ul class="btn fl_wrap">
+                                                <li><a href="#" class="in"><i class="tt">FAQ</i><i class="xi xi-arrow-right"></i></a></li>
+                                                <li><a href="#" class="in"><i class="tt">1:1문의</i><i class="xi xi-arrow-right"></i></a></li>
+                                            </ul>
+                                            <!--SNS -->
+                                            <ul class="sns fl_wrap">
+                                                <li><a href="#" class="in" target="_blank"><i class="xi xi-facebook"></i></a></li>
+                                                <li><a href="#" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+                                                <li><a href="#" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+                                                <li><a href="#" class="in" target="_blank"><i class="xi xi-kakaostory"></i></a></li>
+                                                <li><a href="#" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    mainVisual();
+                    mainBanner_slide();
+                    mainNew_slide();
+                    mainEvent_slide();
+                    
+                    function mainVisual(){
+                        var Wrap = $("#contents .mainVisual_wrap");
+                        var SlideWrap = Wrap.find(".mainVisual");	
+                        SlideWrap.slick({
+                            fade: false,
+                            arrows: true,
+                            dots: true,
+                            autoplay: true,
+                            autoplaySpeed: 4000,	
+                            prevArrow: Wrap.find('.main_arrow_wrap .prev'),
+                            nextArrow: Wrap.find('.main_arrow_wrap .next')
+                        });
+                    };
+                    
+                    function mainBanner_slide(){
+                        var Wrap = $("#contents .main_banner");
+                        var SlideWrap = Wrap.find(".slide");
+                        SlideWrap.slick({
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            fade: false,
+                            arrows: false,
+                            dots: false,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            responsive: [
+                            {
+                            breakpoint: 1281,
+                            settings: {
+                                slidesToShow: 4,
+                            }
+                            },
+                            {
+                            breakpoint: 1025,
+                            settings: {
+                                slidesToShow: 3,
+                            }
+                            },
+                            {
+                            breakpoint: 769,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                            }
+                            ]
+                        });
+                    };
+                    
+                    function mainNew_slide(){
+                        var Wrap = $("#contents .main_new");
+                        var SlideWrap = Wrap.find(".list_prod_wrap .list_prod .prod");
+                        var Page = Wrap.find('.main_arrow_wrap .page');
+                        
+                        SlideWrap.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+                            var i = (currentSlide ? currentSlide : 0) + 1;
+                            Page.html('<i class="t1 ti">'+i+'</i>'+'<i>/</i>'+'<i class="t2 ti">'+slick.slideCount+'</i>');
+                        });		
+                        SlideWrap.slick({
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: true,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            prevArrow: Wrap.find('.main_arrow_wrap .prev'),
+                            nextArrow: Wrap.find('.main_arrow_wrap .next'),
+                            responsive: [
+                            {
+                            breakpoint: 1025,
+                            settings: {
+                                //slidesToShow: 4,
+                            }
+                            },
+                            {
+                            breakpoint: 769,
+                            settings: {
+                                //slidesToShow: 3,
+                            }
+                            },
+                            {
+                            breakpoint: 520,
+                            settings: {
+                                //slidesToShow: 2,
+                            }
+                            }
+                            ]
+                        });
+                        Wrap.find('.main_control_wrap .pause').clickToggle(function(){
+                            SlideWrap.slick('slickPause');
+                            $(this).removeClass("pause").addClass("play");
+                        },function(){
+                            SlideWrap.slick('slickPlay');
+                            $(this).removeClass("play").addClass("pause");
+                        });
+                    };
+                    
+                    function mainEvent_slide(){
+                        var Wrap = $("#contents .main_event_slide");
+                        var SlideWrap = Wrap.find(".event_slide");
+                        SlideWrap.slick({
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            fade: false,
+                            arrows: true,
+                            dots: true,
+                            autoplay: true,
+                            pauseOnHover: true,
+                            prevArrow: Wrap.find('.main_arrow_wrap .prev'),
+                            nextArrow: Wrap.find('.main_arrow_wrap .next'),
+                            appendDots: Wrap.find('.main_dot_wrap'),
+                            responsive: [
+                            {
+                            breakpoint: 520,
+                            settings: {
+                                //slidesToShow: 1,
+                            }
+                            }
+                            ]
+                        });
+                    };
+                    </script>
+                </div>
+                <!-- contents :: e :: -->
+                <!-- footer :: s :: -->
+                <div id="footer">
+                    <div class="menu_wrap">
+                        <div class="box1 fl_wrap">
+                            <ul class="menu fl_wrap">
+                                <li><a href="#" class="va_wrap"><span class="va"><i class="xi xi-home"></i></span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va tt">회사소개</span></a></li>
+                                <li><a href="#" class="va_wrap"><span class="va tt">이용약관</span></a></li>
+                                <li class="point"><a href="#" class="va_wrap"><span class="va tt">개인정보처리방침</span></a></li>                
+                                <li><a href="#" class="va_wrap"><span class="va tt">고객센터</span></a></li>   
+                                <li><a href="#" class="va_wrap"><span class="va tt">이용안내</span></a></li>                         
+                            </ul>
+                            <div class="sns_menu va_wrap">
+                                <div class="va"><!--SNS-->
+                                    <ul class="sns fl_wrap">
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-facebook"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-kakaostory"></i></a></li>
+                                        <li><a href="#" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cs_wrap">
+                        <div class="box1 flex stretch">
+                            <div class="cs_box st1">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">CS CENTER</span></p>
+                                    <div class="cs_con">
+                                        <a class="txt t1 c1 en" onClick="telLink('<?=$site_tel?>',this)"><?=$site_tel?></a>
+                                <p class="txt t2 cs_sec">평일 : 09:00 ~ 18:00 / 점심시간 : 12:00 ~ 13:00</p>
+                                        <p class="txt t2">토, 일요일, 공휴일 휴무</p>  	
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs_box st2">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">BANK INFO</span></p>
+                                    <div class="cs_con">
+                                        <p class="txt t3 c1 en cs_sec">국민은행 000000</p>
+                                        <p class="txt t2 cs_sec">예금주 : 홍길동</p>  
+                                        <a href="#" class="foot_btn" target="_blank"><i class="tt">국민은행 바로가기</i><i class="xi xi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cs_box st3">
+                                <div class="inner">
+                                    <p class="cs_tit"><span class="tit en">STORE GUIDE</span></p>
+                                    <ul class="link flex">
+                                        <li><a href="#" class="in"><i class="xi xi-basket"></i><span class="tt">장바구니</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-truck"></i><span class="tt">주문배송</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-pen"></i><span class="tt">상품후기</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-gift-o"></i><span class="tt">이벤트</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-comment"></i><span class="tt">1:1문의</span></a></li>
+                                        <li><a href="#" class="in"><i class="xi xi-profile"></i><span class="tt">Mypage</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                    <div class="info_wrap">
+                        <div class="box1 fl_wrap">
+                            <ul class="info fl_wrap">
+                                <li>상호. 한컴 말랑말랑 행복케어</li>
+                                <li>대표. 한컴</li>
+                                <li>사업자등록번호. 000-00-00000</li>
+                                <li>통신판매신고번호. 000-00-00000</li>
+                                <li class="br">주소. 경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 1층</li>
+                                <li>전화. <a onclick="telLink('031-626-7000',this)">031-626-7000</a></li>
+                                <li>팩스. 031-626-7000</li>
+                                <li class="br">개인정보보호책임자. 한컴</li>
+                                <li>E-mail. <a href="#">www.naver.com</a></li>
+                                <li class="copy en">Copyright (C) SMART SENIOR DAYCARE CENTER. All Rights Reserved.</li>
+                            </ul>
+                            <div class="etc">
+                                <div class="inner flex">
+                                    <div class="mark"><img src="images/inc/mark_escrow.png" /></div>
+                                    <div class="txt">
+                                        <p class="t1">구매안전(에스크로) 서비스</p>
+                                        <p class="t2">고객님은 안전거래를 위해 현금등으로 결제시 구매자가 보호를 받을 수 있는 구매안전서비스(에스크로)를 이용하실 수 있습니다.</p>
+                                        <a href="#link" class="foot_btn" target="_blank"><i class="tt">서비스 가입사실 확인</i><i class="xi xi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer :: e :: -->
+            </div>
+            <!-- l-main :: e :: -->
+            <!-- nav :: s :: -->
+            <div id="LeftNavigation" class="l-nav">
+                <div class="nav_logo"><a href="#" class="logo vm_wrap"><img src="images/inc/logo.png" /></a><a href="#" class="nav_close" id="sitemapPhone"></a></div>
+                <div class="menu_wrap">
+                    <ul class="menu di_wrap sec4">
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-lock-o"></i><i class="tt">로그인</i></span></a></li>
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-user-plus-o"></i><i class="tt">회원가입</i></span></a></li>
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-lock-o"></i><i class="tt">로그아웃</i></span></a></li>
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-profile-o"></i><i class="tt">정보수정</i></span></a></li>
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-user-o"></i><i class="tt">마이페이지</i></span></a></li>
+                        <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="xi xi-truck"></i><i class="tt">배송조회</i></span></a></li>
+                    </ul>
+                </div>
+                <div class="gnb_wrap">
+                    <span class="nav_prod_tit">제품 카테고리</span>
+                    <div class="column category"><!--제품메뉴-->                    
+                    </div>
+                    <div class="column pagemenu"><!--메뉴-->
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            //<![CDATA[
+            (function ( window, document, $, m, ui, undefined ) {
+            'use strict';
+            var documentElement = document.documentElement,
+                $win = $( window ),
+                $root = $( document ),
+                $html = $( documentElement ),
+                transitionEnd;
+            $(function () {
+                $html.addClass( 'ready' );
+            });
+            if ( !window.ui ) {
+                window.ui = ui;
+            }
+            if ( ui.prefixed ) {
+                transitionEnd = ui.prefixed.transitionend;
+            }
+            // 네비게이션 사이드바
+            function openNav() {
+                $html.addClass( 'l-nav-open' );
+            }
+            function closeNav() {
+                $( '.l-main' )
+                .one( transitionEnd, function () {
+                    $html.removeClass( 'l-nav-closing' );
+                });
+                $html
+                .addClass( 'l-nav-closing' )
+                .removeClass( 'l-nav-open' );
+            }
+            function toggleNav() {
+                if ( $html.hasClass( 'l-nav-open' ) ) {
+                    closeNav();
+                } else {
+                    openNav();
+                }
+            }
+            $root
+            // 네비게이션 사이드바 토글 버튼
+            .on( 'click', '#sitemapPhone', function ( e ) {
+                e.preventDefault();
+                toggleNav();
+            })
+            // 네비게이션 사이드바 열린 상태에서 메인 영역 터치 시 사이드바 닫기
+            .on( 'click touchstart', '.l-nav-open .l-main', function ( e ) {
+                e.preventDefault();
+                closeNav();
+            });
+            ui.nav = {
+                open: openNav,
+                close: closeNav,
+                toggle: toggleNav
+            };
+            }( this, this.document, this.jQuery, this.Modernizr, this.ui || {} ));
+            
+            //
+            $(".l-nav .gnb > li").each(function(){	
+                if($(this).children("ul").hasClass("dp2")){
+                    $(this).children(".dp1").attr("href","javascript:void()").click(function(){
+                        if($(this).next(".dp2").css("display") == "none"){
+                            $(".l-nav .gnb .dp2").slideUp(200)
+                            $(this).next(".dp2").slideDown(200)
+                            $(".l-nav .gnb > li").removeClass("onCr")
+                            $(this).parent("li").addClass("onCr")
+                        }else{
+                            $(".l-nav .gnb > li").removeClass("onCr")
+                            $(this).next(".dp2").slideUp(200)
+                        }
+                    })
+                    
+                }else{
+                    $(this).children(".dp1").addClass("nolink")
+                }	
+            })
+            $(".l-nav .gnb .dp2 > li").each(function(){
+                var obj = $(this).find(".dp3 > li");
+                var objL = obj.length;
+                if (0 == objL) {
+                    $(this).find(".dp3").hide();		 				
+                }else{				 
+                    $(this).find(".dp3").show();	
+                }
+            })
+            
+            //]]>
+            </script>
+            <!-- nav :: e :: -->
+        </div>
+        <!-- l-wrapper :: e :: -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).on('click', '.bookmark', function(e){
+                e.preventDefault();
+                var bUrl = location.href;
+                var bTitle = "<?=$site_name?>";
+                try {
+                    if (window.sidebar) {
+                        window.sidebar.addPanel(bTitle, bUrl, "");
+                    } else if (window.external || document.all) {
+                        window.external.AddFavorite(bUrl, bTitle);
+                    } else if (window.opera) {
+                        $("a#bookmark").attr("rel","sidebar");
+                    }
+                } catch (err) {
+                    alert("죄송합니다. 현재 브라우저는 스크립트로 즐겨찾기 추가 기능을 지원하지 않습니다.\n즐겨찾기에 추가하시려면 Ctrl + D 키를 눌러주세요.");
+                }
+            });
+            function gnbOn(){
+                var obj = $(".gnb");
+                obj.find("li.m_<?=$dp1?>").addClass("on");
+                obj.find("li.m_<?=$dp1?> li.sm_<?=$dp2?>").addClass("on");
+                obj.find("li.m_<?=$dp1?> li.sm_<?=$dp2?> li.ssm_<?=$dp3?>").addClass("on");
+            };
+            function gnbCate(){
+                var obj = $(".gnb li");
+                obj.each(function(){
+                    var leng = $(this).children("ul").children("li").length;
+                    if(leng > 0){
+                        $(this).addClass("plus");
+                    }else{
+                        $(this).removeClass("plus");
+                    }
+                    if(leng == 0){
+                        $(this).children("ul").remove();
+                    }
+                });
+            };
+            
+            gnbOn();
+            gnbCate();
+            $(window).load(function(){
+                $("body").addClass("load");
+                var scrollst = $(".scrollst")
+                scrollst.mCustomScrollbar({
+                    theme:"minimal-dark"
+                });
+                var scrollstX = $(".scrollstX")
+                scrollstX.mCustomScrollbar({
+                    theme:"dark-thin",
+                    axis:"x",
+                    scrollbarPosition:"outside"
+                });
+            })
+            $(window).scroll(function(){
+                var scrollY = $(window).scrollTop()
+                if(scrollY > 0){
+                    $("body").addClass("scroll")
+                }else{
+                    $("body").removeClass("scroll")
+                }
+            })
+            if(isMobile){
+                $("body").addClass("mobile");
+            }
+            if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
+                $('body').on("mousewheel", function () {
+                    // remove default behavior
+                    event.preventDefault();
+                    //scroll without smoothing
+                    var wheelDelta = event.wheelDelta;
+                    var currentScrollPosition = window.pageYOffset;
+                    window.scrollTo(0, currentScrollPosition - wheelDelta);
+                });
+                $('body').keydown(function (e) {
+                    var currentScrollPosition = window.pageYOffset;
+                    switch (e.which) {
+                        case 33: // page up
+                            e.preventDefault(); // prevent the default action (scroll / move caret)
+                            window.scrollTo(0, currentScrollPosition - 600);
+                            break;
+                        case 34: // page down
+                            e.preventDefault(); // prevent the default action (scroll / move caret)
+                            window.scrollTo(0, currentScrollPosition + 600);
+                            break;
+                        case 38: // up
+                            e.preventDefault(); // prevent the default action (scroll / move caret)
+                            window.scrollTo(0, currentScrollPosition - 120);
+                            break;
+                        case 40: // down
+                            e.preventDefault(); // prevent the default action (scroll / move caret)
+                            window.scrollTo(0, currentScrollPosition + 120);
+                            break;
+                        default: return; // exit this handler for other keys
+                    }
+                });
+            
+            }
+            $(document).ready(function() {
+                setInterval(function() {
+                    $.get("../inc/session.php", function(a) { /*console.log(a);*/ }, 'text');
+                }, 300000);
+            
+            });
+            //]]>
+        </script>
+    </body>
+</html>

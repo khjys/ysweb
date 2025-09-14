@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes, target-densitydpi=device-dpi">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="포트폴리오">
+    <meta property="og:description" content="포트폴리오">
+    <title>YEONGSEON PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/inc.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../js/swiper/swiper.css">
+    <script type="text/javascript" src="../../../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../../js/inc.js"></script>
+    <script type="text/javascript" src="../../../js/swiper/swiper.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/gsap.min.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/ScrollToPlugin.min.js"></script>
+</head>
+<body id="sub">
+    <header>
+        <div class="box0 gnb_wrap flex space vb" id="parallax_nav">
+            <h1 class="logo"><a href="../../index.html">Yeongseon</a></h1>
+            <ul class="gnb flex">
+                <li><a href="#section1" class="active">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Work</a></li>
+                <li><a href="#section6">Contact</a></li>  
+            </ul>
+            <a href="../../index.html" class="close_btn"><i class="xi xi-close-thin"></i></a>
+        </div>
+    </header>
+    <div class="contents">
+        <div class="doc">
+            <div class="top_wrap">
+                <div class="box0">
+                    <h1>GISEP 온라인 교육 시스템</h1>
+                    <h3>경상국립대학교 간호대학, Web design + Publishing</h3>
+                    <img src="../images/detail_img.png" class="ac bd">
+                    <div class="txt_box">
+                        <h2>노인간호교육을 위한 플랫폼 구축</h2>
+                        <p>GISEP는 노인의 건강 및 복지 증진을 위해 설립된 온라인 플랫폼으로, 간호대학생 및 대학원생을 대상으로 한 학술·교육 지원 서비스를 제공합니다.</p>
+                        <p class="mt10">간호대학(학부 및 대학원) 학생들은 학술대회 사전 등록은 물론, 노인간호교육 플랫폼(GISEP) 기반의 온라인 교육과정을 확인하고 신청할 수 있으며, 제공되는 교육 영상을 통해 학습할 수 있습니다.
+                        <p class="mt10">또한 플랫폼을 통해 설문조사 참여가 가능하여, 기존의 번거로운 통계조사 과정을 간소화하고 결과를 문서화된 통계자료로 손쉽게 확인할 수 있도록 지원합니다.</p>
+                        <p class="mt10">이러한 기능을 통해 학술 및 교육 활동의 접근성과 효율성이 향상되었으며, 간호대학 학부 및 대학원생들의 참여가 확대되어 노인의 건강과 복지 증진에 기여할 수 있었습니다.</p>
+                        <div class="goBtn flex">
+                            <a href="https://www.figma.com/proto/txvn014qbiKNIzXuO0YGBu/Untitled?page-id=0%3A1&node-id=1-5&viewport=716%2C257%2C0.13&scaling=min-zoom&starting-point-node-id=1%3A5" target="_blank"><i class="t1">프로토타입 바로가기</i><i class="xi xi-angle-right arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail_wrap">
+                <div class="box0">
+                    <img src="../images/detail_img3.png" class="bd">
+                    <ul class="listA flex mt50">
+                        <li><img src="../images/detail_img1.png" class="bd"></li>
+                        <li><img src="../images/detail_img2.png" class="bd"></li>
+                    </ul>
+                    <img src="../images/detail_img4.png" class="bd mt50">
+                    <ul class="listA flex mt50">
+                        <li><img src="../images/detail_img5.png" class="bd"></li>
+                        <li><img src="../images/detail_img6.png" class="bd"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//-->
+    <footer id="footer">
+        <div class="box0">
+            <div class="foot_head">
+                <div class="contact_head"><p>Let's work</p><p>together</p></div>
+                <a href="#" class="mail">kjbjys56@naver.com</a>
+            </div>
+            <div class="copyright_info">
+                <p class="copyright">©2025. All right reserved</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/index.js"></script>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        //부드러운스크롤
+        const lenis = new Lenis({
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+        
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+</body>
+</html>

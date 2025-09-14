@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+/* Web Font NotoSanskr */
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../font/noto-sans-kr-100.eot');
+  src: local('Noto Sans KR Thin'), local('NotoSansKR-Thin'),
+       url('../font/noto-sans-kr-100.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-100.woff2') format('woff2'),
+       url('../font/noto-sans-kr-100.woff') format('woff'),
+       url('../font/noto-sans-kr-100.ttf') format('truetype'),
+       url('../font/noto-sans-kr-100.svg#NotoSansKR') format('svg');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/noto-sans-kr-300.eot');
+  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'),
+       url('../font/noto-sans-kr-300.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-300.woff2') format('woff2'),
+       url('../font/noto-sans-kr-300.woff') format('woff'),
+       url('../font/noto-sans-kr-300.ttf') format('truetype'),
+       url('../font/noto-sans-kr-300.svg#NotoSansKR') format('svg');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/noto-sans-kr-regular.eot');
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+       url('../font/noto-sans-kr-regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-regular.woff2') format('woff2'),
+       url('../font/noto-sans-kr-regular.woff') format('woff'),
+       url('../font/noto-sans-kr-regular.ttf') format('truetype'),
+       url('../font/noto-sans-kr-regular.svg#NotoSansKR') format('svg');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/noto-sans-kr-500.eot');
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+       url('../font/noto-sans-kr-500.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-500.woff2') format('woff2'),
+       url('../font/noto-sans-kr-500.woff') format('woff'),
+       url('../font/noto-sans-kr-500.ttf') format('truetype'),
+       url('../font/noto-sans-kr-500.svg#NotoSansKR') format('svg');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/noto-sans-kr-700.eot');
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+       url('../font/noto-sans-kr-700.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-700.woff2') format('woff2'),
+       url('../font/noto-sans-kr-700.woff') format('woff'),
+       url('../font/noto-sans-kr-700.ttf') format('truetype'),
+       url('../font/noto-sans-kr-700.svg#NotoSansKR') format('svg');
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../font/noto-sans-kr-900.eot');
+  src: local('Noto Sans KR Black'), local('NotoSansKR-Black'),
+       url('../font/noto-sans-kr-900.eot?#iefix') format('embedded-opentype'),
+       url('../font/noto-sans-kr-900.woff2') format('woff2'),
+       url('../font/noto-sans-kr-900.woff') format('woff'),
+       url('../font/noto-sans-kr-900.ttf') format('truetype'),
+       url('../font/noto-sans-kr-900.svg#NotoSansKR') format('svg');
+}
+
+/* roboto */
+@font-face {
+  font-family: 'Rb';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/roboto-300.eot');
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../font/roboto-300.eot?#iefix') format('embedded-opentype'),
+       url('../font/roboto-300.woff2') format('woff2'),
+       url('../font/roboto-300.woff') format('woff'),
+       url('../font/roboto-300.ttf') format('truetype'),
+       url('../font/roboto-300.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Rb';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/roboto-regular.eot');
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../font/roboto-regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/roboto-regular.woff2') format('woff2'),
+       url('../font/roboto-regular.woff') format('woff'),
+       url('../font/roboto-regular.ttf') format('truetype'),
+       url('../font/roboto-regular.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Rb';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/roboto-500.eot');
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../font/roboto-500.eot?#iefix') format('embedded-opentype'),
+       url('../font/roboto-500.woff2') format('woff2'),
+       url('../font/roboto-500.woff') format('woff'),
+       url('../font/roboto-500.ttf') format('truetype'),
+       url('../font/roboto-500.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Rb';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/roboto-700.eot');
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../font/roboto-700.eot?#iefix') format('embedded-opentype'),
+       url('../font/roboto-700.woff2') format('woff2'),
+       url('../font/roboto-700.woff') format('woff'),
+       url('../font/roboto-700.ttf') format('truetype'),
+       url('../font/roboto-700.svg#Roboto') format('svg');
+}

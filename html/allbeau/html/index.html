@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes, target-densitydpi=device-dpi">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="포트폴리오">
+    <meta property="og:description" content="포트폴리오">
+    <title>YEONGSEON PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/font.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/inc.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../js/swiper/swiper.css">
+    <script type="text/javascript" src="../../../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../../js/inc.js"></script>
+    <script type="text/javascript" src="../../../js/swiper/swiper.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/gsap.min.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../../js/gsap/ScrollToPlugin.min.js"></script>
+</head>
+<body id="sub">
+    <header>
+        <div class="box0 gnb_wrap flex space vb" id="parallax_nav">
+            <h1 class="logo"><a href="../../index.html">Yeongseon</a></h1>
+            <ul class="gnb flex">
+                <li><a href="#section1" class="active">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Work</a></li>
+                <li><a href="#section6">Contact</a></li>  
+            </ul>
+            <a href="../../index.html" class="close_btn"><i class="xi xi-close-thin"></i></a>
+        </div>
+    </header>
+    <div class="contents">
+        <div class="doc">
+            <div class="top_wrap">
+                <div class="box0">
+                    <h1>ALLBEAUCARE HAIRHEAL</h1>
+                    <h3>올뷰케어 헤어힐, Web design + Publishing</h3>
+                    <img src="../images/temp1.png" class="ac bd">
+                    <div class="txt_box">
+                        <h2>제휴점 관리까지 한번에, 올뷰케어 헤어힐 웹사이트 개편 디자인</h2>
+                        <p>웹사이트 개편을 통해 지사 개념의 매장을 업종·지역별로 검색·관리할 수 있는 구조로 제작했습니다. 주요 특징인 매장 검색과 정보가 눈에 띄도록 레이아웃을 구성해 접근성을 강화했으며, 관리자 페이지에서 매장 정보·가격·직원 스케줄까지 간편하게 등록·관리할 수 있도록 사용성을 고려한 디자인을 구현했습니다.</p>
+                        <div class="goBtn">
+                            <a href="../../allbeau/html/allbeau/main.html" target="_blank"><i class="t1">사이트 바로가기</i><i class="xi xi-angle-right arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail_wrap">
+                <div class="box0">
+                    <div module-item="" class="single-video-loop ac videoA bd"><video loop="loop" muted="muted" autoplay="autoplay" playsinline="" src="../images/allbeau.mp4"></video></div>
+                    <ul class="listA">
+                        <li><img src="../images/detail_img1.png" class="bd"></li>
+                        <li><img src="../images/detail_img2.png" class="bd"></li>
+                    </ul>
+                    <img src="../images/detail_img3.png" class="mt50 bd">
+                    <ul class="listA mt50">
+                        <li><img src="../images/detail_img4.png" class="bd"></li>
+                        <li><img src="../images/detail_img5.png" class="bd"></li>
+                    </ul>
+                    <img src="../images/detail_img6.png" class="mt50 bd">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="box0">
+            <div class="foot_head">
+                <div class="contact_head"><p>Let's work</p><p>together</p></div>
+                <a href="mailto:kjbjys56@naver.com" class="mail">kjbjys56@naver.com</a>
+            </div>
+            <div class="copyright_info">
+                <p class="copyright">©2025. All right reserved</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/index.js"></script>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        //부드러운스크롤
+        const lenis = new Lenis({
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+        
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+</body>
+</html>

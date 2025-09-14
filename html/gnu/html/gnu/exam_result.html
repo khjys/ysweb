@@ -1,0 +1,612 @@
+<?
+$dp1 = "mypage";
+$dp2 = "eduList";
+//$dp3 = "writeA2";
+include "../inc/header.php";
+?>
+<!--본문 -->
+<style media="screen">
+	.join_finish .txt .red{ color:#e66f19; vertical-align:baseline;}
+</style>
+<div class="doc">
+	<div class="box1">
+        <div class="section page_database" id="<?=$id_database?>">
+            <div class="page_con">
+                <div class="datapage_tit">
+                    <p class="tit_s fl"><span class="tit_tt">설문지 타이틀</span> 통계 정보</p>
+                    <p class="tit_pp fr">참여인원 : <span class="num">000</span> 명</p>
+                    <p class="cl"></p>
+                </div>
+                <ul class="database_wrap">
+                    <li>
+                        <div class="inner">
+                            <div class="page_small_tit"><p class="tt t1">공통 사전수요 조사</p></div>
+                            <div class="page_small_tit"><p class="tt t2">1. 우리대학의 비교과 프로그램에 만족하고 계십니까? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">전혀 그렇지 않다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">별로 그렇지 않다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">보통이다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">약간 그렇다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">매우 그렇다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">2. [학습능력 향상] 관련 비교과프로그램 중 가장 중요하게 생각하거나 더 확대하였으면 하는 분야는? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">기초학력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">창의적사고 능력향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">학습동기 강화</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">학습 전략(노트필기, 시관관리, 보고서 작성 등)</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">인문학적 소양 함양(인문학, 교육학, 철학, 저자특강 등)</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">학습동아리 지원</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">외국어 어학 능력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">글쓰기 능력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">발표력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>                                
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">공동체 의식 역량 향상(토론 및 팀워크 또는 협동 능력)</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>     
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt"> IT관련 활용법</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>     
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">자기주도적 학습능력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>     
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">기타</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>     
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">3. [취ㆍ창업 지원] 관련 비교과프로그램 중 가장 중요하게 생각하거나 더 확대하였으면 하는 분야는? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">진로설정 및 진로탐색 검사 및 상담</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">면접전략 또는 면접캠프(취업을 위한 이미지/스피치 메이킹)</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">기업 및 공기업 취업대비 집중교육</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">입사지원서(자기소개서) 작성</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">NCS(국가직무능력표준) 또는 직무적성 검사 모의테스트</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">창조적 아이디어와 사업화 전략</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">취업 또는 창업동아리 지원</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">해외취업 설명회 및 박람회</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>                                
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">맞춤형 취업 트랙과정(금융기관/공공기관/공무원/글로벌기업 등) 운영</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>   
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">기타</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>   
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">4. [자기계발이나 상담지원] 관련 비교과프로그램 중 가장 중요하게 생각하거나 더 확대하였으면 하는 분야는? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">인문학적 소양 함양</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">봉사활동</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">리더십 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">독서클럽</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">컴퓨터자격증</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">의사소통 능력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">자기관리 능력 향상</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>                                
+                                 <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">정서조절 코칭</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li> 
+                                 <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">대인관계 능력 증진</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li> 
+                                 <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">인성 함양</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li> 
+                                 <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">기타</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li> 
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">4. [자기계발이나 상담지원] 관련 비교과프로그램 중 가장 중요하게 생각하거나 더 확대하였으면 하는 분야는? *</p></div>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="page_small_tit"><p class="tt t1">공통 만족도 조사</p></div>
+                            <div class="page_small_tit"><p class="tt t2">1. 본 프로그램에 전반적으로 만족 하십니까? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">매우 만족한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">만족한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">보통이다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">만족하지 않는다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">전혀 만족하지 않는다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">2. 본 프로그램의 주제와 내용이 일치했다고 생각 하십니까? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">매우 일치한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">약간 일치한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">보통이다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">일치하지 않는다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">매우불만족</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">3. 본 프로그램을 다른 이들에게 추천 하시겠습니까? *</p></div>
+                            <ul class="list">
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">매우 추천한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">추천한다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">보통이다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">추천하지 않는다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="con">
+                                    <strong class="tit"><i class="tt">절대 추천하지 않는다</i></strong>
+                                    <p class="bar"><span class="per" style="width:<?=$Orper?>%;"></span></p>
+                                    <p class="info pos">
+                                    <strong class="tt t1 en"><?=$Orper?>%</strong>
+                                    <span class="tt t2">(<?=number_format($Ornum)?>명/<?=number_format($TotalMem)?>명)</span>
+                                    </p>
+                                </div>
+                                </li>
+                            </ul>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                            <div class="page_small_tit"><p class="tt t2">4. 본 프로그램에 관한 의견이 있으시면 작성해 주십시오.</p></div>
+                            <div class="txt"><i class="xi"></i><p class="tt">주관식문제는 통계가 제공되지 않습니다.</p></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="board_btn_wrap">
+                    <button type="button" class="input_st s1 c1 re" onclick=""><i class="tt">목록으로</i></button>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<!--본문 end-->
+<? include "../inc/footer.php" ?>

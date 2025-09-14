@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* CSS Document */
+.di_wrap{font-size:0}
+.di_wrap > li{display:inline-block; *display:inline; zoom:1; vertical-align:top; font-size:16px; font-size:1rem;}
+.di_wrap > li > a,
+.di_wrap > li > .in{ display:block}
+
+.fl_wrap > li{ float:left}
+.fl_wrap > li > a:not(.va),
+.fl_wrap > li > .in{ display:block}
+.fl_wrap::after{ content:""; display:block; clear:both}
+
+.va_wrap{ display:block; text-align:center; white-space: nowrap}
+.va_wrap:before{ content:""; display:inline-block; *display:inline; zoom:1; vertical-align:middle; width:0; height:100%}
+.va{display:inline-block; *display:inline; zoom:1; vertical-align:middle; max-width:100%; height:auto; white-space:normal}
+.va_wrap img{vertical-align:middle; display:inline-block; *display:inline; zoom:1; max-width:100%; max-height:100%}
+
+.al{ text-align: left !important;}
+.ac{ text-align: center !important;}
+.ar{ text-align: right !important;}
+
+.vt{ vertical-align:top !important;}
+.vm{ vertical-align:middle !important;}
+.vb{ vertical-align:bottom !important;}
+
+.fl{ float:left !important;}
+.fr{ float:right !important;}
+.cl{ clear:both !important; display:block}
+.oh{ overflow:hidden !important;}
+
+.pr{ position:relative; z-index:inherit}
+.pa{ position:absolute; z-index:inherit}
+.pa100{ position:absolute; z-index:inherit; left:0; top:0; width:100%; height:100%}
+
+.di{display:inline-block; *display:inline; zoom:1;}
+.db{ display:block !important;}
+.dn{ display:none !important;}
+
+.flex{ display:flex}
+.flex.wrap{ flex-wrap:wrap}
+.flex.col{ flex-direction:column}
+.flex.col > *{ width:100%; box-sizing:border-box}
+.flex.space{ justify-content: space-between}
+.flex.vspace{ align-content:space-between}
+.flex.hc{ justify-content:center}
+.flex.hr{ justify-content:flex-end}
+.flex.vt{ align-content:flex-start; align-items:flex-start}
+.flex.vc{ align-content:center; align-items:center}
+.flex.vb{ align-content:flex-end; align-items:flex-end}
+.flex .mgL{ margin-left:auto}
+.flex .mgR{ margin-right:auto}
+.flex .mgT{ margin-top:auto}
+.flex .grow{ flex:1 1 auto; min-width:0}
+.flex .fix{ flex:0 0 auto}
+
+.resize{ display:block; height:0; padding-bottom:100%; position:relative}
+.resize svg{ position:absolute; width:100%; height:100%}
+.resize .re{ position:absolute; left:0; top:0; width:100%; height:100%}
+.resize.s1{ padding-bottom:56.25%}
+.resize.s2{ padding-bottom:75%}
+
+.cp{ cursor:pointer;}
+.cutstr {text-overflow : ellipsis;overflow : hidden;white-space : nowrap;}
+.row2{ line-height:1.25em; height:2.5em; overflow:hidden}
+
+.c_point{ color: #ffda00 !important; vertical-align:top}
+.c_red{ color: #af1f24 !important; vertical-align:top}
+.c_black{ color:#000 !important; vertical-align:top}
+.c_gray{ color:#999 !important; vertical-align:top}
+.c_white{ color:#fff !important; vertical-align:top}
+
+.bgfix{ background-position:center; background-repeat:no-repeat; background-size:cover}
+
+.b_icon{ display:block; text-align:center; font-size:5em; color:#ccc}
+
+/*board*/
+.board_st{ table-layout:fixed}
+.prod_view_con .board_st{ font-size:.875em}
+.pop .board_st{ border-top-width:1px}
+.board_st th,
+.board_st td{ padding:1em; border-bottom:1px solid #ddd}
+.board_st th{ color:#111}
+.board_st td{ color:#777}
+.board_st a{ color:#111}
+
+.board_st.list th{ border-top:1px solid #111; font-weight:500}
+.board_st.list td{ text-align:center; padding:1.25em 1em}
+.board_st.list td.w_tit{ text-align:left;}
+.board_st.list td.w_tit > a{ display:block; text-overflow:ellipsis; white-space:nowrap; overflow:hidden}
+
+.board_st.list.notice td{ background: #ffffe8; color:#111}
+.board_st.list.reply td{ background:#f9f9f9;}
+
+.board_st tr:hover td > a > i{ position:relative}
+.board_st tr:hover td > a > i:after{ content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:#333}
+
+.board_st.write{ border-top:1px solid #333}
+.board_st.write th,
+.board_st.write td{ height:3em; padding:.75em 2em}
+.board_st.write th{ text-align:left}
+
+.board_st.write.st1{ border-top:none; font-size:.813em}
+.board_st.write.st1 th,
+.board_st.write.st1 td{ height:2em; padding:.5em 1.5em; border:1px solid #ddd; text-align:left}
+
+.board_st.write caption{ text-align:left; font-size:1.375em; font-weight:500; color:#313232; padding-bottom:.5em}
+
+.board_view_top,
+.board_view_middle,
+.board_view_bottom{}
+.board_view_top{ }
+.board_view_top .tit{ padding:1.5em; font-weight:500; border-top:2px solid #666; text-align:center; border-bottom:1px dashed #aaa; font-size:1.25em}
+.board_view_top .info{border-bottom:1px solid #ddd; font-size:.875em}
+.board_view_top .info > li{ display:inline-block; *display:inline; zoom:1; padding:1em 2em; color:#666; position:relative}
+.board_view_top .info > li:before{ content:""; position:absolute; left:0; top:35%; width:1px; height:30%; background:#ccc}
+.board_view_top .info > li:first-child:before{ display:none}
+.board_view_top .file{ text-align:right; padding:1em 2em; font-size:.813em}
+.board_view_top .file > li{ }
+.board_view_top .file > li > a{ display:inline-block; word-break: break-all; word-wrap: break-word; padding:.2em}
+.board_view_top .file > li > a:hover{ text-decoration:underline}
+.board_view_top .file > li > a .xi{ margin:0 .2em 0 0; vertical-align: middle}
+.board_view_middle{ padding:2em 2em 5em 2em; border-bottom:1px solid #aaa}
+.board_view_bottom th .xi{ font-size:1em; margin-right:1em}
+.board_view_bottom a:hover{ text-decoration:underline}
+
+.no_con{ padding:5em 0 !important; color:#999 !important; border:1px solid #eee;  text-align:center}
+.no_con:before{ content:"\e9d8"; font-family:xeicon!important; display:block; margin:0 auto .2em auto; font-size:5em; color:#ddd;}
+.no_con.cart:before{ content:"\e9fb"}
+td .no_con{ border:none}
+
+.ess{ font-size:.75em; color:#af1f24; display:inline-block; width:1.5em; margin-top:-.5em}
+.xi.ess:before{content:"\e928"}
+
+.board_st.faq{ border-top:1px solid #ffda00}
+.board_st.faq .faq_tit{ font-family: Arial, Helvetica, sans-serif; font-weight:bold; font-size:2em; color:#333}
+.board_st.faq .faq_tit:after{ content:"."}
+.board_st.faq .faq_tit.c1{ color:#ffda00}
+.board_st.faq .BStit{ cursor:pointer}
+.board_st.faq .BStit .w_tit{ white-space: normal; overflow: visible; color:#666; font-weight:500; font-size:1.063em}
+.board_st.faq .BScon{ display:none}
+.board_st.faq .BScon:hover td{ background:#fff}
+.board_st.faq .on .BStit{ background:#f9f9f9}
+.board_st.faq .on .BStit .w_tit{ color:#222}
+.board_st.faq .on .BScon{ display: table-row}
+.board_st.faq .on .BScon .w_tit{ line-height:2}
+.board_st.faq .on .faq_tit{ color:#ffda00}
+.board_st.faq .BScon td{ padding-top:2em; padding-bottom:2em}
+.board_st.faq .board_more{ display:inline-block; color:#111; width:2.25em; line-height:2.25em !important; border:1px solid #ddd; border-radius:100%; text-align:center; transition:.3s}
+.board_st.faq .board_more .xi:before{content:"\e943"}
+.board_st.faq .on .board_more{ transform:rotate(180deg); background:#ffda00; color:#fff; border-color:transparent; color:#fff}
+
+/**/
+.board_st .toggleBtn{ cursor:pointer}
+.board_st .toggleCon{ display:none}
+.board_st .toggleCon td{ border-top:2px dashed #ddd; background:#fff !important; padding-top:2em; padding-bottom:4em}
+.board_st .toggleWrap.on .toggleBtn{ background:#f9f9f9}
+.board_st .toggleWrap.on .toggleCon{ display: table-row}
+.board_st .reply_wrap{ background:#fff; border-radius:.5em; margin-top:1em; padding:1.5em 2em; color:#111; border:1px solid #ddd}
+
+/**/
+.board_icon.xi{}
+.board_icon.xi:before{}
+.board_icon.new .xi:before{content:"\e9a9"; color:#af1f24}
+.board_icon.notice .xi:before{ content:"\ea5b"; color:#111}
+.board_icon.reply .xi:before{ content:"\e981"; color:#aaa}
+.board_icon.file .xi:before{ content:"\ea7f"; color:#999; font-size:.813em}
+.board_icon.sub .xi:before{content:"\e981"; color:#aaa}
+.board_icon.lock:before{ content:"\e964"; color:#aaa; font-size:.938em; padding-left:.25em}
+.board_icon.review .xi:before{ content:"\e9d7"; color:#003399}
+
+/**/
+.board_search_wrap{ font-size:.875em; margin-bottom:1.5em; display:flex; align-items:center}
+.board_search_wrap .left{}
+.board_search_wrap .right{ margin-left:auto; display:flex}
+.board_search_wrap .right .input_st[type=text]{ flex:1 1 auto; width:14em; margin:0 .125em}
+.board_search_wrap button{ padding:0 1.5em}
+.board_search_wrap .total .icon{ width:2.5em; line-height:2.5em; text-align:center; border-radius:50%; box-shadow:0 0 3px 1px rgba(0,0,0,.2); margin-right:.5em; color:#333}
+.board_search_wrap .total .icon:before{ font-size:1.25em; content:"\e9cf"; font-family:xeicon!important;}
+.board_search_wrap .total .t1{ color:#666}
+.board_search_wrap .total .t2{ color:#333; font-weight:700; font-size:1.25em; margin-left:.25em}
+.board_search_wrap .point{ font-size:1.25em; font-weight:700; height:3em; padding-right:2em}
+
+/**/
+.board_paging{ text-align:center; margin-top:5em; font-size:.813em}
+.board_paging button{ vertical-align:top; width:3em; height:3em; line-height:3em; border:1px solid #ddd; background:#fff; color:#333; font-family: Verdana, Arial, Helvetica, sans-serif}
+.board_paging button:hover,
+.board_paging button.on{ background:#444; color:#fff}
+.board_paging button.icon{ background:#f1f1f1;}
+.board_paging button.icon:hover{ background:#aaa}
+.board_paging .xi.first:before{ content:"\ea47"}
+.board_paging .xi.last:before{ content:"\ea48"}
+.board_paging .xi.prev:before{ content:"\e93c"}
+.board_paging .xi.next:before{ content:"\e93f"}
+
+/**/
+.board_gallery{ margin:-3em 0 0 -3em}
+.board_gallery > li{ width:50%}
+.board_gallery > li .in{ display:block; margin:3em 0 0 3em; position:relative; background:#fff; cursor:pointer; transition:.3s}
+.board_gallery > li .in .img_wrap{ overflow:hidden; position:relative}
+.board_gallery > li .in .img_wrap .img{ transition:.5s}
+.board_gallery > li .in .info_wrap{ padding:1em .5em; text-align:center; transition:.3s; text-align:left}
+.board_gallery > li .in .info_wrap .t1{ color:#111; font-size:1.25em; font-weight:500}
+.board_gallery > li .in .info_wrap .t2{ color:#999; font-size:.875em}
+.board_gallery > li .in .info_wrap .t3{ color:#666; font-size:.938em}
+.board_gallery > li .in:hover{ border-color:#aaa}
+.board_gallery > li .in:hover .img_wrap .img{ transform:scale(1.1)}
+.board_gallery.equip{ margin:-2em 0 0 -2em}
+.board_gallery.equip > li{ width:25%}
+.board_gallery.equip > li .in{ border:1px solid #ddd; margin:2em 0 0 2em}
+.board_gallery.equip > li .in:before{ content:""; position:absolute; width:100%; height:100%; z-index:-1; right:-.5em; bottom:-.5em; background:#000; opacity:.1}
+.board_gallery.equip > li .in .img_wrap{}
+.board_gallery.equip > li .in .info_wrap{ opacity:.8; border-top:1px solid #ddd; padding:1em; font-size:.875em}
+.board_gallery.equip > li .in:hover .info_wrap{ opacity:1}
+.board_gallery.equip > li .in:hover{ border-color:#ffda00}
+.board_gallery.equip > li .in:hover:before{ background:#ffda00; opacity:1}
+
+.layer_more_wrap{ position:relative}
+.layer_more{ position:absolute; left:0; top:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.5); opacity:0; visibility:hidden; transition:.3s}
+.layer_more .icon{ font-size:1.5em; width:2em; line-height:2em; text-align:center; border-radius:50%; background:#fff; color:#ffda00; transform:translateY(3em); transition:.3s}
+.layer_more.zoom .icon:before{ content:"\e97b"}
+.layer_more_wrap:hover .layer_more{ opacity:1; visibility:visible}
+.layer_more_wrap:hover .layer_more .icon{ transform:translateY(0)}
+
+/**/
+.board_btn_wrap{ margin-top:4em; text-align:center}
+.board_btn_wrap .list{ margin:-1em 0 0 -1em}
+.board_btn_wrap .list > li button{ margin:1em 0 0 1em}
+.pop .board_btn_wrap{ margin-top:2em; font-size:.938em}
+
+/**/
+.board_memo{ background:#555; color:#fff; padding:1em 2em; border-radius:.5em; overflow:hidden; box-shadow:1px 1px 1em rgba(0,0,0,.3); margin-bottom:1em; position:relative}
+.board_memo:before{ content:""; position:absolute; left:0; top:0; width:100%; height:100%; opacity:.2;
+background-color: #555; background-image: linear-gradient(30deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(150deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(30deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(150deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(60deg, #888 25%, transparent 25.5%, transparent 75%, #888 75%, #888), linear-gradient(60deg, #888 25%, transparent 25.5%, transparent 75%, #888 75%, #888);background-position: 0 0, 0 0, 15px 30px, 15px 30px, 0 0, 15px 30px; background-size: 30px 60px;}
+.board_memo .t1{ font-weight:500; font-size:.938em; position:relative}
+.board_memo .icon:before{ content:"\e9a7"; font-family:xeicon!important; margin-right:.25em; font-size:1.25em}
+.board_memo.c1{ background:#ffda00}
+
+/**/
+.label_wrap{display:inline-block; *display:inline; zoom:1;}
+.label_wrap label{ margin-left:1em}
+.label_wrap label:first-child{ margin-left:0}
+
+.label_wrap_fix > li{ width:33.33%}
+
+.board_st.write .label_st{ margin-right:2em}
+.board_st.write .label_st:last-child{ margin-right:0}
+
+.label_st{ display:inline-block; *display:inline; zoom:1; cursor:pointer}
+.label_st > *{ display:inline-block; *display:inline; zoom:1; vertical-align:middle; cursor:pointer;}
+.label_st:not(.cssbrowser) .xi:before{ font-family:xeicon!important; font-style:normal; padding-right:.125em}
+.label_st:not(.cssbrowser) input ~ span,
+.label_st:not(.cssbrowser) input ~ .xi:before{ color:#999}
+.label_st:not(.cssbrowser) input:checked ~ span,
+.label_st:not(.cssbrowser) input:checked ~ .xi:before{ color:#111}
+.label_st:not(.cssbrowser) input[type=checkbox] ~ .xi:before{ content:"\e98f"}
+.label_st:not(.cssbrowser) input[type=checkbox]:checked ~ .xi:before{ content:"\e92d"}
+.label_st:not(.cssbrowser) input[type=radio] ~ .xi:before{ content:"\e9c6"}
+.label_st:not(.cssbrowser) input[type=radio]:checked ~ .xi:before{ content:"\e9c7"}
+.label_st:not(.cssbrowser) input[type=checkbox],
+.label_st:not(.cssbrowser) input[type=radio]{ width:0; height:0; overflow:hidden;}
+
+.label_select{ position:relative; background:#fff; display:inline-block; *display:inline; zoom:1;}
+.label_select select{ background:none; padding-right:5em; appearance:none;-webkit-appearance:none; position:relative; z-index:1}
+.label_select select::-ms-expand{display:none;}
+.label_select:after{ content:"\e942"; font-family:xeicon!important; position:absolute; z-index:0; right:0; top:50%; margin-top:-.625em; width:3em; text-align:center}
+
+.input_st{display:inline-block; *display:inline; zoom:1; vertical-align:middle; border:1px solid #ddd; color:#666; padding:.5em 1em;  box-sizing:border-box; line-height:2em; height:3em; border-radius:.25em}
+input[type=text].input_st,
+input[type=password].input_st,
+input[type=tel].input_st{ }
+input[type=file].input_st{ background:none; border:none; padding:0}
+select.input_st{ padding-right:3em; transition:0}
+textarea.input_st{ padding:1em; width:100%; height:7em; line-height:1.2}
+textarea.input_st.h1{ height:12em}
+
+input[type=button].input_st,
+input[type=submit].input_st,
+button.input_st,
+a.input_st{ box-shadow:0 0 5px rgba(0,0,0,.3)}
+input[type=button].input_st:hover,
+input[type=submit].input_st:hover,
+button.input_st:hover,
+a.input_st:hover{ opacity:.7; transition:.3s}
+
+.input_st:hover,
+.input_st:focus{ border-color:#666; color:#111}
+.label_select .input_st:hover,
+.label_select .input_st:focus{ background:none}
+.input_st[disabled=disabled]{ cursor:default}
+.input_st[disabled=disabled]:not[button]:hover{ border-color:#ddd; color:#666}
+select.input_st:hover,
+select.input_st:focus{ color:#666}
+.input_st .xi{ font-size:1.5em;  margin:0 .125em; margin-top:-.125em}
+
+.input_st.s1{ line-height:2em; height:3.5em; padding:.5em 1.5em; font-size:1.063em; font-weight:500}
+.input_st.s2{ line-height:1.25em; height:2.5em; padding:.5em 1em; font-size:.938em}
+.input_st.s3{ line-height:1em; height:2em; padding:.25em .5em; font-size:.875em}
+
+.input_st.c1{ background:#111; border-color:#111; color:#ffda00}
+.input_st.c1.re{ background:#fff; color:#111}
+.input_st.c2{ background:#999; border-color:#999; color:#fff}
+.input_st.c2.re{ background:#f5f5f5; border-color:#ccc; color:#888}
+.input_st.c3{ background:#666; border-color:#666; color:#fff}
+.input_st.c3.re{ background:#fff; border-color:#ccc; color:#666}
+.input_st.c4{ background:#ffda00; border-color:#ffda00; color:#222}
+.input_st.c4.re{ background:#fff; border-color:#ffda00; color:#222}
+
+.input_st.w1{ width:16.75em; max-width:100%}
+.input_st.w2{ width:8em}
+.input_st.w3{ width:35em; max-width:100%}
+.input_st.w4{ width:20em}
+
+.w50{ width:50% !important}
+.w100{ width:100% !important}
+
+.input_sec{ display:inline-block; *display:inline; zoom:1; width:1.25em; text-align:center; vertical-align:middle}
+.input_sec.s1{ width:.5em}
+.input_sec.s2{ padding:0 1.5em 0 .5em}
+
+.input_st::-webkit-input-placeholder{ color:#aaa}
+.input_st::-moz-placeholder{ color:#aaa}
+.input_st:-moz-placeholder{ color:#aaa}
+.input_st:-ms-input-placeholder{ color:#aaa}
+
+.input_wrap{ margin:-.25em 0 0 -.25em; max-width:100%}
+.input_wrap > li{ flex-basis:auto}
+.input_wrap > li.br{ width:100%}
+.input_wrap > li.label{ width:20%}
+.input_wrap > li .in{ margin:.25em 0 0 .25em}
+
+.input_tt{ margin:.5em 0}
+
+.input_st.btn_calendar{ background:none; box-shadow:none; border:none ; padding:0; color:#999}
+.input_st.btn_calendar .xi:before{content:"\e9a4"; font-size:1.5em}
+.input_st.btn_calendar:hover{ color:#111; opacity:1}
+.input_st.btn_close{ box-shadow:none; padding:0; width:2.5em; line-height:2.5em; height:2.5em; border-radius:50%; color:#aaa}
+.input_st.btn_close .xi:before{content:"\e9af"}
+
+/**/
+.w_no{ width:4em}
+.w_tit{ width:auto}
+.w_name{ width:7em}
+.w_date{ width:7em}
+.w_hit{ width:8em}
+.w_check{ width:4em}
+.w_btn{ width:7em}
+.w_faq{ width:6em}
+.w_state{ width:8em}
+
+.w_form_tit{ width:12em}
+.w_auto{ width:auto}
+
+.fix .input_st{ width:90%; margin:.25em 0}
+
+.tt_state{ display:inline-block; border:1px solid #111; padding:.25em 1.5em; min-width:4em; border-radius:3em; font-weight:500; font-size:.875em}
+.tt_state.c1{ background:#fff; color:#111}
+.tt_state.c2{ background:#111; color:#fff}
+
+.tt_prod{ line-height:1.25em; height:2.5em; overflow:hidden; word-break:break-all; font-size:.938em; color:#313232}
+.tt_prod:hover{ text-decoration:underline}
+.tt_price{ font-family:tahoma,Arial,notokr,sans-serif}
+.tt_price > *{ vertical-align:middle !important}
+.tt_price .tn{ font-weight:bold; color:#313232; font-size:1.375em}
+.tt_price .tw{ color:#888; font-size:.938em; margin-left:.5em; display:inline-block; margin-top:.25em; letter-spacing:0}
+.tt_price .before{ font-size:.875em; text-decoration:line-through; color:#888}
+.tt_price.c1 > *{ color:#fff !important}
+
+.board_img_wrap{ margin-bottom:2em; text-align:center}
+
+.ui-widget{ font-size:.938em !important}
+
+.rental_list{ background:#f5f5f5; margin-top:1em; padding:.5em 1em}
+.rental_list > li{ border-top:1px solid #ddd; position:relative; margin:.5em 0; padding:.5em 0; padding-left:3em;}
+.rental_list > li:first-child{ border-top-color:transparent}
+.rental_list > li .list_close{ position:absolute; left:0; top:.5em; width:2em; line-height:2em; border:1px solid #ddd; text-align:center; color:#999}
+.rental_list > li .list_close:hover{ background:#333; color:#fff}
+.rental_list > li .list_close .xi{ font-size:1em}
+.rental_list > li .list_close .xi:before{content:"\e921"}
+.rental_list > li .list_tit{ padding:.375em 0; color:#333}
+
+.calendar_top{ text-align:center; padding:0 0 1.5em 0}
+.calendar_top .t1{ font-size:2.5em; font-weight:700; color:#111}
+.calendar_top .t2{ font-size:.875em; color:#999; margin-top:.5em; letter-spacing:0}
+.calendar_top .calendar_btn{ display:block; width:3em; line-height:3em; text-align:center; margin:0 1em}
+.calendar_top .calendar_btn .xi{ font-size:1.5em}
+.calendar_top .calendar_btn.prev .xi:before{ content:"\e93b"}
+.calendar_top .calendar_btn.next .xi:before{ content:"\e93e"}
+.calendar_top .btn_wrap{ text-align:right}
+
+.table_calendar thead th{ font-size:.875em; font-weight:700; color:#666; padding:1em}
+.table_calendar th,
+.table_calendar td{ border:1px solid #ddd; padding:.5em}
+.table_calendar td{ height:10em; padding-bottom:1em; vertical-align:top; text-align:left}
+.table_calendar td.today{ background:#ffda00}
+.table_calendar td .date{ display:block; margin-bottom:1em}
+.table_calendar td .date > i{ display:inline-block; width:2em; line-height:2em; font-weight:500; color:#999; border-radius:50%; font-size:.875em; text-align:left}
+.table_calendar td.today{ background:#f9f9f9}
+.table_calendar td.today .date > i{ background:#ffda00; color:#111; text-align:center}
+
+.room_info > li{ position:relative; box-shadow:0 0 5px 1px rgba(0,0,0,.2); border:1px solid transparent; border-radius:.25em; background:#fff; padding:.5em; padding-left:2.5em; font-size:.938em; margin-top:.5em; cursor:pointer}
+.room_info > li:first-child{ margin-top:0}
+.room_info > li .room_icon{ position:absolute; left:.75em; top:.75em; width:1.75em; line-height:1.75em; text-align:center; background:#111; color:#fff; font-weight:700; font-size:.875em; letter-spacing:0}
+.room_info > li.room_M .room_icon{ background:#ff5a3f}
+.room_info > li.room_E .room_icon{ background:#74a903}
+.room_info > li.room_C .room_icon{ background:#0094a6}
+.room_info > li.room_P .room_icon{ background:#3e4ff6}
+.room_info > li.room_Ed .room_icon{ background:#bd4c81}
+.room_info > li .t1{ color:#111; font-weight:500; font-size:1.125em}
+.room_info > li .t2{ color:#999; font-size:.938em; margin-left:.5em}
+.room_info > li .hover_info{ position:absolute; left:calc(100% + 2px); top:-2px; background:#111; color:#fff; padding:.5em 1em 1.5em 1em; border-radius:.25em; min-width:7em; opacity:0; visibility:hidden; transform:translateY(1em); transition:.3s}
+.room_info > li .hover_info:before{ content:"\e935"; font-family: xeicon!important; transform:rotate(90deg); position:absolute; left:-.75em; top:.5em; color:#111;}
+.room_info > li .hover_info .tt{ position:relative; margin-top:.5em; padding-left:1.5em; font-size:.938em; letter-spacing:0}
+.room_info > li .hover_info .xi{ position:absolute; left:0; top:.125em; line-height:1}
+.room_info > li .hover_info .name .xi:before{ content:"\ea2a"}
+.room_info > li .hover_info .time .xi:before{ content:"\eac2"}
+.room_info > li .hover_info .tool .xi:before{ content:"\e986"}
+.room_info > li .hover_info .room_name{ font-weight:700; font-size:2em; color:#ffda00}
+.room_info > li.room_M .hover_info .room_name{ color:#ff5a3f}
+.room_info > li.room_E .hover_info .room_name{ color:#74a903}
+.room_info > li.room_C .hover_info .room_name{ color:#0094a6}
+.room_info > li.room_P .hover_info .room_name{ color:#3e4ff6}
+.room_info > li.room_Ed .hover_info .room_name{ color:#bd4c81}
+.room_info > li .hover_info .room_name:after{ content:"LAB"; font-size:.5em; margin-left:.5em}
+.room_info > li.notice{ background:#222; margin-bottom:1em; color:#fff; line-height:1.2; cursor:default}
+.room_info > li.notice .xi{ position:absolute; left:.5em; top:.25em; color:#ffda00}
+.room_info > li.notice .xi:before{content:"\ea5b"}
+.room_info > li.notice .hover_info{ display:none; background:#ffda00; color:#111}
+.room_info > li.notice .hover_info:before{ color:#ffda00}
+.room_info > li.notice .hover_info .tt{ padding-left:0}
+.room_info > li:hover .hover_info{ opacity:1; visibility:visible; transform:translateY(0)}
+.room_info > li:hover{ border-color:#111}
+
+.table_st{ border-top:1px solid #111}
+.table_st th,
+.table_st td{ text-align: center; padding:.5em 1.5em; height:2em; border:1px solid rgba(0,0,0,.1); border-top:none}
+.table_st th{ background:#f5f5f5; color:#111; font-weight:500}
+.table_st .bg1{ background:#333; color:#fff; border-color:rgba(255,255,255,.1)}
+.table_st .bg2{ background:#f5f5f5; color:#666}
+.table_st .h1{ height:4em}
+.table_st .h2{ height:2em}
+.table_st .t1{ font-size:1.25em; font-weight:700}
+.table_st .t2{ font-size:.875em; font-size:300}
+
+.table_st.s1{ font-size:.875em}
+.table_st.s1 th,
+.table_st.s1 td{ padding:.5em; line-height:1.3}
+
+.tableX table{ width:100% !important}
+.tableX table th,
+.tableX table td{ box-sizing:border-box}
+
+.memo_st{ padding:1.5em; border:1px dashed #ddd; border-radius:.5em}
+.memo_st.s1{ font-size:.938em; padding:1em}
+.memo_st > li{ margin-top:.5em}
+.memo_st > li:first-child{ margin-top:0}
+.memo_st .t1{ color:#333; font-size:.938em}
+.memo_st .t2{ color:#777; font-size:.875em}
+.memo_st .t3{ color:#111; font-size:1.75em; font-weight:700}
+.memo_st .t4{ color:#333; font-weight:500}
+.memo_st .icon{ padding-left:1.625em; padding-top:.25em; position:relative}
+.memo_st .icon:before{ font-family:xeicon!important; position:absolute; left:0; top:0}
+.memo_st .icon.info:before{ content:"\e9a6"; color:#af1f24; font-size:1.375em}
+.memo_st .icon.check:before{ content:"\e929"; color:#aaa; font-size:1.375em}
+.memo_st .icon2{ position:relative; padding-left:3.25em; line-height:2.5em; margin:1.5em 1em}
+.memo_st .icon2 > .xi{ font-size:1em; width:2.5em; text-align:center; background:#111; color:#fff; border-radius:50%; position:absolute; left:0; top:0}
+.memo_st .icon2.c1 > .xi{ background:#ffda00; color:#111}
+.memo_st .icon2 > .xi:before{ font-size:1.25em}
+
+@media screen and (max-width:768px){
+	
+.board_search_wrap{ flex-wrap:wrap}
+.board_search_wrap .left{ width:100%; margin-top:1em; order:2}
+.board_search_wrap .left > button{ width:100%}
+.board_search_wrap .right{ width:100%}
+.board_search_wrap .right > form{ display:flex; width:100%}
+
+.board_st th,
+.board_st td{ padding:1em .5em !important}
+
+.tt_state{ padding:.25em 1em}
+
+.board_gallery > li{ width:100%}
+.board_gallery.equip > li{ width:50%}
+
+.w_no{ width:2em}
+.w_name{ width:4em}
+.w_state{ width:6.5em}
+.w_hit{ display:none}
+.w_form_tit{ width:7em}
+
+.input_st,
+.label_st{ font-size:1.25em}
+.input_tt{ display:block; margin-top:1em}
+
+.input_wrap > li{ flex:1 1 1%}
+.input_wrap > li.label{ flex:0 0 33.33%}
+.input_wrap > li.space{ flex:0 0 1.5em; text-align:center}
+.input_wrap > li .in .input_st,
+.input_wrap > li .in .label_select{ width:100%}
+.input_wrap > li .in .input_st{ padding:.5em}
+.input_wrap > li.space.email{ display:none}
+.input_wrap > li.space.email + li{ flex:0 0 100%}
+
+.room_info > li{ padding:.25em}
+.room_info > li .room_icon,
+.room_info > li.notice > .xi{ position: static; width:100%; padding:.5em; box-sizing:border-box; text-align:center}
+.room_info > li.notice > .xi{ padding:.375em}
+.room_info > li .t1,
+.room_info > li .t2{ display:none}
+.room_info > li .hover_info{ z-index:1; text-align:left; left:-2px; top:3.5em; min-width:6em; padding:.5em; padding-bottom:1em}
+.room_info > li .hover_info:before{ left:.5em; top:-1em; transform:rotate(180deg); font-size:1.25em}
+.room_info > li.notice > i:not(.xi){ display:none}
+.room_info > li.notice .hover_info{ display:block}
+}
+@media screen and (max-width:768px){
+}

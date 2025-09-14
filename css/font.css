@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('../font/Pretendard-Black.woff2') format('woff2'), url('../font/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('../font/Pretendard-ExtraBold.woff2') format('woff2'), url('../font/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('../font/Pretendard-Bold.woff2') format('woff2'), url('../font/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.woff2') format('woff2'), url('../font/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('../font/Pretendard-Medium.woff2') format('woff2'), url('../font/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('../font/Pretendard-Regular.woff2') format('woff2'), url('../font/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('../font/Pretendard-Light.woff2') format('woff2'), url('../font/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('../font/Pretendard-ExtraLight.woff2') format('woff2'), url('../font/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('../font/Pretendard-Thin.woff2') format('woff2'), url('../font/Pretendard-Thin.woff') format('woff');
+}
+
+
+
+
+
+
+/* Web Font Noto Sans KR */
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:100;
+	src:url('../font/NotoSanskr-Thin.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Thin.woff2') format('woff2'),
+		url('../font/NotoSanskr-Thin.woff') format('woff'),
+		url('../font/NotoSanskr-Thin.otf') format('opentype')
+}
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:200;
+	src:url('../font/NotoSanskr-Light.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Light.woff') format('woff'),
+		url('../font/NotoSanskr-Light.otf') format('opentype')
+}
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:300;
+	src:url('../font/NotoSanskr-DemiLight.eot'); src:local(※);
+	src:url('../font/NotoSanskr-DemiLight.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-DemiLight.woff') format('woff'),
+		url('../font/NotoSanskr-DemiLight.otf') format('opentype')
+}
+
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:400;
+	src:url('../font/NotoSanskr-Regular.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Regular.woff') format('woff'),
+		url('../font/NotoSanskr-Regular.otf') format('opentype')
+}
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:500;
+	src:url('../font/NotoSanskr-Medium.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Medium.woff') format('woff'),
+		url('../font/NotoSanskr-Medium.otf') format('opentype')
+}
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:700;
+	src:url('../font/NotoSanskr-Bold.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Bold.woff') format('woff'),
+		url('../font/NotoSanskr-Bold.otf') format('opentype')
+}
+@font-face {
+	font-family:'NotoSans';
+	font-style:normal;
+	font-weight:800;
+	src:url('../font/NotoSanskr-Black.eot'); src:local(※);
+	src:url('../font/NotoSanskr-Black.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSanskr-Black.woff') format('woff'),
+		url('../font/NotoSanskr-Black.otf') format('opentype')
+}
+
+
+/* Web Font Montserrat */
+@font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../font/montserrat-100.eot');
+	src: local('Montserrat Thin'), local('Montserrat-Thin'),
+		 url('../font/montserrat-100.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-100.woff2') format('woff2'),
+		 url('../font/montserrat-100.woff') format('woff'),
+		 url('../font/montserrat-100.ttf') format('truetype'),
+		 url('../font/montserrat-100.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../font/montserrat-200.eot');
+	src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+		 url('../font/montserrat-200.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-200.woff2') format('woff2'),
+		 url('../font/montserrat-200.woff') format('woff'),
+		 url('../font/montserrat-200.ttf') format('truetype'),
+		 url('../font/montserrat-200.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../font/montserrat-300.eot');
+	src: local('Montserrat Light'), local('Montserrat-Light'),
+		 url('../font/montserrat-300.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-300.woff2') format('woff2'),
+		 url('../font/montserrat-300.woff') format('woff'),
+		 url('../font/montserrat-300.ttf') format('truetype'),
+		 url('../font/montserrat-300.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/montserrat-regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		 url('../font/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-regular.woff2') format('woff2'),
+		 url('../font/montserrat-regular.woff') format('woff'),
+		 url('../font/montserrat-regular.ttf') format('truetype'),
+		 url('../font/montserrat-regular.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../font/montserrat-500.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+		 url('../font/montserrat-500.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-500.woff2') format('woff2'),
+		 url('../font/montserrat-500.woff') format('woff'),
+		 url('../font/montserrat-500.ttf') format('truetype'),
+		 url('../font/montserrat-500.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../font/montserrat-600.eot');
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+		 url('../font/montserrat-600.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-600.woff2') format('woff2'),
+		 url('../font/montserrat-600.woff') format('woff'),
+		 url('../font/montserrat-600.ttf') format('truetype'),
+		 url('../font/montserrat-600.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../font/montserrat-700.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		 url('../font/montserrat-700.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-700.woff2') format('woff2'),
+		 url('../font/montserrat-700.woff') format('woff'),
+		 url('../font/montserrat-700.ttf') format('truetype'),
+		 url('../font/montserrat-700.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../font/montserrat-800.eot');
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+		 url('../font/montserrat-800.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-800.woff2') format('woff2'),
+		 url('../font/montserrat-800.woff') format('woff'),
+		 url('../font/montserrat-800.ttf') format('truetype'),
+		 url('../font/montserrat-800.svg#Montserrat') format('svg');
+  }
+  @font-face {
+	font-family: 'Ms';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../font/montserrat-900.eot');
+	src: local('Montserrat Black'), local('Montserrat-Black'),
+		 url('../font/montserrat-900.eot?#iefix') format('embedded-opentype'),
+		 url('../font/montserrat-900.woff2') format('woff2'),
+		 url('../font/montserrat-900.woff') format('woff'),
+		 url('../font/montserrat-900.ttf') format('truetype'),
+		 url('../font/montserrat-900.svg#Montserrat') format('svg');
+  }

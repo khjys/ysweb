@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* .box1{max-width:95%; margin:0 auto;} */
+.PC{ display:none !important}
+.PHONE{ display:block !important}
+
+
+@media screen and (max-width:1280px){
+#header {width:100%;}
+.scroll #header{background:rgba(0,0,0,.1); z-index:1; height:5em;}
+.scroll #header .gnb_wrap .gnb,
+.scroll #header .gnb_wrap {top:0; transition:.3s;}
+#header .gnb_wrap .gnb > li{float:left; padding:0 1em;}
+#header .gnb_wrap .gnb{position:fixed; right:0; top:3em;}
+.box3{margin-left:5em;}
+#contents .slogan .tt1{display:inline-block;}
+.project_gall .gall > li{flex:0 0 50%;}
+#contents .slogan .t1{font-size:3.5em; margin-top:3em; transition:.5s;}
+
+}
+
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:900px) ,(max-height:900px){
+
+}
+
+@media screen and (max-width:768px) ,(max-height:768px){
+}
+
+@media screen and (max-width:768px) and (orientation:portrait){ /*세로모드*/
+#header .gnb_wrap{left:1em;}
+#header .gnb_wrap > h1{font-size:2em;}
+#header .gnb_wrap .gnb > li{padding:0 .3em;}
+#header .gnb_wrap .gnb > li > a{font-size:1.5em;}
+.project_gall .gall > li{flex:0 0 100%;}
+.box3{margin-left:2em;}
+}
+
+
+@media screen and (max-height:768px) and (orientation:landscape){ /*가로모드*/
+}
+
+@media screen and (max-width:480px) and (orientation:portrait){
+
+}
+@media screen and (max-height:480px) and (orientation:landscape){
+}
+@media screen and (max-width:380px), (max-height:380px){}

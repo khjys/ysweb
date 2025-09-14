@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>한국지역사회간호학회</title>
+		<meta name="description" content="">
+		<meta name="author" content="GOEUN">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<title>한국지역사회간호학회</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/inc.css" rel="stylesheet" type="text/css" />
+		<link href="css/font.css" rel="stylesheet" type="text/css" />
+		<link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+<!--
+		<link rel="stylesheet" href="http://edu.kcma.or.kr/css/old/main.css" />
+		<link rel="stylesheet" href="http://edu.kcma.or.kr/css/old/common.css" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+		<script src="/js/jquery.slides.min.js"></script>
+		<script src="/js/jqueryui.js"></script>
+		<script src="/js/blockui.js"></script>
+		<script src="/js/core.js"></script>
+		<script src="/js/common.js"></script>
+		<script src="/js/jquery.validate.js"></script>
+		<script src="/js/util.js"></script>
+		<script>
+		$(function(){
+			// 처음부터 서브메뉴인 sub 를 안보이게 합니다.
+			//$("#gnb .wrapper").hide();
+
+			// li 에 마우스 오버시
+			$("#gnb>ul>li").hover(function(){
+				$(this).children("div.wrapper").fadeIn(0);
+			}, function() {
+				// 모든 서브 메뉴에 대하여 숨김처리
+				$("#gnb div.wrapper").fadeOut(100);
+			});
+		});
+
+
+
+		</script>
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<style type="text/css" media="print">
+@page{  size:210mm 297mm; margin :0 -500px; }
+@media print{
+html{ margin:0 500px;}
+.no-print{ display:none !important}
+.print .wrapB { border:none !important}
+}
+
+</style>
+<!--	<link rel="stylesheet" href="http://edu.kcma.or.kr/css/old/print.css" />-->
+
+	<body>
+		<div id="content" class="print">
+        	<div class="wrapB">
+                <div class="wrapB_in">
+					<span class="num1">제 2020- 0000호</span>
+					<p class="tt">등록확인증</p>
+					<ul class="list1">
+						<li><span class="tx">성명 : 이름이 들어갑니다</span><span class="tx"></span></li>
+						<li><span class="tx">소속 : 소속이 들어갑니다</span><span class="tx"></span></li>
+					</ul>
+					<span class="cl"></span>
+					<p class="t1">위 사람은 <span class="ti">『교육과정명이 들어갑니다』</span>에 등록하였음을 증명합니다.</p>
+					<p class="t2">2020년  00월  00일</p>
+					<p class="name"><img src="../images/temp/print1.jpg" /></p>
+				</div>
+                </div>
+            <div class="icon_dv no-print">
+                <i class="xi xi-download down" onclick="location.href=''" ></i>
+                <i class="xi xi-print printbtn" onclick="window.print();"></i>
+                <i class="xi xi-close" onclick="window.close();'" ></i>
+            </div>
+        </div>
+    </div>
+        
+	</body>
+	<script type="text/javascript">
+//	$(function () {
+//		$("body").css("margin","0");
+//		 window.print();
+//	});
+	</script>
+
+</html>

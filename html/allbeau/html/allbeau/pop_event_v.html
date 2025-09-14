@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLBEAUCARE Therapy</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/animated.css" rel="stylesheet" type="text/css">
+    <link href="css/style_response.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/inc.js" type="text/javascript"></script>
+    <link href="js/slick/slick.css" rel="stylesheet" type="text/css" />
+    <script src="js/slick/slick.js" type="text/javascript"></script>
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js" type="text/javascript" defer="defer"></script>
+    <script src="js/placeholders.min.js" type="text/javascript" defer="defer"></script>
+    <script src="js/ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+</head>
+<body class="pop">
+    <div class="popWrap">
+        <div class="popIn" data-tit="이벤트">
+            <div class="popCon">			
+                <div class="board_view_top">
+                    <p class="tit">게시물의 제목이 입력됩니다.</p>
+                    <ul class="info">
+                        <li>작성자 : 관리자</li>
+                        <li>이벤트 기간 : 25.00.00 ~ 25.00.00</li>
+                        <li class="btn"><span class="state c2">공지</span><span class="state c1">진행중</span><span class="state c3">종료</span></li>
+                    </ul>
+                    <ul class="file">
+                        <li><a href="#"><i class="xi xi-file-text-o"></i>file.jpg</a></li>
+                        <li><a href="#"><i class="xi xi-file-text-o"></i>file.jpg</a></li>
+                    </ul>
+                    <p class="cl"></p>
+                </div>
+                <div class="board_view_middle">	
+                    <img src="images/inc/logo.png" alt="" style="display:block; margin:0 auto">
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.
+                </div>
+                <div class="board_view_bottom">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st view">
+                        <col class="w_form_tit">
+                        <col class="w_auto">
+                        <tr>
+                            <th>이전글 <i class="xi xi-angle-up-min"></i></th>
+                            <td><a href="#" class="tt_cut">이전글 게시물의 제목이 입력됩니다.</a></td>
+                        </tr>
+                        <tr>
+                            <th>다음글 <i class="xi xi-angle-down-min"></i></th>
+                            <td><a href="#" class="tt_cut">다음글 게시물의 제목이 입력됩니다.</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="board_btn_wrap ar">
+                    <button class="input_st s1 c2 re" onclick='parent.layerClose()'><i class="xi xi-close"></i><i class="tt">창닫기</i></button>
+                    <button class="input_st s1 c2 re" onclick="location.href='?mode=write'"><i class="tt">수정</i></button>
+                    <button class="input_st s1 c2 re" onclick=""><i class="tt">삭제</i></button>
+                    <button class="input_st s1 c2 re" onclick="history.back(-1); return false;"><i class="xi xi-library-books-o"></i><i class="tt">목록으로</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--본문 end-->
+    <script type="text/javascript">
+    // function gnbOn(){
+    // 	var obj = $(".gnb");
+    // 	obj.find("li.m_<?=$dp1?>").addClass("on");
+    // 	obj.find("li.m_<?=$dp1?> li.sm_<?=$dp2?>").addClass("on");
+    // 	obj.find("li.m_<?=$dp1?> li.sm_<?=$dp2?> li.ssm_<?=$dp3?>").addClass("on");
+    // }
+    // gnbOn();
+    // UI.Layout.bodyLoad();
+    // UI.Layout.bodyScroll();
+    UI.Motion.ieFixed(); 
+    </script>
+    <!--홈end -->
+    </body>
+</html>
+

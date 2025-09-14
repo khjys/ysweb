@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+@-ms-viewport{width:device-width}
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+html,body,div,p,span,a,img,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,form,input,select,textarea,button,label,fieldset,table,tr,td,th,tbody,thead,tfoot,caption,video,strong,em,i,b{margin:0;padding:0; word-break:keep-all; font-size:inherit}
+ul,ol,li{list-style:none}
+img { border:none; max-width:100%}
+em,i{ font-style:normal}
+table{ border-collapse:collapse; border-spacing:0}
+span, strong, a, em, i, b, input, button, textarea, select, label{ display:inline-block; font-size:inherit; font-family:inherit; color:inherit; vertical-align: middle}
+strong,h1,h2,h3,th{ font-weight:inherit}
+input[type=button], input[type=submit], button{ cursor:pointer}
+select{ max-width:100%}
+input[type=text], input[type=button], input[type=submit], input[type=tel], input[type=file], button, label, textarea{ appearance:none;-webkit-appearance:none; -webkit-border-radius:0}
+a, input, button, textarea, select, li{ -webkit-tap-highlight-color:transparent}
+a:focus, input:focus, button:focus, textarea:focus, select:focus{ outline:none}
+
+a,
+a:active,
+a:hover{text-decoration:none}
+
+html{overflow-x:hidden}
+body{font-family:notokr,sans-serif; font-weight:400; line-height:1.5; letter-spacing:-1px; word-spacing:2px; color:#111}
+body.hidden, html.hidden{ overflow-y:hidden}
+
+/*inc*/
+.wrap_idx{ overflow:hidden}
+.con_idx{ position:relative}
+.con_idx > .idx{ position:absolute; left:0; top:0; width:100%; visibility:hidden;filter:alpha(opacity=0);opacity:0;}
+.con_idx > .idx.on{ position:relative; visibility: visible; filter:alpha(opacity=100);opacity:1;}
+
+.fixWrap{position:relative;}
+.fixWrap .fixIn{ position:absolute; height:100%}
+.fixWrap .fixIn .fixObj{ position:absolute; transition:.3s}
+.fixWrap .fixIn .fixObj.scroll{ position:fixed}
+.fixWrap .fixIn .fixObj.bottom{ position:absolute; bottom:0}
+
+.layerWrap{ position:fixed; left:0; top:0; width:100%; height:100%; visibility:hidden; z-index:1000}
+.layerWrap .layerBg{position:absolute; z-index:9999; width:100%; height:100%; left:0; top:0; background:#000; opacity:0; transition:.3s}
+.layerWrap .layerFrame{ position:absolute; z-index:10000; left:0; top:0; margin-top:90%; width:100%; height:100%; transition:.3s}
+.layerWrap .layerImg{ position:absolute; z-index:10000; left:3%; top:3%; width:94%; height:94%; transition:.3s; overflow-y:auto}
+.layerWrap.on{ visibility:visible}
+.layerWrap.on .layerBg{ opacity:.5}
+.layerWrap.on .layerFrame{ margin-top:0}
+body.pop{background:transparent; display:flex; justify-content:center; align-items:center; width:100vw; height:100vh}
+body.pop .popWrap{ position:relative; display:flex; justify-content:center; align-items:center; max-width:96vw}
+body.pop .popWrap .popTit{position:absolute; left:0; top:0; width:100%; z-index:1}
+body.pop .popWrap .popTit .tit{ display:block; width:100%; height:4em; padding:0 1em; border-bottom:1px solid #ccc; background:#fff; box-sizing:border-box; border-radius:5px 5px 0 0; padding-right:5em; display:flex; align-items:center}
+body.pop .popWrap .popTit .tit .t1{ font-weight:700; font-size:1.25em; letter-spacing:-1px; color:#222; line-height:1.25em; max-height:2.5em; overflow:hidden}
+body.pop .popWrap .popTit .popClose{position:absolute; z-index:10000; right:1em; top:.5em; text-align:center; width:3em; line-height:3em; border-radius:100%; text-align:center; box-shadow:0 0 5px 1px rgba(0,0,0,.3); background:#fff}
+body.pop .popWrap .popTit .popClose .xi{ transition:.3s}
+body.pop .popWrap .popTit .popClose .xi:before{ content:"\e9af"}
+body.pop .popWrap .popTit .popClose:hover .xi{ transform:rotate(180deg)}
+body.pop .popWrap .popIn{ background:#fff; border-radius:5px; box-shadow:1px 1px 10px #333; position:relative; text-align:left; white-space:normal; width:100%; max-width:96vw; max-height:96vh}
+body.pop .popWrap .popIn .popCon{ padding:3em 1.25em}
+body.pop .popWrap .popTit + .popIn .popCon{ padding-top:5.5em}
+body.pop .popWrap .popIn .popCon.pd{ padding-top:5em; padding-bottom:1em}
+
+
+/**/
+.layer_wrap{ position:fixed; left:0; top:0; width:100%; height:100%; visibility:hidden; z-index:1000}
+.layer_wrap .layer_bg{position:absolute; z-index:9999; width:100%; height:100%; left:0; top:0; background:#000; opacity:0; transition:.5s}
+.layer_wrap .layer_frame{ position:absolute; z-index:10000; left:0; top:0; margin-top:90%; width:100%; height:100%; transition:.5s}
+
+.layer_wrap.on{ visibility:visible}
+.layer_wrap.on .layer_bg{ opacity:.5}
+.layer_wrap.on .layer_frame{ margin-top:0}
+
+.layer_wrap_img{ position:fixed; z-index:1001; width:100%; height:100%; left:0; top:0; cursor:pointer; background:rgba(0,0,0,.7)}
+.layer_wrap_img img{ max-height:60% !important}
+
+
+
+
+
+
+/**/
+.strong{ vertical-align:top; font-weight:700}
+
+.pd0{ padding:0 !important;}
+.pt0{ padding-top:0 !important;}
+.pb0{ padding-bottom:0 !important;}
+
+.mt0{ margin-top:0 !important;}
+.mt3{ margin-top:3px !important;}
+.mt5{ margin-top:5px !important;}
+.mt10{ margin-top:10px !important;}
+.mt15{ margin-top:15px !important;}
+.mt20{ margin-top:20px !important;}
+.mt25{ margin-top:25px !important;}
+.mt30{ margin-top:30px !important;}
+.mt40{ margin-top:40px !important;}
+.mt50{ margin-top:50px !important;}
+
+.mb0{ margin-bottom:0 !important;}
+.mb5{ margin-bottom:5px !important;}
+.mb10{ margin-bottom:10px !important;}
+.mb15{ margin-bottom:15px !important;}
+.mb20{ margin-bottom:20px !important;}
+.mb25{ margin-bottom:25px !important;}
+.mb30{ margin-bottom:30px !important;}
+.mb40{ margin-bottom:40px !important;}
+.mb50{ margin-bottom:50px !important;}
+
+.ml0{ margin-left:0 !important;}
+.ml5{ margin-left:5px !important;}
+.ml10{ margin-left:10px !important;}
+.ml15{ margin-left:15px !important;}
+.ml20{ margin-left:20px !important;}
+.ml25{ margin-left:25px !important;}
+.ml30{ margin-left:30px !important;}
+.ml40{ margin-left:40px !important;}
+.ml50{ margin-left:50px !important;}
+
+.mr0{ margin-right:0 !important;}
+.mr5{ margin-right:5px !important;}
+.mr10{ margin-right:10px !important;}
+.mr15{ margin-right:15px !important;}
+.mr20{ margin-right:20px !important;}
+.mr25{ margin-right:25px !important;}
+.mr30{ margin-right:30px !important;}
+.mr40{ margin-right:40px !important;}
+.mr50{ margin-right:50px !important;}
+
+.fwB{ font-weight:700}
+.fwM{ font-weight:500}
+.fwR{ font-weight:300}
+
+.fs32{ font-size:2em !important}
+.fs15{ font-size:.938em !important}
+.fs14{ font-size:.875em !important}
+.fs13{ font-size:.813em !important}
+.fs12{ font-size:.75em !important}
+
+.sec2 > li{ width:50%}
+.sec3 > li{ width:33.33%}
+.sec4 > li{ width:25%}
+.sec5 > li{ width:20%}
+.sec6 > li{ width:16.66%}
+.sec7 > li{ width:14.28%}
+.sec8 > li{ width:12.5%}
+.sec9 > li{ width:11.11%}
+.sec10 > li{ width:10%}
+
+/**/
+.scrollst{ overflow:hidden}
+
+.loading_st{position:fixed; left:0; top:0; width:100%; height:100%; z-index:1001; text-align:center; transition:.3s}
+.loading_st .xi:before{ content:"\ec34"; font-size:3em; color:#00a3dd}
+.load .loading_st{ display:none}
+
+.swiper-wrapper.center{ justify-content:center}
+.slide_wrap{ position:relative}
+.slide_wrap .swiper-pagination{ bottom:1em}
+.swiper-pagination.out{ bottom:-2em}
+.swiper-pagination.st1{ bottom:1em}
+.swiper-pagination.st1 span{ position:relative; width:1.5em; height:.25em; border-radius:0; background:#333; opacity:.5; transition:.3s}
+.swiper-pagination.st1 span.swiper-pagination-bullet-active{ opacity:1; width:3em}
+
+
+
+.fadeAni{ animation-name: fadeAni; animation-duration: 2s; animation-iteration-count: infinite}
+@keyframes fadeAni{
+30% {opacity:0}
+50% {opacity:1}
+}
+.fadeAni:hover{animation-name: none}
+
+.scrollAni{ opacity:0}
+.scrollAni.on{ opacity:1; transition:1s; transition-timing-function:ease-in-out;}
+.scrollAni.fade{ opacity:0}
+.scrollAni.fade.on{ opacity:1}
+.scrollAni.moveL{ transform:translateX(-10rem); }
+.scrollAni.moveL.on{ transform:translateX(0); }
+.scrollAni.moveR{ transform:translateX(10rem)}
+.scrollAni.moveR.on{ transform:translateX(0)}
+.scrollAni.moveT{ transform:translateY(6rem)}
+.scrollAni.moveT.on{ transform:translateY(0)}
+.scrollAni.moveB{ transform:translateY(-6rem)}
+.scrollAni.moveB.on{ transform:translateY(0)}
+.scrollAni.width{ width:0}
+.scrollAni.width.on{ width:100%}
+.scrollAni.scale.on{ transform:scale(1)}
+.scrollAni.scale{ transform:scale(0)}
+.scrollAni.scale.on{ transform:scale(1)}
+.scrollAni.scaleX{ transform:scaleX(0); transform-origin:left top}
+.scrollAni.scaleX.on{ transform:scaleX(1)}
+.scrollAni.scaleX.right{transform-origin:right top}
+.scrollAni.scaleY{ transform:scaleY(0); transform-origin:left top}
+.scrollAni.scaleY.on{ transform:scaleY(1)}
+.scrollAni.delay.on:nth-child(1){ transition-delay:.2s}
+.scrollAni.delay.on:nth-child(2){ transition-delay:.4s}
+.scrollAni.delay.on:nth-child(3){ transition-delay:.6s}
+.scrollAni.delay.on:nth-child(4){ transition-delay:.8s}
+.scrollAni.delay.on:nth-child(5){ transition-delay:1s}
+.scrollAni.delay.on:nth-child(6){ transition-delay:1.2s}
+.scrollAni.delay.on:nth-child(7){ transition-delay:1.4s}
+.scrollAni.delay.on:nth-child(8){ transition-delay:1.6s}
+.scrollAni.delay.on:nth-child(9){ transition-delay:1.8s}
+.scrollAni.delay.on:nth-child(10){ transition-delay:2s}

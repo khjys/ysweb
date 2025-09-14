@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한컴 말랑말랑 행복케어</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_response.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/inc.js" type="text/javascript"></script>
+    <link href="css/slick.css" rel="stylesheet" type="text/css" />
+    <script src="js/slick.js" type="text/javascript"></script>
+    <script src="js/placeholders.min.js" type="text/javascript" defer="defer"></script>
+    <link rel="stylesheet" type="text/css" href="js/animated/animated.css" />
+    <script type="text/javascript" src="js/animated/jquery.waypoints.min.js"></script>
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script src="js/scrollbar/jquery.mCustomScrollbar.js" type="text/javascript" defer="defer"></script>
+</head>
+<body class="sub">
+    <!-- header :: s :: -->
+    <div id="header">
+        <div class="box1 pr">
+            <h1 class="logo"><a href="index.html" class="vm_wrap"><img src="images/inc/logo.png" /></a></h1>
+            <div class="search_wrap PC">
+                <div class="inp_wrap vm_wrap">
+                    <input type="text" msg="검색어를" name="allKeyword" class="search_inp" placeholder="검색어를 입력하세요.">
+                    <button type="submit" class="search_btn"><i class="xi xi-search"></i></button>
+                </div>
+            </div>
+            <div class="search_wrap PHONE">
+                <div class="inp_wrap vm_wrap">
+                    <button type="button" class="search_btn"><i class="xi xi-search"></i></button>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="vm_wrap mobileBtn PHONE" id="sitemapBtn"><span class="vm_tt"><i class="ham"></i></span></a><!--모바일nav-->
+        </div>
+        <div class="gnb_wrap">
+            <div class="box1">
+                <!--gnb start-->
+                <ul class="gnb di_wrap">
+                    <li>
+                        <a href="sub1.html" class="dp1 vm_wrap"><span class="vm_tt">행복케어</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                                <p class="gnb_tit">hancom smart senior daycare center</p>
+                                <p class="gnb_info">한컴 말랑말랑 행복케어는 행복한 시니어 라이프를 위한 선택, 행복한 시설을 설계합니다.</p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="sub1.html" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon1.png" /></i>행복케어란</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon14.png" /></i>미션비전</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon2.png" /></i>프로그램 운영 및 활동</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon4.png" /></i>이용시설 및 요금안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub2.html" class="dp1 vm_wrap"><span class="vm_tt">창업안내</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                            <p class="gnb_tit">hancom care</p>
+                            <p class="gnb_info">한컴 말랑말랑 행복케어는 국내 최초 스마트데이케어로 체계적인 치매 예방 교육과정과 초보창업도 문제없는 운영지원 시스템을 갖추고 있습니다. </p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="sub2.html" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon13.png" /></i>창업안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon15.png" /></i>사업설명회</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon5.png" /></i>상담신청</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon6.png" /></i>개설절차</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon7.png" /></i>자주하는질문</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon8.png" /></i>센터검색</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub3.html" class="dp1 vm_wrap"><span class="vm_tt">행복케어소식</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                                <p class="gnb_tit">hancom news</p>
+                                <p class="gnb_info">한컴 말랑말랑 행복케어의 새로운 소식들을 확인하실 수 있습니다.</p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="sub3.html" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon9.png" /></i>공지사항</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon10.png" /></i>보도자료</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon11.png" /></i>홍보자료실</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon12.png" /></i></i>갤러리</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon16.png" /></i>인재채용</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sub4.html" class="dp1 vm_wrap"><span class="vm_tt">청리움</span></a>
+                    </li>
+                    <li>
+                        <a href="sub5.html" class="dp1 vm_wrap"><span class="vm_tt">한컴그룹</span></a>
+                    </li>
+                </ul>
+                <!--gnb end-->
+                <ul class="link_wrap di_wrap">
+                    <li class="go_btn1"><a href="#" target="_blank" class="vm_wrap"><i class="xi xi-external-link"></i><i class="vm_tt">행복케어몰</i></a></li>
+                    <li class="go_btn2"><a href="#" class="vm_wrap"><i class="xi xi-comment-o"></i><i class="vm_tt">상담신청</i></a></li>
+                </ul>
+            </div>
+        </div><!--gnb_wrap end-->
+        <span class="gnbBg"></span>
+        <div class="siteMap_wrap">
+            <div class="box1">
+                <div class="inner">
+                    <p class="tt vm_wrap"><img src="images/inc/logo.png" /></p>
+                    <a href="javascript:void(0);" class="vm_wrap close_btn" id="sitemapBtn"><span class="vm_tt"><i class="xi xi-close"></i></span></a>
+                    <ul class="gnb di_wrap">
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">행복케어</span></a>
+                            <div class="gnb_draw">
+                                <div class="draw_title">
+                                    <p class="gnb_tit">hancom smart senior daycare center</p>
+                                    <p class="gnb_info">한컴 말랑말랑 행복케어는 행복한 시니어 라이프를 위한 선택, 행복한 시설을 설계합니다.</p>
+                                </div>
+                                <ul class="dp2 di_wrap">
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon1.png" /></i>행복케어란</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon14.png" /></i>미션비전</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon2.png" /></i>프로그램 운영 및 활동</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon4.png" /></i>이용시설 및 요금안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                        <a href="#" class="dp1 vm_wrap"><span class="vm_tt">창업안내</span></a>
+                        <div class="gnb_draw">
+                            <div class="draw_title">
+                            <p class="gnb_tit">hancom care</p>
+                            <p class="gnb_info">한컴 말랑말랑 행복케어는 국내 최초 스마트데이케어로 체계적인 치매 예방 교육과정과 초보창업도 문제없는 운영지원 시스템을 갖추고 있습니다. </p>
+                            </div>
+                            <ul class="dp2 di_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon13.png" /></i>창업안내</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon15.png" /></i>사업설명회</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon5.png" /></i>상담신청</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon6.png" /></i>개설절차</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon7.png" /></i>자주하는질문</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon8.png" /></i>센터검색</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">행복케어소식</span></a>
+                            <div class="gnb_draw">
+                                <div class="draw_title">
+                                    <p class="gnb_tit">hancom news</p>
+                                    <p class="gnb_info">한컴 말랑말랑 행복케어의 새로운 소식들을 확인하실 수 있습니다.</p>
+                                </div>
+                                <ul class="dp2 di_wrap">
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon9.png" /></i>공지사항</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon10.png" /></i>보도자료</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon11.png" /></i>홍보자료실</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon12.png" /></i></i>갤러리</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                    <li><a href="#" class="vm_wrap"><span class="vm_tt"><i class="menu_icon"><img src="images/inc/menu_icon16.png" /></i>인재채용</span><i class="vm_tt xi xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">청리움</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">한컴그룹</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sns_right_dv">
+        <div class="open_btn">
+            <span class="circleAni c1"></span>
+            <span class="circleAni c2"></span>
+            <span class="circleAni c3"></span>
+            <a class="in_sns" href="in_sns">상담문의</a>
+        </div>
+    </div>
+    <!-- header :: e :: -->
+    <!-- contents :: s :: -->
+    <div id="contents">
+        <div class="page_con">
+            <div class="box1">
+                <div class="doc">
+                    <div class="conSection" data-no="0">
+                        <div class="page_cont_top bg1 st3">
+                            <p class="line"></p>
+                            <div class="con_wrap page_txt">
+                            <dl class="inner tt_wrap">
+                                    <dt class="tit1 ani aniT delay1"><strong>한컴 말랑말랑 행복케어</strong> 창업 안내</dt>	
+                                    <dd class="ani aniT delay2">국내 최초의 스마트 데이케어 센터, 한컴 말랑말랑 행복케어 한컴위드의 뛰어난 기술력이 여러분의 행복한 인생을 약속합니다. 한컴 말랑말랑행복케어 가맹은 ‘가맹 상담 사업 설명회’ 참석을 시작으로 진행됩니다. 
+                                        ICT 기반 다양한 플랫폼과 체계적인 운영 관리 지원 시스템으로 여러분의 스마트한 100세 인생의길을 함께하겠습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conSection" data-no="1">
+                        <div class="pageMemo_wrap icon page_sec1">
+                            <div class="memo_box">
+                                <ul class="list1">
+                                    <li class="t1">말랑말랑 행복케어 상담신청</li>
+                                    <li class="t2">한컴 말랑말랑 행복케어 가맹 문의를 원하시는 분들은 아래 정보에 연락처를 남겨주시면 연락드리겠습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_sec2">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write inqury_st">
+                            <colgroup>
+                                <col class="w_form_tit">
+                                <col class="w_85">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tt">이름 <i class="xi ess"></i></th>
+                                    <td class="td"><input type="text" name="u_name" class="input_st inp_w7" msg="이름을"></td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">상담문의 유형 <i class="xi ess"></i></th>
+                                    <td class="td">
+                                        <select name="" title="" class="input_st inp_w7">
+                                            <option value="상담유형 선택">상담 유형을 선택해주세요</option>
+                                            <option value="주간보호센터">주간보호센터</option>
+                                            <option value="방문요양">방문요양</option>
+                                            <option value="자격증">자격증</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">희망 개설 지역 <i class="xi ess"></i></th>
+                                    <td class="td"><input type="text" name="u_name" class="input_st inp_w7" msg="희망개설지역"></td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">연락처 <i class="xi ess"></i></th>
+                                    <td class="td">
+                                        <select name="hp[]" title="" class="input_st w2"  maxlength="3">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        -
+                                        <input name="hp[]" title="" class="input_st w2" type="text" >
+                                        -
+                                        <input name="hp[]" title="" class="input_st w2" type="text" >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">팩스번호</th>
+                                    <td class="td">
+                                        <input name="hp[]" title="" class="input_st w2" type="text" >
+                                        -
+                                        <input name="hp[]" title="" class="input_st w2" type="text" >
+                                        -
+                                        <input name="hp[]" title="" class="input_st w2" type="text" >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">이메일 <i class="xi ess"></i></th>
+                                    <td class="td">
+                                        <input name="email[]" title="주소입력" class="input_st inp_w4" type="text" msg="이메일을"> @
+                                        <input name="email[]" title="주소입력" class="input_st inp_w4" type="text" msg="이메일을">
+                                        <select name="domain" class="input_st w1" onchange="input_email(this.value);">
+                                            <option value="">직접입력</option>
+                                            <option value="hanmail.net">한메일</option>
+                                            <option value="naver.com">네이버</option>
+                                            <option value="nate.com">네이트</option>
+                                            <option value="Korea.com">Korea</option>
+                                            <option value="hanafos.com">하나포스</option>
+                                            <option value="gmail.com">지메일</option>
+                                            <option value="msn.com">MSN</option>
+                                            <option value="netian.com">네띠앙</option>
+                                            <option value="yahoo.co.kr">야후</option>
+                                            <option value="empas.com">엠파스</option>
+                                            <option value="chol.com">천리안</option>
+                                            <option value="hotmail.com">핫메일</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">제목 <i class="xi ess"></i></th>
+                                    <td class="td"><input type="text" class="input_st inp_w100" name="subject2" msg="문의사항을"></td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">문의내용 <i class="xi ess"></i></th>
+                                    <td>
+                                        <textarea class="input_st textarea_w1" name="content"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tt">첨부파일</th>
+                                    <td class="td">
+                                    <input type="file" name="file[]" class="w3"><br>
+                                    <input type="file" name="file[]" class="w3 mt10">
+                                    <span class="file_txt">※ 첨부하실 파일의 크기는 3M 미만으로 하여 주시기 바랍니다.</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="member_agree page_sec">
+                        <div class="page_basic_tit"><p class="t1">개인정보 수집 및 이용 동의</p></div>
+                        <div class="agree H">
+                            <h1>개인정보처리방침</h1>
+                                <p>한컴 말랑말랑 행복케어는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법, 통신비밀보호법, 전기통신사업법 등 정보통신서비스 제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익보호에 최선을 다하고 있습니다. 본 개인정보취급방침은 한컴 말랑말랑 행복케어가 제공하는 www.hancomcare.com(이하 ‘회사’) 이용에 적용되며 다음과 같은 내용을 담고 있습니다. <br>
+                                </p>
+                                <p><strong>1. 수집하는 개인정보의 항목 및 수집방법</strong></p>
+                                <p>가. 수집하는 개인정보의 항목</p>
+                                <p>첫째, 한컴 말랑말랑 행복케어는 회원가입 및 각종 서비스의 제공을 위해 최초 회원가입 당시 아래와 같은 최소한의 개인정보를 필수항목으로 수집하고 있습니다.</p>
+                                <p>&lt;회원가입&gt;<br>
+                                · 필수항목 : ID, 비밀번호, 이름, 생년월일, 성별, 이메일 주소, 가입인증 휴대폰번호</p>
+                                <p>둘째, 서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.<br>
+                                · IP Address, 쿠키, 방문 일시, 서비스 이용 기록</p>
+                                <p>셋째, 한컴 말랑말랑 행복케어를 이용한 부가 서비스 및 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 개인정보 추가 수집에 대해 동의를 받는 경우 추가 정보들이 수집될 수 있습니다.</p>
+                                <p>나. 개인정보 수집방법</p>
+                                <p>한컴 말랑말랑 행복케어는 다음과 같은 방법으로 개인정보를 수집합니다.<br>
+                                · 서비스, 서면양식, 팩스, 전화, 게시판, 이메일 등<br>
+                                · 협력사로부터의 제공<br>
+                                · 생성정보 수집 툴을 통한 수집<br>
+                                </p>
+                                <p><strong>2. 개인정보의 수집 및 이용목적</strong></p>
+                                <p>가. 서비스 제공에 관한 계약 이행</p>
+                                <p>컨텐츠 제공</p>
+                                <p>나. 회원관리</p>
+                                <p>회원제 서비스 제공, 개인 식별, 한컴 말랑말랑 행복케어의 이용약관 위반 회원에 대한 이용제한 조치, 서비스의 원활한 운영에 지장을 미치는 행위 및 서비스 부정이용 행위 제재, 가입의사 확인, 가입 및 가입횟수 제한, 14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인, 추후 법정 대리인 본인확인, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달, 회원탈퇴 의사의 확인</p>
+                                <p>다. 신규 서비스 개발 및 마케팅·광고에의 활용</p>
+                                <p>신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, 이벤트 정보 및 참여기회 제공, 광고성 정보 제공, 접속빈도 파악, 회원의 서비스이용에 대한 통계<br>
+                                </p>
+                                <p><strong>3. 개인정보의 공유 및 제공</strong></p>
+                                <p>한컴 말랑말랑 행복케어는 이용자들의 개인정보를 “2. 개인정보의 수집 및 이용목적”에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의 개인정보를 외부에 공개하지 않습니다. 다만, 아래의 경우에는 예외로 합니다. ‘한컴 말랑말랑 행복케어 ID로 로그인’ 기능을 한컴 말랑말랑 행복케어 외의 웹사이트에서 사용하시는 회원의 경우, ‘한컴 말랑말랑 행복케어 ID로 로그인 운영정책’이 적용됨을 알려 드립니다. </p>
+                                <p>가. 이용자가 사전에 동의 한 경우</p>
+                                <p>· 한컴 말랑말랑 행복케어 연계 서비스</p>
+                                <p>나. 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우<br>
+                                </p>
+                                <p><strong>4. 개인정보의 보유 및 이용기간</strong></p>
+                                <p>이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 보존 이유를 위해 명시한 기간 동안 보존합니다. </p>
+                                <p>가. 한컴 말랑말랑 행복케어 내부 방침에 의한 정보보유 사유</p>
+                                <p>· 부정이용기록(부정가입, 징계기록 등의 비정상적 서비스 이용기록)<br>
+                                보존 항목 : 가입인증 휴대폰 번호, 14세 미만 회원의 경우 법정 대리인 ID<br>
+                                보존 이유 : 부정 가입 및 이용 방지<br>
+                                보존 기간 : 6개월</p>
+                                <p>※ ‘부정이용기록’이란 부정 가입 및 운영정책에 위배되는 게시글 작성 등으로 인해 한컴 말랑말랑 행복케어로부터 이용제한 등을 당한 기록으로 관련 법령 및 이용약관을 위반하거나 다른 회원 등 타인의 권리나 이익을 침해한 기록을 의미합니다.</p>
+                                <p>나. 관련 법령에 의한 정보보유 사유</p>
+                                <p>관련 법령의 규정에 의하여 보존할 필요가 있는 경우 한컴 말랑말랑 행복케어는 관련 법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 한컴 말랑말랑 행복케어는 보관하는 정보를 그 보관의 목적으로만 이용하며, 보존기간은 아래와 같습니다.</p>
+                                <p>· 웹사이트 방문기록<br>
+                                보존 이유 : 통신비밀보호법<br>
+                                보존 기간 : 3개월<br>
+                                </p>
+                                <p><strong>5. 개인정보 파기절차 및 방법</strong></p>
+                                <p>이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다.한컴 말랑말랑 행복케어의 개인정보 파기절차 및 방법은 다음과 같습니다.</p>
+                                <p>가. 파기절차</p>
+                                <p>· 이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.<br>
+                                · 동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.</p>
+                                <p>나. 파기방법</p>
+                                <p>· 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br>
+                                · 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br>
+                                </p>
+                                <p><strong>6. 이용자 및 법정 대리인의 권리와 그 행사방법</strong></p>
+                                <p>· 이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며, 한컴 말랑말랑 행복케어의 개인정보의 처리에 동의하지 않는 경우 동의를 거부하거나 가입해지(회원탈퇴)를 요청하실 수 있습니다. 다만, 그러한 경우 서비스의 일부 또는 전부 이용이 어려울 수 있습니다.<br>
+                                · 이용자 혹은 14세 미만 아동의 개인정보 조회, 수정을 위해서는 ‘개인정보 변경(또는 ‘회원정보수정’ 등)’을, 가입해지(동의철회)를 위해서는 ‘회원탈퇴’를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.<br>
+                                · 혹은 개인정보 관리담당자에게 서면, 전화 또는 이메일로 연락하시면 지체 없이 조치하겠습니다.<br>
+                                · 이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.<br>
+                                · 한컴 말랑말랑 행복케어의 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 “4. 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br>
+                                </p>
+                                <p><strong>7. 개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항</strong></p>
+                                <p>가. 쿠키란?</p>
+                                <p>· 한컴 말랑말랑 행복케어는 개인화되고 맞춤화된 서비스를 제공하기 위해서 이용자의 정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.<br>
+                                · 쿠키는 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에게 보내는 아주 작은 텍스트 파일로 이용자 컴퓨터의 하드디스크에 저장됩니다. 이후 이용자가 웹 사이트에 방문할 경우 웹 사이트 서버는 이용자의 하드 디스크에 저장되어 있는 쿠키의 내용을 읽어 이용자의 환경설정을 유지하고 맞춤화된 서비스를 제공하기 위해 이용됩니다.<br>
+                                · 쿠키는 개인을 식별하는 정보를 자동적, 능동적으로 수집하지 않으며, 이용자는 언제든지 이러한 쿠키의 저장을 거부하거나 삭제할 수 있습니다.</p>
+                                <p>나. 한컴 말랑말랑 행복케어의 쿠키 사용 목적</p>
+                                <p>이용자들이 방문한 한컴 말랑말랑 행복케어의 서비스와 방문 및 이용형태, 인기 컨텐츠, 보안접속 여부, 이용자 규모 등을 파악하여 이용자에게 광고를 포함한 최적화된 맞춤형 정보를 제공하기 위해 사용합니다. </p>
+                                <p>다. 쿠키의 설치/운영 및 거부</p>
+                                <p>· 이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.<br>
+                                · 다만, 쿠키의 저장을 거부할 경우에는 한컴 말랑말랑 행복케어의 일부 서비스 이용에 어려움이 있을 수 있습니다.<br>
+                                · 쿠키 설치 허용 여부를 지정하는 방법(Internet Explorer의 경우)은 다음과 같습니다.<br>
+                                ① “도구” 메뉴에서 “인터넷 옵션”을 선택합니다.<br>
+                                ② “개인 정보” 탭을 클릭합니다.<br>
+                                ③ “설정(인터넷 영역에 대한 설정을 선택하십시오.)”을 설정하시면 됩니다.<br>
+                                </p>
+                                <p><strong>8. 개인정보의 기술적/관리적 보호 대책</strong></p>
+                                <p>한컴 말랑말랑 행복케어는 이용자들의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적, 관리적 대책을 강구하고 있습니다.</p>
+                                <p>가. 비밀번호 암호화</p>
+                                <p>한컴 말랑말랑 행복케어 회원 ID의 비밀번호는 암호화되어 저장 및 관리되고 있어 본인만이 알고 있으며, 개인정보의 확인 및 변경도 비밀번호를 알고 있는 본인에 의해서만 가능합니다.</p>
+                                <p>나. 해킹 등에 대비한 대책</p>
+                                <p>한컴 말랑말랑 행복케어는 해킹이나 컴퓨터 바이러스 등에 의해 회원의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다. 개인정보의 훼손에 대비해서 자료를 수시로 백업하고 있고, 최신 백신프로그램을 이용하여 이용자들의 개인정보나 자료가 누출되거나 손상되지 않도록 방지하고 있으며, 암호화통신 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 관리하고 있습니다. 그리고 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다. </p>
+                                <p>다. 취급 직원의 최소화 및 교육</p>
+                                <p>한컴 말랑말랑 행복케어의 개인정보 관련은 담당자에 한정시키고 있고, 이를 위한 별도의 비밀번호를 부여하여 정기적으로 갱신하고 있으며, 담당자에 대한 수시 교육을 통하여 한컴 말랑말랑 행복케어의 개인정보취급방침 준수를 항상 강조하고 있습니다. </p>
+                                <p>라. 개인정보보호의 운영</p>
+                                <p>그리고 사내 개인정보 등을 통하여 한컴 말랑말랑 행복케어의 개인정보취급방침의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로 잡을 수 있도록 노력하고 있습니다. 단, 한컴 말랑말랑 행복케어가 개인정보보호 의무를 다 하였음에도 불구하고 이용자 본인의 부주의나 한컴 말랑말랑 행복케어가 관리하지 않는 영역에서의 사고 등 한컴 말랑말랑 행복케어의 귀책에 기인하지 않은 손해에 대해서는 한컴 말랑말랑 행복케어의 책임이 없습니다. <br>
+                                </p>
+                                <p><strong>9. 개인정보 관리담당자의 연락처</strong></p>
+                                <p>귀하께서는 한컴 말랑말랑 행복케어의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보 관리담당자에게 신고하실 수 있습니다. 한컴 말랑말랑 행복케어는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. </p>
+                                <p>개인정보 관리담당자</p>
+                                <p>책임자 : <br>
+                                전 화 : <br>
+                                팩 스 : <br>
+                                메 일 : </p>
+                                <p>기타 개인정보 침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.<br>
+                                - 개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118)<br>
+                                - 대검찰청 사이버수사과 (www.spo.go.kr / 국번없이 1301)<br>
+                                - 경찰청 사이버안전국 (www.ctrc.go.kr / 국번없이 182)<br>
+                                </p>
+                                <p><strong>10. 기타</strong></p>
+                                <p>한컴 말랑말랑 행복케어에 링크되어 있는 웹사이트들이 개인정보를 수집하는 행위에 대해서는 한컴 말랑말랑 행복케어의 개인정보취급방침이 적용되지 않음을 알려 드립니다.<br>
+                                </p>
+                                <p><strong>11. 고지의 의무</strong></p>
+                                <p>현 개인정보취급방침의 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 ‘공지사항’을 통해 고지할 것입니다. 다만, 개인정보의 수집 및 활용, 제3자 제공 등과 같이 이용자 권리의 중요한 변경이 있을 경우에는 최소 30일 전에 고지합니다.<br>
+                                · 공고일자 : 2020년 09월 5일<br>
+                                · 시행일자 : 2020년 10월 15일<br>
+                                </p>
+
+                        </div>
+                        <div class="check">
+                            <label class="label_st mg"><input type="radio" /><i class="xi"></i> <span>개인정보 수집 및 이용 동의</span></label>
+                        </div>
+                    </div>
+                    <div class="board_btn_wrap ac">
+                    <input type="submit" value="문의하기" class="input_st s3 c2" id="btnSubmit">
+                        <!--       <input type="button" value="취소하기" class="input_st s1 c2"> -->
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- contents :: e :: -->
+    <script type="text/javascript">
+        mainVisual();
+        bannerVisual();
+        layoutDiv();
+        familySlide();
+        function mainVisual(){
+            var Wrap = $(".mainVisual_wrap");
+            var SlideWrap = $(".mainVisual_wrap .mainVisual");
+            SlideWrap.slick({
+                fade: true,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next')
+            });
+            $(window).bind('ready resize', function(){
+                var winW = $(window).width();
+                var winH = $(window).height();
+                //var topBnH = $(".topBanner").outerHeight();
+                var headerH = $("#header").outerHeight();
+                var footerH = $("#footer").outerHeight();
+                var H = winH-topBnH-headerH-60;
+        
+                //SlideWrap.find(".slick-track, .item").css({"height":H, "min-height":"590px"});
+            });
+        }
+        function bannerVisual(){
+            var Wrap = $(".bannerVisual_wrap");
+            var SlideWrap = $(".bannerVisual_wrap .bannerVisual");
+            SlideWrap.slick({
+                fade:true,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                //pauseOnHover: true,
+                autoplaySpeed: 4000,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next')
+            });
+        
+        //controlbox 일시정지
+            Wrap.find('.control_box .btn').clickToggle(function(){
+                SlideWrap .slick('slickPause');
+                $(this).find(".xi").removeClass("xi-pause").addClass("xi-play");
+            },function(){
+                SlideWrap .slick('slickPlay');
+                $(this).find(".xi").removeClass("xi-play").addClass("xi-pause");
+            });
+        
+        }
+        //    
+        function familySlide(){
+            var Wrap = $("#section5 .family_wrap");
+            var SlideWrap = $(".family_wrap .family");
+            SlideWrap.slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                pauseOnHover: true,
+                prevArrow: Wrap.find('.arrow_wrap .prev'),
+                nextArrow: Wrap.find('.arrow_wrap .next'),
+                        responsive: [
+                        {
+                        breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 5,
+                        }
+                        },
+                        {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                        },
+                        {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                        }
+                        ]
+
+                });
+                Wrap.find('.arrow_wrap .btn').clickToggle(function(){
+                    SlideWrap.slick('slickPause');
+                    $(this).find(".xi").removeClass("xi-pause").addClass("xi-play");
+                },function(){
+                    SlideWrap.slick('slickPlay');
+                    $(this).find(".xi").removeClass("xi-play").addClass("xi-pause");
+                });
+
+        }
+        function toggleClass(obj,wrap,Class){
+            if(!wrap){
+                var wrap = (".toggleWrap");
+            };
+            if(!Class){
+                var Class = "on";
+            };
+            $(obj).parents(wrap).toggleClass(Class);
+        }
+            
+            jQuery(function(){
+            jQuery(".bla-1").YouTubePopUp();
+            });
+        
+        
+        </script>
+        <!--footer 시작 -->
+        <div id="footer">
+            <div class="foot_wrap">
+                <div class="box1">
+                    <div class="con menu_wrap fl_wrap">
+                        <ul class="menu di_wrap">
+                            <li><a href="#">한컴그룹</a></li>
+                            <li><a href="#">행복케어</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                        </ul>
+                        <p class="hanwithLogo"><img src="images/inc/footer_logo.png" /></p>
+                        <div class="family">
+                            <p class="tit"><i class="tt">Family Site</i><i class="xi"></i></p>
+                            <ul class="list">
+                                <li><a href="#" target="_blank">한컴위드</a></li>
+                                <li><a href="#" target="_blank">한컴그룹</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:goTop()" class="goTop vm_wrap" title="맨 위로 이동"><span class="vm"><i class="xi xi-arrow-top"></i><i class="tt">TOP</i></span></a>
+                    </div>
+                    <div class="bottom_wrap">
+                        <ul class="con info_wrap fl_wrap">
+                            <li><span class="tit">한컴 말랑말랑 행복케어</span></li>
+                            <li><span class="tt">사업자등록번호. 338-88-01955</span></li>
+                            <li class="cl"><span class="tt">Add. 경기도 성남시 분당구 대왕판교로 644번길 49 한컴타워 1층</span></li>
+                            <li><span class="tt">Tel. 031-626-7000</span></li>
+                            <li class="cl"><p class="copy">Copyright (C) SMART SENIOR DAYCARE CENTER. All Rights Reserved.</p></li>
+                        </ul>
+                        <div class="sns_wrap">
+                            <ul class="snsList fl_wrap">
+                                <li><a href="#" class="vm_wrap in face" target="_blank" title="페이스북"><span class="vm_tt"><i class="xi xi-facebook"></i></span></a></li>
+                                <li><a href="#" class="vm_wrap in blog" target="_blank" title="네이버블로그"><span class="vm_tt"><i class="xi xi-naver"></i></span></a></li>
+                                <li><a href="#" class="vm_wrap in yout" title="유튜브"><span class="vm_tt"><i class="xi xi-youtube-play"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer 끝 -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var scrollst = $(".scrollst")
+                scrollst.mCustomScrollbar({
+                    theme:"minimal-dark"
+                });
+            })
+            
+            $(window).load(function(){
+                $("body").addClass("load");
+            })
+            
+            $(".conSection").eq(0).addClass("secAni");
+            $(window).scroll(function(){
+                var ST = $(window).scrollTop();
+                var WH = $(window).height();
+                var HH = $("#header").outerHeight();
+                if(ST > 0){
+                    $("body").addClass("scroll");
+                }else{
+                    $("body").removeClass("scroll");
+                }
+                $(".conSection").each(function(){
+                    var idx = $(this).data("no");
+                    var Off = $(this).offset().top;
+                    var VA = ST+((WH-HH)/2);
+                    var H = $(this).outerHeight();
+            
+                    if(VA > Off && VA < Off+H){
+                        $(".conSection[data-no='"+idx+"']").addClass("secAni");
+                    }
+                })
+                stepAni();
+            })
+            $(window).resize(function(){
+                stepAni();
+            })
+        </script>
+    </body>
+</html>

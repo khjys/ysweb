@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랩바모스</title>
+    <link href="css/inc.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/xeicon.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <link href="js/swiper/swiper.css" rel="stylesheet" type="text/css" />
+    <script src="js/swiper/swiper.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="js/fullpage/jquery.fullPage.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/drawsvg/jquery.drawsvg.js"></script>
+</head>
+<body class="cWhite main">
+    <div id="header">
+        <div class="box0 top_wrap flex vc space">
+            <h1 class="logo" style="cursor:pointer" onclick="location.href='main.html'"><a><img src="images/inc/logo.svg" alt="" /><img src="images/inc/logo_w.svg" alt="" /></a></h1>
+            <!-- <div class="gnb_wrap" style="cursor:pointer" onclick="location.href='sub.html'"> -->
+            <div class="gnb_wrap">
+                <ul class="gnb flex">
+                    <li><a class="dp1 va_wrap"><span class="va">회사소개</span></a></li>
+                    <li><a class="dp1 va_wrap"><span class="va">스튜디오 랩</span></a></li>
+                    <li><a class="dp1 va_wrap"><span class="va">예약문의</span></a></li>
+                    <li><a class="dp1 va_wrap"><span class="va">포트폴리오</span></a></li>
+                    <li><a class="dp1 va_wrap"><span class="va">프로덕션 랩바모스</span></a></li>
+                    <li><a class="dp1 va_wrap"><span class="va">contact us</span></a></li>
+                </ul>
+            </div>
+            <div class="etc_wrap flex vc">
+                <div class="all_wrap">
+                    <a href="javascript:void(0)" onclick="toggleClass(this); toggleClass(this,'html,body','hidden')" class="all_btn"><i class="xi xi-bars"></i></a>
+                    <div class="all">
+                        <div class="wrap_bg" onclick="toggleClass(this); toggleClass(this,'html,body','hidden')"></div>
+                            <div class="wrap_in scrollst">
+                                <div class="all_top">
+                                    <a href="javascript:void(0)" onclick="toggleClass(this); toggleClass(this,'html,body','hidden')" class="close_btn"><i class="xi xi-close-thin"></i></a>
+                                    <p class="logo"><a href="#"><img src="images/inc/logo.svg" alt="" /></a></p>
+                                </div>
+                                <ul class="gnb flex">
+                                    <li><a class="dp1 va_wrap"><span class="va">회사소개</span></a></li>
+                                    <li><a class="dp1 va_wrap"><span class="va">스튜디오 랩</span></a></li>
+                                    <li><a class="dp1 va_wrap"><span class="va">예약문의</span></a></li>
+                                    <li><a class="dp1 va_wrap"><span class="va">포트폴리오</span></a></li>
+                                    <li><a class="dp1 va_wrap"><span class="va">프로덕션 랩바모스</span></a></li>
+                                    <li><a class="dp1 va_wrap"><span class="va">contact us</span></a></li>
+                                </ul>
+                                <script type="text/javascript">
+                                    $("#header .all_wrap .gnb > li:has('.dp2') .dp1").attr("href","javascript:void(0)").click(function(){
+                                        $(this).next(".dp2").slideToggle();
+                                        $(this).parent("li").siblings().find(".dp2").slideUp();
+                                    });
+                                    $("#header .close_btn").click(function(){
+                                        $("#header .all_wrap .gnb > li.on .dp2").slideDown();
+                                        $("#header .all_wrap .gnb > li:not(.on) .dp2").slideUp();
+                                    });
+                                    $("#header .all_wrap .gnb > li:not(:has('.dp2'))").addClass("only");
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainNav flex vb">
+        <ul class="list">
+            <li data-no="0" class="on home"><a href="javascript:goFullpage(0)"><i class="xi xi-home"></i><i class="line"></i></a></li>
+            <li data-no="1"><a href="javascript:goFullpage(1)"><i class="line"></i></a></li>
+            <li data-no="2"><a href="javascript:goFullpage(2)"><i class="line"></i></a></li>
+            <li data-no="3"><a href="javascript:goFullpage(3)"><i class="line"></i></a></li>
+            <li data-no="4"><a href="javascript:goFullpage(4)"><i class="line"></i></a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div id="section0" class="section vod">
+            <video id="vod" preload="metadata" muted autoplay loop><source src="vod.mp4" type="video/mp4"></video>
+            <a href="javascript:void(0)" class="vodBtn"><i class="xi btn pause"></i><i class="xi btn play"></i></a>
+            <a href="javascript:goFullpage(1)" class="scrollDown"></a>
+        </div>
+        <div id="section1" class="section company">
+            <div class="bg scrollAni"></div>
+            <div class="wrap_con">
+                <div class="box1">
+                    <p class="scrollAni moveB delay logo"><img src="images/inc/logo.svg" alt="" /></p>
+                    <p class="main_tit2 page_sec2 scrollAni moveT delay"><i class="di">온택트 시대의 고민을</i> <i class="di">Studio LAB이 함께합니다.</i></p>
+                    <p class="main_tt2 page_sec2 scrollAni moveT delay">단순 공간 대여와 라이브스트리밍을 넘어선, 종합 솔루션 스튜디오로<br />기획- 촬영 - 편집, 송출까지 콘텐츠 제작의 모든 솔루션을 One-Stop으로 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+        <div id="section2" class="section studio bgfix">
+            <div class="wrap_con">
+                <div class="box1">
+                    <p class="main_tit scrollAni moveB">Introduce LAB</p>
+                    <p class="main_tt3 page_sec1 scrollAni moveT delay"><i>5 Type  6 LAB</i></p>
+                    <ul class="icon flex wrap hc scrollAni moveT delay">
+                        <li onclick="location.href='<?=$link_studio_mLab?>'">
+                            <div class="svg_wrap">
+    <svg version="1.1" width="200px" height="200px" class="svg" viewbox="0 0 200 200">
+    <g>
+        <g>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M53.121,100.982l5.38-5.4c0.959-0.973,1.648-1.79,2.065-2.453
+                c0.417-0.663,0.625-1.266,0.625-1.81c0-0.883-0.278-1.576-0.833-2.074c-0.556-0.499-1.313-0.748-2.273-0.748
+                c-0.657,0-1.223,0.148-1.696,0.445c-0.474,0.297-0.833,0.692-1.08,1.184c-0.246,0.493-0.37,1.03-0.37,1.61h-1.989
+                c0-0.921,0.212-1.762,0.635-2.52c0.422-0.758,1.025-1.361,1.809-1.81c0.783-0.448,1.686-0.672,2.709-0.672
+                c1.01,0,1.897,0.189,2.662,0.568c0.764,0.378,1.354,0.915,1.771,1.61c0.417,0.695,0.625,1.49,0.625,2.386
+                c0,0.795-0.241,1.585-0.721,2.368c-0.48,0.784-1.307,1.775-2.481,2.975l-3.979,3.902h7.692v1.724H53.121V100.982z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M68.296,101.722c-0.847-0.595-1.51-1.488-1.989-2.681
+                c-0.48-1.194-0.72-2.649-0.72-4.367c0-1.717,0.239-3.173,0.72-4.366c0.479-1.194,1.143-2.087,1.989-2.68
+                c0.845-0.593,1.812-0.89,2.898-0.89c1.087,0,2.05,0.297,2.889,0.89c0.84,0.593,1.5,1.487,1.98,2.68
+                c0.479,1.194,0.72,2.649,0.72,4.366c0,1.718-0.24,3.174-0.72,4.367c-0.48,1.193-1.14,2.086-1.98,2.681
+                c-0.839,0.593-1.803,0.889-2.889,0.889C70.108,102.61,69.141,102.314,68.296,101.722z M73.07,100.149
+                c0.555-0.468,0.994-1.163,1.316-2.084c0.322-0.922,0.483-2.053,0.483-3.391c0-1.326-0.161-2.453-0.483-3.381
+                c-0.322-0.928-0.761-1.626-1.316-2.093c-0.556-0.468-1.182-0.701-1.876-0.701c-0.707,0-1.338,0.233-1.894,0.701
+                c-0.556,0.467-0.995,1.165-1.317,2.093S67.5,93.348,67.5,94.674c0,1.339,0.161,2.469,0.483,3.391
+                c0.322,0.921,0.761,1.616,1.317,2.084c0.556,0.466,1.187,0.701,1.894,0.701C71.888,100.85,72.514,100.615,73.07,100.149z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M81.424,101.722c-0.847-0.595-1.51-1.488-1.989-2.681
+                c-0.48-1.194-0.72-2.649-0.72-4.367c0-1.717,0.239-3.173,0.72-4.366c0.479-1.194,1.143-2.087,1.989-2.68
+                c0.846-0.593,1.812-0.89,2.898-0.89c1.087,0,2.049,0.297,2.889,0.89c0.841,0.593,1.5,1.487,1.98,2.68
+                c0.479,1.194,0.72,2.649,0.72,4.366c0,1.718-0.24,3.174-0.72,4.367c-0.48,1.193-1.14,2.086-1.98,2.681
+                c-0.839,0.593-1.803,0.889-2.889,0.889S82.27,102.314,81.424,101.722z M86.198,100.149c0.556-0.468,0.995-1.163,1.316-2.084
+                c0.322-0.922,0.483-2.053,0.483-3.391c0-1.326-0.161-2.453-0.483-3.381c-0.322-0.928-0.761-1.626-1.316-2.093
+                c-0.556-0.468-1.182-0.701-1.875-0.701c-0.707,0-1.339,0.233-1.895,0.701c-0.557,0.467-0.995,1.165-1.317,2.093
+                c-0.322,0.928-0.483,2.055-0.483,3.381c0,1.339,0.161,2.469,0.483,3.391c0.322,0.921,0.762,1.616,1.317,2.084
+                c0.555,0.466,1.187,0.701,1.895,0.701C85.017,100.85,85.642,100.615,86.198,100.149z"/>
+        </g>
+        <g>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M93.354,86.648h-1.288l1.572-5.437h2.273L93.354,86.648z
+                M96.916,86.648h-1.289l1.592-5.437h2.273L96.916,86.648z"/>
+        </g>
+        <g>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M109.104,100.471h8.336v1.8h-10.325V87.096h1.989V100.471
+                L109.104,100.471z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M130.454,87.096v1.762h-8.79v4.774h8.127v1.762h-8.127v5.115h8.961
+                v1.762h-10.95V87.096H130.454z"/>
+            <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M138.563,87.096c1.717,0,3.194,0.315,4.433,0.947
+                c1.237,0.632,2.184,1.519,2.842,2.662c0.656,1.144,0.985,2.473,0.985,3.989c0,1.516-0.325,2.842-0.976,3.979
+                c-0.651,1.135-1.597,2.021-2.842,2.651c-1.244,0.631-2.726,0.949-4.442,0.949h-5.38V87.096H138.563z M143.166,98.955
+                c1.099-1.01,1.648-2.431,1.648-4.262c0-1.832-0.55-3.258-1.648-4.282c-1.1-1.023-2.615-1.534-4.547-1.534h-3.448v11.594h3.448
+                C140.551,100.471,142.066,99.965,143.166,98.955z"/>
+        </g>
+    </g>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M22.5,59.097l12.271,12.271 M164.906,114.639l12.271,12.271 M177.5,59.097v68.429v0.46h-155v-0.46V59.097H177.5z M177.5,127.986
+        v12.831v0.085h-155v-0.085v-12.831H177.5z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M153.819,136.598h-4.306
+        v-4.306h4.306V136.598z M162.431,132.292h-4.306v4.306h4.306V132.292z M171.042,132.292h-4.306v4.306h4.306V132.292z"/>
+    </svg>
+                            </div>
+                            <p class="tit">M Lab</p>
+                        </li>
+                        <li onclick="location.href='<?=$link_studio_eLab?>'">
+                            <div class="svg_wrap">
+    <svg version="1.1" width="200px" height="200px" class="svg" viewbox="0 0 200 200">
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M182.5,52.664v94.672l-24.345-12.623v0.451l-116.311-0.451L17.5,147.336V52.664L41.844,67.09v0.451h116.311V67.09L182.5,52.664z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M41.844,67.542v67.171 M157.254,67.542v67.171"/>
+    <g>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M60.482,108.526c0.925,0.404,1.667,0.97,2.222,1.697
+            c0.555,0.727,0.866,1.547,0.932,2.459h-2.142c-0.119-0.873-0.552-1.587-1.299-2.141c-0.748-0.557-1.723-0.835-2.926-0.835
+            c-1.217,0-2.172,0.229-2.866,0.685c-0.694,0.457-1.042,1.048-1.042,1.776c0,0.543,0.165,0.996,0.496,1.359
+            c0.331,0.362,0.842,0.677,1.537,0.941c0.694,0.266,1.637,0.523,2.827,0.773c1.917,0.409,3.309,0.996,4.175,1.755
+            c0.866,0.761,1.299,1.742,1.299,2.946c0,0.925-0.276,1.735-0.833,2.431c-0.556,0.693-1.315,1.229-2.281,1.605
+            c-0.965,0.377-2.036,0.565-3.213,0.565c-1.23,0-2.331-0.211-3.302-0.637c-0.972-0.422-1.75-1.018-2.331-1.783
+            c-0.582-0.767-0.906-1.66-0.972-2.678h2.142c0.105,0.979,0.572,1.772,1.398,2.38c0.827,0.608,1.894,0.913,3.203,0.913
+            c0.78,0,1.481-0.11,2.103-0.336c0.621-0.226,1.104-0.543,1.448-0.953c0.343-0.41,0.516-0.873,0.516-1.389
+            c0-0.582-0.166-1.065-0.497-1.449c-0.331-0.382-0.843-0.709-1.537-0.98c-0.694-0.271-1.65-0.533-2.867-0.784
+            c-1.851-0.383-3.216-0.938-4.096-1.666c-0.88-0.728-1.319-1.732-1.319-3.015c0-0.859,0.262-1.61,0.783-2.252
+            c0.522-0.641,1.247-1.134,2.173-1.477c0.926-0.346,1.977-0.517,3.153-0.517C58.52,107.922,59.557,108.124,60.482,108.526z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M74.893,123.334c-0.972,0.754-2.113,1.131-3.422,1.131
+            c-1.11,0-2.108-0.259-2.995-0.771c-0.886-0.517-1.581-1.228-2.083-2.134c-0.503-0.906-0.753-1.921-0.753-3.044
+            c0-1.124,0.248-2.14,0.743-3.045c0.497-0.907,1.188-1.617,2.073-2.132c0.886-0.517,1.878-0.774,2.975-0.774
+            c0.874,0,1.683,0.176,2.431,0.525c0.746,0.352,1.372,0.837,1.874,1.458c0.503,0.622,0.846,1.322,1.031,2.103h-2.083
+            c-0.238-0.688-0.641-1.24-1.209-1.656c-0.569-0.417-1.25-0.624-2.044-0.624c-0.74,0-1.398,0.181-1.973,0.545
+            c-0.576,0.364-1.021,0.858-1.339,1.487c-0.317,0.628-0.477,1.332-0.477,2.113c0,0.78,0.159,1.484,0.477,2.112
+            c0.317,0.629,0.763,1.124,1.339,1.486c0.575,0.365,1.233,0.545,1.973,0.545c0.794,0,1.482-0.21,2.063-0.634
+            c0.582-0.423,0.992-0.985,1.23-1.686h2.082C76.503,121.584,75.865,122.58,74.893,123.334z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M81.35,112.842v1.745c0.304-0.515,0.809-0.982,1.518-1.398
+            c0.708-0.416,1.563-0.626,2.568-0.626c0.648,0,1.165,0.067,1.547,0.2v1.943c-0.463-0.211-1.025-0.318-1.686-0.318
+            c-0.754,0-1.432,0.183-2.034,0.546c-0.603,0.363-1.071,0.847-1.408,1.447c-0.337,0.603-0.506,1.246-0.506,1.936v5.871h-2.043
+            v-11.346H81.35z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M90.583,123.69c-0.867-0.515-1.544-1.226-2.034-2.132
+            c-0.489-0.905-0.733-1.92-0.733-3.044s0.244-2.139,0.733-3.046c0.489-0.905,1.167-1.617,2.034-2.131
+            c0.866-0.516,1.841-0.775,2.925-0.775c1.085,0,2.06,0.26,2.926,0.775c0.865,0.514,1.54,1.226,2.023,2.131
+            c0.483,0.907,0.724,1.922,0.724,3.046c0,0.369-0.013,0.648-0.04,0.832h-9.284c0.106,0.993,0.493,1.806,1.161,2.44
+            c0.667,0.635,1.498,0.953,2.489,0.953c0.754,0,1.419-0.156,1.994-0.467c0.575-0.313,0.968-0.704,1.18-1.183h2.083
+            c-0.318,0.994-0.952,1.804-1.904,2.431c-0.953,0.628-2.069,0.942-3.353,0.942C92.426,124.466,91.45,124.206,90.583,123.69z
+            M96.008,115.231c-0.661-0.628-1.495-0.942-2.5-0.942s-1.838,0.314-2.5,0.942c-0.661,0.629-1.044,1.445-1.15,2.451h7.32
+            C97.06,116.676,96.67,115.86,96.008,115.231z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M103.954,123.69c-0.867-0.515-1.545-1.226-2.034-2.132
+            c-0.49-0.905-0.732-1.92-0.732-3.044s0.243-2.139,0.732-3.046c0.488-0.905,1.167-1.617,2.034-2.131
+            c0.865-0.516,1.841-0.775,2.925-0.775c1.085,0,2.06,0.26,2.927,0.775c0.865,0.514,1.539,1.226,2.022,2.131
+            c0.483,0.907,0.725,1.922,0.725,3.046c0,0.369-0.015,0.648-0.041,0.832h-9.282c0.106,0.993,0.492,1.806,1.16,2.44
+            s1.498,0.953,2.489,0.953c0.754,0,1.418-0.156,1.993-0.467c0.575-0.313,0.968-0.704,1.182-1.183h2.082
+            c-0.317,0.994-0.952,1.804-1.902,2.431c-0.954,0.628-2.071,0.942-3.354,0.942C105.795,124.466,104.819,124.206,103.954,123.69z
+            M109.378,115.231c-0.66-0.628-1.493-0.942-2.499-0.942c-1.004,0-1.838,0.314-2.499,0.942c-0.66,0.629-1.043,1.445-1.15,2.451h7.32
+            C110.428,116.676,110.039,115.86,109.378,115.231z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M117.193,112.842v1.725c0.29-0.515,0.77-0.979,1.438-1.388
+            c0.668-0.411,1.471-0.616,2.41-0.616c0.885,0,1.676,0.205,2.37,0.616c0.695,0.409,1.234,0.989,1.617,1.735
+            c0.384,0.748,0.574,1.623,0.574,2.629v6.645h-2.043v-6.288c0-1.139-0.26-2.013-0.782-2.629c-0.521-0.615-1.247-0.922-2.172-0.922
+            c-0.648,0-1.23,0.182-1.746,0.545s-0.922,0.851-1.22,1.457c-0.298,0.609-0.446,1.264-0.446,1.966v5.871h-2.045v-11.346H117.193z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M134.946,117.463h-6.942v-1.784h6.942V117.463z"/>
+        <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M134.906,108.298h2.52l4.384,6.269l4.422-6.269h2.423l-5.556,7.796
+            l5.753,8.095h-2.479l-4.604-6.506l-4.621,6.506h-2.44l5.731-8.033L134.906,108.298z"/>
+    </g>
+    </svg>
+                            </div>
+                            <p class="tit">E LAB</p>
+                        </li>
+                        <li onclick="location.href='<?=$link_studio_cLab?>'">
+                            <div class="svg_wrap">
+    <svg version="1.1" width="200px" height="200px" class="svg" viewbox="0 0 200 200">
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M93.99,44.084h11.939v5.572
+        H93.99V44.084z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M84.637,155.916l6.766-10.348 M115.281,155.916l-6.766-10.348"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M139.624,50.901l-40.157,26.76l-39.623-26.76
+        M139.624,77.661l-40.157-26.76l-39.623,26.76"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M139.758,145.17H60.692
+        h-0.531V49.656h0.531h79.065V145.17z"/>
+
+    </svg>
+                            </div>
+                            <p class="tit">C LAB</p>
+                        </li>
+                        <li onclick="location.href='<?=$link_studio_pLab?>'">
+                            <div class="svg_wrap">
+    <svg version="1.1" width="200px" height="200px" class="svg" viewbox="0 0 200 200">
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" d="M95.106,114.632H62.485c0-4.867,5.133-8.945,12.098-10.146l4.212,9.562
+        l3.655-9.652C89.696,105.465,95.106,109.637,95.106,114.632z M78.795,75.359c-7.396,0-13.392,5.995-13.392,13.391
+        c0,7.396,5.996,13.394,13.392,13.394c7.397,0,13.393-5.996,13.393-13.394C92.188,81.354,86.192,75.359,78.795,75.359z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M100,126.362v14.137
+        M72.611,140.499h54.778"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" d="M123.497,74.181c-9.138,0-16.547,4.232-16.547,9.451
+        c0,3.113,2.646,5.864,6.709,7.585l-3.313,5.589l7.229-4.356c1.845,0.403,3.836,0.634,5.923,0.634c9.138,0,16.549-4.232,16.549-9.453
+        C140.046,78.414,132.635,74.181,123.497,74.181z M119.463,83.241c0,0.733-0.593,1.328-1.328,1.328c-0.731,0-1.328-0.594-1.328-1.328
+        s0.596-1.328,1.328-1.328C118.87,81.913,119.463,82.508,119.463,83.241z M125.473,83.241c0,0.733-0.594,1.328-1.328,1.328
+        c-0.733,0-1.328-0.594-1.328-1.328s0.595-1.328,1.328-1.328C124.878,81.913,125.473,82.508,125.473,83.241z M131.479,83.241
+        c0,0.733-0.593,1.328-1.328,1.328c-0.731,0-1.328-0.594-1.328-1.328s0.596-1.328,1.328-1.328
+        C130.887,81.913,131.479,82.508,131.479,83.241z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M153.011,116.045H47.697
+        h-0.708V59.5h0.708h105.314V116.045z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M153.011,124.17H47.697
+        h-0.708v-8.125h0.708h105.314V124.17z"/>
+    </svg>
+                            </div>
+                            <p class="tit">P LAB</p>
+                        </li>
+                        <li onclick="location.href='<?=$link_studio_editLab?>'">
+                            <div class="svg_wrap">
+    <svg version="1.1" width="200px" height="200px" class="svg" viewbox="0 0 200 200">
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M99.866,115.681
+        c-8.66,0-15.681-7.021-15.681-15.681s7.021-15.681,15.681-15.681c8.661,0,15.681,7.021,15.681,15.681
+        S108.527,115.681,99.866,115.681z"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M99.866,63.533v27.715
+        M136.333,100h-27.715 M91.114,100H63.399 M99.866,108.752v27.715"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M50.272,63.533v4.741v68.193 M61.941,70.59H50.272 M61.941,85.177H50.272 M61.941,99.764H50.272 M61.941,114.351H50.272
+        M61.941,128.937H50.272"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        M148.435,136.467V68.274v-4.741 M148.435,70.59h-11.67 M148.435,85.177h-11.67 M148.435,99.764h-11.67 M148.435,114.351h-11.67
+        M148.435,128.937h-11.67"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M63.399,136.467V64.02
+        v-0.487h12.034h60.899v0.487v72.447H63.399z"/>
+    </svg>
+                            </div>
+                            <p class="tit">Edit LAB</p>
+                        </li>
+                    </ul>
+                    <p class="main_tt3 st1 page_sec2 scrollAni moveB delay"><i><span class="di">웨비나 시스템부터 라이브커머스, 비대면 행사</span> <span class="di">그리고 개인 콘텐츠 제작까지</span></i></p>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="section client">
+            <div class="wrap_con">
+                <p class="main_tit scrollAni moveB">Client</p>
+                <div class="box1">
+                    <ul class="list flex wrap">
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo1.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">현대자동차</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo2.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">기아자동차</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo3.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">현대모토그룹</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo4.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">현대트랜시스</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo5.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">현대오토에버</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo6.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">ak</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo7.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">직방</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo8.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">펄어비스</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo9.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">Flo</i></span></a></li>
+                        <li class="scrollAni moveT delay"><a class="resize"><span class="re img va_wrap"><img src="images/main/client_logo10.png" alt="" /></span><span class="re layer flex hc vc"><i class="t1">PAT</i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4" class="section footer flex vb">
+            <div class="wrap_con scrollAni moveT">
+                <div id="footer">
+                    <div class="logo_wrap">
+                        <div class="box1 ac"><img src="images/inc/logo_wy.svg" alt="" class="logo" /></div>
+                    </div>
+                    <div class="cs_wrap">
+                        <div class="box1 flex wrap space">
+                            <div class="wrap_in w1 location">
+                                <p class="cs_tit"><i class="xi xi-maker icon"></i><i>오시는길</i></p>
+                                <div class="cs_con">
+                                    <p class="t1">서울시 금천구 가산디지털1로 75-15<br />(하우스디 와이즈타워) 9층 918-925호 (가산동)</p>
+                                    <a href="" class="more page_sec2"><i>자세히 보기</i><i class="xi xi-plus-min"></i></a>
+                                </div>
+                            </div>
+                            <div class="wrap_in w2 cs">
+                                <p class="cs_tit c_point"><i class="xi xi-call-outgoing icon"></i><i>예약/문의</i></p>
+                                <div class="cs_con">
+                                    <p class="no1">02-6295-1113</p>
+                                    <p class="t2">(전화상담 : 평일 09:00 ~18:00. 토, 일, 공휴일 휴무)</p>
+                                    <ul class="link flex wrap space page_sec2">
+                                        <li><a href="#"><i class="xi xi-calendar-check icon"></i><i class="tt">예약 현황</i></a></li>
+                                        <li><a href="#"><i class="xi xi-devices icon"></i><i class="tt">예약 문의 하기</i></a></li>
+                                        <li><a href="#"><i class="xi xi-document icon"></i><i class="tt">이용안내</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="wrap_in w1 bank">
+                                <p class="cs_tit"><i class="xi xi-piggy-bank icon"></i><i>입금계좌</i></p>
+                                <div class="cs_con">
+                                    <p class="t1"></p>
+                                    <p class="no2"></p>
+                                    <p class="t2">예금주 : 홍길동</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_wrap">
+                        <div class="box1 flex wrap space vc">
+                            <ul class="menu flex wrap">
+                                <li><a href="#">홈</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용 약관 및 환불 규정</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                            <ul class="sns flex wrap">
+                                <li><a href="#" target="_blank"><i class="xi xi-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_wrap">
+                        <div class="box1">
+                            <ul class="info flex wrap">
+                                <li>주식회사 랩바모스 (LABVAMOS)</li>
+                                <li>서울시 금천구 가산디지털1로 75-15, "(하우스디 와이즈타워) 9층 918-925호 (가산동)</li>
+                                <li>대표 : 홍길동</li>
+                                <li>사업자등록번호 : </li>
+                                <li>Tel : 02-6295-1113</li>
+                                <li>Fax : 02-6295-1115</li>
+                                <li>Email : </li>
+                                <li class="copyright">Copyright(c) LABVAMOS. All Rights Reserved.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="javascript:goTop()" class="gotop"><i class="xi xi-arrow-top"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+        $('#fullpage').fullpage({
+        normalScrollElements : '#header .all_wrap',
+        anchors:['0','1','2','3','4'],
+        menu: '#menu',
+        scrollOverflow: false,
+        scrollBar: false,
+        afterLoad: function(anchorLink, index){
+            $(".mainNav .list > li").removeClass("on");
+            $(".mainNav .list > li:nth-child("+(index)+")").addClass("on");
+            $(".scrollAni").addClass("on");
+
+            if(index == 1 || index == 2){
+                $("body").removeClass("cWhite");
+            }else{
+                $("body").addClass("cWhite");
+            }
+            if(index == 3){
+                drwaSvg(".svg");
+            }
+        },
+        'onLeave': function(index, nextIndex, direction){
+            $(".scrollAni").removeClass("on");
+            if (index == 7 && direction == 'down'){
+                $("#section6").addClass("fix");
+                $("#header").addClass("hide");
+            }else{
+                $("#section6").removeClass("fix");
+                $("#header").removeClass("hide");
+            }
+        }
+        });
+    });
+    function drwaSvg(obj){
+        var mySVG = $(obj).drawsvg()
+        mySVG.drawsvg('animate')
+    }
+    $(window).load(function(){
+    $("body").addClass("load");
+
+    labSlide = new Swiper('.labSlide', {
+        slidesPerView: 'auto',
+        effect: 'slide',
+        speed: 1000,
+        spaceBetween: 0,
+        freeMode: false,
+        loop: true,
+        loopFillGroupWithBlank: false,
+        centeredSlides: false,
+        autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: '.labSlide-next',
+        prevEl: '.labSlide-prev',
+        }
+    });
+    });
+    function goFullpage(idx){
+        $.fn.fullpage.moveTo(idx)
+    }
+    var objVod = document.getElementById("vod");
+    $(".vodBtn .pause").click(function(){
+        objVod.pause();
+        $(this).parents(".vodBtn").addClass("on");
+    })
+    $(".vodBtn .play").click(function(){
+        objVod.play();
+        $(this).parents(".vodBtn").removeClass("on");
+    })
+    </script>
+</body>
+</html>

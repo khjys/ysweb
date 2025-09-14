@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑의책 HIM</title>
+    <link rel="stylesheet" type="text/css" href="css/inc.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/board.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_response.css" media="screen and (min-width:1px)" />
+    <link rel="stylesheet" type="text/css" href="css/xeicon.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/animated/animated.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/inc.js"></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/placeholders.min.js" defer="defer"></script>
+    <script type="text/javascript" src="js/animated/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
+    
+</head>
+<body id="main">
+    <!-- header :: s :: -->
+    <div id="header">
+        <div class="top_wrap">
+            <div class="box0 fl_wrap">
+                <div class="follow">
+                    <p class="tit en"><span class="vm_wrap"><i class="vm_tt tt">Follow Us</i></span></p>
+                    <ul class="sns fl_wrap">
+                        <li><a href="#" class="vm_wrap in face" target="_blank" title="페이스북"><span class="vm_tt"><i class="xi xi-facebook"></i></span></a></li>
+                        <li><a href="#" class="vm_wrap in inst" target="_blank" title="인스타그램"><span class="vm_tt"><i class="xi xi-instagram"></i></span></a></li>
+                        <li><a href="#" class="vm_wrap in kaka" target="_blank" title="카카오스토리"><span class="vm_tt"><i class="xi xi-kakaostory"></i></span></a></li>
+                        <li><a href="#" class="vm_wrap in blog" target="_blank" title="네이버블로그"><span class="vm_tt"><i class="xi xi-naver"></i></span></a></li>
+                        <li><a href="#" class="vm_wrap in twit" target="_blank" title="트위터"><span class="vm_tt"><i class="xi xi-twitter"></i></span></a></li>
+                        <li><a href="#" class="vm_wrap in yout" target="_blank" title="유튜브"><span class="vm_tt"><i class="xi xi-youtube-play"></i></span></a></li>
+                    </ul>
+                </div>
+                <ul class="etc right">
+                    <li><a href="#" class="vm_wrap"><span class="vm_tt tt">잡지소개</span></a></li>
+                    <li><a href="#" class="vm_wrap"><span class="vm_tt tt">취재요청</span></a></li>
+                    <li><a href="#" class="vm_wrap"><span class="vm_tt tt">광고문의</span></a></li>
+                    <li class="en"><a href="mailto:naver.com" class="vm_wrap"><span class="vm_tt tt en">Contact Us</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo_wrap">
+            <div class="box0 pr">
+                <h1 class="logo"><a href="index.html" class="vm_wrap"><img src="images/inc/logo.png" alt="logo" /></a></h1>
+                <div class="menu menuL vm_wrap">
+                    <ul class="list vm_tt">
+                        <li class="all">
+                            <a href="javascript:void(0);" class="all_btn" onClick="toggleClass(this,'#header','nav_open')"><i class="ham"></i></a>
+                            <!--전체메뉴 -->
+                            <div class="nav_layer">
+                                <div id="nav" class="nav">
+                                    <div class="nav_wrap">
+                                        <div  class="nav_logo"><a href="index.html"><img src="../images/inc/logo_white.png" alt="logo" /></a></div>
+                                        <ul class="nav_mem">
+                                            <li class="en"><a href="#">Login</a></li>
+                                            <li class="en"><a href="#">Join</a></li>
+                                        </ul>
+                                        <div class="nav_gnb wrap_idx">
+                                            <ul class="nav_tab tab_idx click fl_wrap">
+                                                <li class="on"><a href="javascript:void(0);" class="in vm_wrap"><span class="vm_tt en">Magazine</span></a></li>
+                                                <li><a href="javascript:void(0);" class="in vm_wrap"><span class="vm_tt en">Him Menu</span></a></li>
+                                            </ul>
+                                            <div class="nav_con con_idx">
+                                                <div class="idx on">
+                                                    <ul class="gnb cate fl_wrap">
+                                                        <li class="on">
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Military</span></a>
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_1 on"><a href="#" class="vm_wrap"><span class="vm_tt">PORTRAIT</span></a></li>
+                                                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">REAL SKETCH</span></a></li>
+                                                                <li class="sm_3"><a href="#" class="vm_wrap"><span class="vm_tt">HIM AWARD</span></a></li>
+                                                                <li class="sm_4"><a href="#" class="vm_wrap"><span class="vm_tt">곰신데이트</span></a></li>
+                                                                <li class="sm_5"><a href="#" class="vm_wrap"><span class="vm_tt">MENTORSHIP</span></a></li>
+                                                                <li class="sm_5"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Interview</span></a>
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">COVER STORY</span></a></li>
+                                                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">MY WAY</span></a></li>
+                                                                <li class="sm_3"><a href="#" class="vm_wrap"><span class="vm_tt">HOT GIRL</span></a></li>
+                                                                <li class="sm_4"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Special</span></a>
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">INTERVIEW</span></a></li>
+                                                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">피처기사</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Feaure</span></a>
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">AGENDA</span></a></li>
+                                                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Campaign</span></a>
+                                                        </li>   
+                                                    </ul>
+                                                </div>
+                                                <div class="idx">
+                                                    <ul class="gnb fl_wrap">
+                                                        <li class="m_customer">
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Board</span></a>       
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_intro"><a href="#" class="vm_wrap"><span class="vm_tt">잡지소개</span></a></li>
+                                                                <li class="sm_notice"><a href="#" class="vm_wrap"><span class="vm_tt">공지사항</span></a></li>
+                                                                <li class="sm_board"><a href="#" class="vm_wrap"><span class="vm_tt">게시판</span></a></li>
+                                                                <li class="sm_request"><a href="#" class="vm_wrap"><span class="vm_tt">취재요청</span></a></li>
+                                                                <li class="sm_ad"><a href="#" class="vm_wrap"><span class="vm_tt">광고문의</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="m_event">
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Event</span></a>       
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_regularEvent"><a href="#" class="vm_wrap"><span class="vm_tt">상시이벤트</span></a></li>
+                                                                <li class="sm_event"><a href="#" class="vm_wrap"><span class="vm_tt">이벤트</span></a></li>
+                                                                <li class="sm_talk"><a href="#" class="vm_wrap"><span class="vm_tt">HIM TALK</span></a></li>
+                                                                <li class="sm_card"><a href="#" class="vm_wrap"><span class="vm_tt">애독자카드</span></a></li>
+                                                                <li class="sm_reporter"><a href="#" class="vm_wrap"><span class="vm_tt">병영리포터</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="m_video">
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Video</span></a>
+                                                        </li>
+                                                        <li class="m_mypage">
+                                                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">My page</span></a>       
+                                                            <ul class="dp2 fl_wrap">
+                                                                <li class="sm_modify"><a href="#" class="vm_wrap"><span class="vm_tt">회원정보수정</span></a></li>
+                                                                <li class="sm_secession"><a href="#" class="vm_wrap"><span class="vm_tt">회원탈퇴</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="nav_btn"><a href="#"><i class="icon xi xi-library-books-o"></i><i class="tt">정기구독 신청</i><i class="arrow xi xi-angle-right"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                navGnb();
+                                function navGnb(){
+                                    var obj = $("#nav .gnb .dp1");
+                                    obj.each(function(){
+                                        var dp2 = $(this).next(".dp2").find("li").length;
+                                        if( dp2 > 0){		
+                                        $(this).attr("href","javascript:void(0)").addClass("arrow").click(function(){
+                                            $(this).parent("li").toggleClass("active");
+                                            $(this).parent("li").siblings("").removeClass("active");
+                                        })
+                                        }
+                                    })
+                                }
+                                </script>                                    
+                            </div>
+                        </li>
+                        <li class="txt en"><a href="javascript:void(0);" id="bookmark"><i class="xi xi-bookmark-o"></i><strong class="tt">Bookmark</strong></a></li>
+                    </ul>
+                </div>
+                <div class="menu menuR vm_wrap">
+                    <ul class="list vm_tt">
+                        <li class="txt en"><a href="#"><strong class="tt">Login</strong></a></li>
+                        <li class="txt en"><a href="#"><strong class="tt">Join</strong></a></li>
+                        <li class="txt kr"><a href="#"><strong class="tt">정기구독</strong></a></li> <!--정기구독-->
+                        <li class="ico"><a href="javascript:void(0);" class="search_btn" onClick="toggleClass(this,'#header','search_open')"><i class="xi xi-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>        
+            <!--검색 -->
+            <div class="search_layer vm_wrap">
+                <div class="box0 vm_tt">
+                    <div class="inp_wrap">
+                        <input type="text" class="inp inp_txt" placeholder="검색어를 입력하세요." />
+                        <button class="inp inp_btn" onclick="location.href='<?=$link_search?>'"><i class="xi xi-search"></i></button>
+                    </div>
+                    <ul class="keyword_wrap">
+                        <li><a href="#link"># 인기검색어1</a></li>
+                        <li><a href="#link"># 인기검색어2</a></li>
+                        <li><a href="#link"># 인기검색어3</a></li>
+                        <li><a href="#link"># 인기검색어4</a></li>
+                        <li><a href="#link"># 인기검색어5</a></li>
+                        <li><a href="#link"># 인기검색어6</a></li>
+                        <li><a href="#link"># 인기검색어7</a></li>
+                    </ul>
+                </div>
+            </div>                 
+        </div>
+        <div class="gnb_wrap">
+            <div class="box1 fl_wrap">
+                <div class="menu1">
+                    <ul class="gnb cate fl_wrap">
+                        <li class="on">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Military</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_1 on"><a href="#" class="vm_wrap"><span class="vm_tt">PORTRAIT</span></a></li>
+                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">REAL SKETCH</span></a></li>
+                                <li class="sm_3"><a href="#" class="vm_wrap"><span class="vm_tt">HIM AWARD</span></a></li>
+                                <li class="sm_4"><a href="#" class="vm_wrap"><span class="vm_tt">곰신데이트</span></a></li>
+                                <li class="sm_5"><a href="#" class="vm_wrap"><span class="vm_tt">MENTORSHIP</span></a></li>
+                                <li class="sm_5"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Interview</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">COVER STORY</span></a></li>
+                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">MY WAY</span></a></li>
+                                <li class="sm_3"><a href="#" class="vm_wrap"><span class="vm_tt">HOT GIRL</span></a></li>
+                                <li class="sm_4"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Special</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">INTERVIEW</span></a></li>
+                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">피처기사</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Feaure</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_1"><a href="#" class="vm_wrap"><span class="vm_tt">AGENDA</span></a></li>
+                                <li class="sm_2"><a href="#" class="vm_wrap"><span class="vm_tt">ETC</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Campaign</span></a>
+                        </li>   
+                    </ul>
+                </div>
+                <div class="menu2 right">
+                    <ul class="gnb fl_wrap">
+                        <li class="m_customer">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Board</span></a>       
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_intro"><a href="#" class="vm_wrap"><span class="vm_tt">잡지소개</span></a></li>
+                                <li class="sm_notice"><a href="#" class="vm_wrap"><span class="vm_tt">공지사항</span></a></li>
+                                <li class="sm_board"><a href="#" class="vm_wrap"><span class="vm_tt">게시판</span></a></li>
+                                <li class="sm_request"><a href="#" class="vm_wrap"><span class="vm_tt">취재요청</span></a></li>
+                                <li class="sm_ad"><a href="#" class="vm_wrap"><span class="vm_tt">광고문의</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_event">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Event</span></a>       
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_regularEvent"><a href="#" class="vm_wrap"><span class="vm_tt">상시이벤트</span></a></li>
+                                <li class="sm_event"><a href="#" class="vm_wrap"><span class="vm_tt">이벤트</span></a></li>
+                                <li class="sm_talk"><a href="#" class="vm_wrap"><span class="vm_tt">HIM TALK</span></a></li>
+                                <li class="sm_card"><a href="#" class="vm_wrap"><span class="vm_tt">애독자카드</span></a></li>
+                                <li class="sm_reporter"><a href="#" class="vm_wrap"><span class="vm_tt">병영리포터</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_video">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">Video</span></a>
+                        </li>
+                        <li class="m_mypage">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">My page</span></a>       
+                            <ul class="dp2 fl_wrap">
+                                <li class="sm_modify"><a href="#" class="vm_wrap"><span class="vm_tt">회원정보수정</span></a></li>
+                                <li class="sm_secession"><a href="#" class="vm_wrap"><span class="vm_tt">회원탈퇴</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header :: e :: -->
+    <!-- contents :: s :: -->
+    <div id="contents">
+        <div class="doc_main">
+            <div class="main_visual">
+                <div class="visual">
+                    <div class="item" style="background-image:url(images/main/main_visual1.jpg)"><!--이미지 최적 사이즈 2000 * 740px -->
+                        <div class="slogan">
+                            <div class="box1">
+                                <p class="tt t1">대세 of 대세, <br />선 넘은 그녀 아나운서 김민아</p>
+                                <p class="tt t2">털털하고 유쾌하고 허물 없고 맥락 없이 '선 넘는 캐릭터'로 흔치 않은 매력을 선보이는 아나운서 김민아.</p>
+                                <p class="btn en"><a href="#link">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image:url(images/main/main_visual2.jpg)">
+                        <div class="slogan">
+                            <div class="box1">
+                                <p class="tt t1">다시 시작 HINAPIA</p>
+                                <p class="tt t2">해체의 아름을 이겨내고 희나피아라는 이름으로 재시작하는 10인조 걸그룹 프리스틴.</p>
+                                <p class="btn en"><a href="#link">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image:url(images/main/main_visual3.jpg)">
+                        <div class="slogan">
+                            <div class="box1">
+                                <p class="tt t1">꽃이 피나, 봄</p>
+                                <p class="tt t2">무겁고 칙칙한 겨울 외투는 이제 넣어두시라. 꽃 피는 봄이 도래했나니.</p>
+                                <p class="btn en"><a href="#link">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="arrow_wrap">
+                    <li class="prev"><i class="xi xi-angle-left-thin"></i></li>
+                    <li class="next"><i class="xi xi-angle-right-thin"></i></li>
+                </ul>
+            </div><!-- 메인비주얼 :: e :: -->
+            <div class="main_con wrap"><img src="images/temp/main_con1.jpg" /></div>
+            <div class="main_con conFix_wrap">
+                <div class="box1 pr">
+                    <div class="con"><img src="images/temp/main_con2_left.jpg" /></div>
+                    <div class="conFix"><img src="images/temp/main_con2_right.jpg" /></div>
+                </div>
+            </div>
+            <div class="main_con wrap"><img src="images/temp/main_con3.jpg" /></div>
+            <div class="main_con conFix_wrap">
+                <div class="box1 pr">
+                    <div class="con"><img src="images/temp/main_con4_left.jpg" /></div>
+                    <div class="conFix"><img src="images/temp/main_con4_right.jpg" /></div>
+                </div>
+            </div>
+            <div class="main_con wrap"><img src="images/temp/main_con5.jpg" /></div><!-- 메인 컨텐츠 :: e :: -->
+        </div>
+    </div>    
+    <!-- contents :: e :: -->
+    <script type="text/javascript">
+        UI.Slider.mainVisual();
+        
+        $(window).on('scroll resize', function(){
+            if(window.innerWidth > 1023){
+                quickBannerSet();
+            }
+        }).trigger('resize');
+        
+        //메인 Position 설정
+        function quickBannerSet(){
+            var windowTop = $(window).scrollTop();
+            var quickBanner = $('.conFix');
+            var headH = $('#header').outerHeight();
+        
+            $('.conFix_wrap').each(function(){
+                if(windowTop >= $(this).offset().top-headH){
+                    var maxTop = $(this).offset().top + $(this).height() - $(this).find(quickBanner).height();
+                    if(maxTop >= windowTop){
+                        $(this).find(quickBanner).css({'position' : 'fixed', 'top' : headH-40});
+                    }else{
+                        $(this).find(quickBanner).css({'position' : 'absolute', 'top' : $(this).height() - $(this).find(quickBanner).height()});
+                    }
+                }else{
+                    $(this).find(quickBanner).css({'position' : 'absolute', 'top' : 0});
+                }
+            });
+        }
+    </script>
+    <!-- footer :: s :: -->
+    <div id="footer">
+        <a href="javascript:goTop();" class="goTop vm_wrap"><span class="vm_tt"><i class="xi xi-angle-up-thin"></i><i class="tt en">TOP</i></span></a>
+        <div class="footer_wrap">
+            <div class="box1">
+                <div class="logo_wrap">
+                    <a href="#" class="logo"><img src="images/inc/logo_white.png" alt="logo" /></a>
+                    <div class="family toggleWrap">
+                        <button class="sel" onClick="toggleClass(this)"><i class="tt en">Family Site</i><i class="xi"></i></button>
+                        <ul class="list">
+                            <li><a href="#link" target="_blank">사랑의책나누기운동본부</a></li>
+                            <li><a href="#link" target="_blank">병역독서활성화지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_wrap">
+                    <ul class="menu fl_wrap">
+                        <li><a href="#" class="in">잡지소개</a></li>
+                        <li><a href="#" class="in">공지사항</a></li>
+                        <li><a href="#" class="in">취재요청</a></li>
+                        <li><a href="#" class="in">광고문의</a></li>
+                        <li><a href="#" class="in">이용약관</a></li>
+                        <li><a href="#" class="in">개인정보처리방침</a></li>
+                        <li><a href="#" class="in">이메일무단수집거부</a></li>
+                    </ul>
+                </div>
+                <div class="info_wrap">
+                    <strong class="tt">사랑의책나누기운동본부</strong>
+                    <span class="tt">(06029) 서울특별시 강남구 압구정로 14길 11 2층</span>
+                    <br />
+                    <span class="tt">대표번호. <a onclick="UI.Layout.telLink('02-465-5417',this)">02-465-5417</a></span>
+                    <span class="tt">팩스. 02-3785-0701</span>
+                    <span class="tt">이메일. <a href="mailto:bookcoaching2012@gmail.com">bookcoaching2012@gmail.com</a></span>
+                    <p class="copy en">Copyright(c) BOOKNANUM. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer :: e :: -->
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Web Font open-sans */
+@font-face {
+  font-family: 'OS';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../font/open-sans-300.eot');
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../font/open-sans-300.eot?#iefix') format('embedded-opentype'),
+       url('../font/open-sans-300.woff2') format('woff2'),
+       url('../font/open-sans-300.woff') format('woff'),
+       url('../font/open-sans-300.ttf') format('truetype'),
+       url('../font/open-sans-300.svg#OpenSans') format('svg');
+}
+@font-face {
+  font-family: 'OS';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/open-sans-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../font/open-sans-regular.eot?#iefix') format('embedded-opentype'),
+       url('../font/open-sans-regular.woff2') format('woff2'),
+       url('../font/open-sans-regular.woff') format('woff'),
+       url('../font/open-sans-regular.ttf') format('truetype'),
+       url('../font/open-sans-regular.svg#OpenSans') format('svg');
+}
+@font-face {
+  font-family: 'OS';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../font/open-sans-600.eot');
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('../font/open-sans-600.eot?#iefix') format('embedded-opentype'),
+       url('../font/open-sans-600.woff2') format('woff2'),
+       url('../font/open-sans-600.woff') format('woff'),
+       url('../font/open-sans-600.ttf') format('truetype'),
+       url('../font/open-sans-600.svg#OpenSans') format('svg');
+}
+@font-face {
+  font-family: 'OS';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/open-sans-700.eot');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../font/open-sans-700.eot?#iefix') format('embedded-opentype'),
+       url('../font/open-sans-700.woff2') format('woff2'),
+       url('../font/open-sans-700.woff') format('woff'),
+       url('../font/open-sans-700.ttf') format('truetype'),
+       url('../font/open-sans-700.svg#OpenSans') format('svg');
+}
+@font-face {
+  font-family: 'OS';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../font/open-sans-800.eot');
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+       url('../font/open-sans-800.eot?#iefix') format('embedded-opentype'),
+       url('../font/open-sans-800.woff2') format('woff2'),
+       url('../font/open-sans-800.woff') format('woff'),
+       url('../font/open-sans-800.ttf') format('truetype'),
+       url('../font/open-sans-800.svg#OpenSans') format('svg');
+}

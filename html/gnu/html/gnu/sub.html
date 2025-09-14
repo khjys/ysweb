@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경상국립대학교 간호대학 노인건강연구센터 온라인교육시스템</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/inc.css?v=0.1" />
+<link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css?v=0.3" />
+<link rel="stylesheet" type="text/css" href="css/board.css?v=0.3" />
+<link rel="stylesheet" type="text/css" href="css/style_response.css?v=0.3" />
+<link rel="stylesheet" type="text/css" href="css/board_response.css?v=0.3" />
+<link rel="stylesheet" type="text/css" href="css/xeicon.min.css" />
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/inc.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+<script type="text/javascript" src="js/slick/slick.js"></script>
+<script type="text/javascript" src="js/placeholders.min.js" defer="defer"></script>
+<!--<script type="text/javascript" src="/js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+<link href="/js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />-->
+<link rel="shortcut icon" href="images/inc/favicon.ico" />
+<body class="sub">
+    <!--haeder start-->
+    <div id="header">
+        <div class="top_wrap">
+            <div class="box1 fl_wrap">
+                <div class="user_wrap vm_wrap">
+                    <div class="btnAll"><a href="javascript:void(0);" class="in vm_wrap" onClick="toggleClass(this,'#header','nav_open');"><i class="xi xi-list-dot"></i></a></div>
+                    <div class="con vm_tt">
+                            <span class="user"><i class="xi xi-emoticon"></i><i class="tt t1">홍길동 (abcd12))</i><i class="tt t2">님 로그인 중.</i></span>
+                        <span class="time"><i class="xi xi-clock-o"></i><i class="tt" id="todayTime">2020-00-00(월) AM 00:00</i></span>
+                    </div>
+
+                </div>
+                <div class="menu_wrap vm_wrap right">
+                    <ul class="menu vm_tt fl_wrap">
+                        <li><a href="#" class="in"><i class="xi xi-log-out"></i><span class="tt">로그인</span></a></li>
+                        <li><a href="#" class="in"><i class="xi xi-pen"></i><span class="tt">회원가입</span></a></li>
+                        <li><a href="https://cap.gnu.ac.kr/main/" class="in" target="_blank"><i class="xi xi-home-o"></i><span class="tt">경상국립대학교 간호대학 홈페이지 바로가기</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--전체메뉴 -->
+        <div class="nav_wrap">
+            <div id="nav" class="nav">
+                <div class="box1">
+                    <!--gnb start-->
+                    <ul class="gnb st1 fl_wrap">
+                        <li class="m_gisep">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">사업소개</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">GISEP 사업소개</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육신청</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">온라인교육신청</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_notice">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">소통마당</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">공지사항</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">소식</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">문의하기</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">오시는길</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">나의 신청내역</span></a>
+                        </li>
+                    </ul>
+                    <!--gnb end-->
+                </div>
+            </div>
+        </div>
+        <!--전체메뉴 end -->
+        <div class="gnb_wrap">
+            <div class="box1 fl_wrap">
+                <h1 class="logo vm_wrap">
+                <a href="index.html" class="vm_tt"><span class="mark"><img src="images/inc/logo.jpg" /></span></a>
+                <!--<a href="<?=$link_linkurl?>" class="vm_tt"><span class="txt"><i class="t1"><?=$site_name1?></i><i class="t1"><?=$site_name2?></i></span></a>-->
+                </h1>
+                <div class="menu right">
+                    <!--gnb start-->
+                    <ul class="gnb st1 fl_wrap">
+                        <li class="m_gisep">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">사업소개</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">GISEP 사업소개</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">교육신청</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">온라인교육신청</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_notice">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">소통마당</span></a>
+                            <ul class="dp2 fl_wrap">
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">공지사항</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">소식</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">문의하기</span></a></li>
+                                <li><a href="#" class="vm_wrap"><span class="vm_tt">오시는길</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="m_edu">
+                            <a href="#" class="dp1 vm_wrap"><span class="vm_tt">나의 신청내역</span></a>
+                        </li>
+                    </ul>
+                    <!--gnb end-->
+                </div>
+                <div class="util">
+                    <a href="javascript:void(0);" class="vm_wrap btnAll" title="전체메뉴" onclick="toggleClass(this,'#header','m_nav_open'); toggleClass(this,'body,html','hidden')"><span class="vm_tt in"><i class="ham"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav_layer js_mouse_wheel">
+            <div class="box1">
+                <!--nav start-->
+                <div id="m_nav" class="m_nav">
+                    <div class="nav_wrap2">
+                        <div  class="nav_logo vm_wrap">
+                            <a href="index.html" class="vm_tt"><img src="images/inc/logo.jpg" alt="logo" /></a>
+                        </div>
+                        <ul class="nav_mem flex">
+                            <li class="en"><a href="#"><i class="xi xi-log-in"></i><i class="tt">LOGIN</i></a></li>
+                            <li class="en"><a href="#"><i class="xi xi-user-plus-o"></i><i class="tt">JOIN</i></a></li>
+                        </ul>
+                        <div class="nav_gnb">
+                            <!--gnb start-->
+                            <ul class="gnb st1 fl_wrap">
+                                <li class="m_gisep">
+                                    <a href="#" class="dp1 vm_wrap"><span class="vm_tt">사업소개</span></a>
+                                    <ul class="dp2 fl_wrap">
+                                        <li><a href="#" class="vm_wrap"><span class="vm_tt">GISEP 사업소개</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="m_edu">
+                                    <a href="sub.html" class="dp1 vm_wrap"><span class="vm_tt">교육신청</span></a>
+                                    <ul class="dp2 fl_wrap">
+                                        <li><a href="sub.html" class="vm_wrap"><span class="vm_tt">온라인교육신청</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="m_notice">
+                                    <a href="#" class="dp1 vm_wrap"><span class="vm_tt">소통마당</span></a>
+                                    <ul class="dp2 fl_wrap">
+                                        <li><a href="#" class="vm_wrap"><span class="vm_tt">공지사항</span></a></li>
+                                        <li><a href="#" class="vm_wrap"><span class="vm_tt">소식</span></a></li>
+                                        <li><a href="#" class="vm_wrap"><span class="vm_tt">문의하기</span></a></li>
+                                        <li><a href="#" class="vm_wrap"><span class="vm_tt">오시는길</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="m_edu">
+                                    <a href="#" class="dp1 vm_wrap"><span class="vm_tt">나의 신청내역</span></a>
+                                </li>
+                            </ul>
+                            <!--gnb end-->
+                            <ul class="goLink">
+                                <li class="en"><a href="https://cap.gnu.ac.kr/main/" target="_blank"><i class="xi xi-bank"></i><i class="tt">경상국립대학교 간호대학 홈페이지 바로가기</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--nav end-->
+            </div>
+        </div>
+    </div>
+    <!--header end-->
+    <!--contents start-->
+    <div id="contents">
+        <div class="sub_layout">
+            <div class="doc_wrap">
+                <div class="doc_tit">
+                    <h2 class="tit">온라인교육신청</h2>
+                    <ul class="nav">
+                        <li class="home"><i class="xi xi-home-o"></i></li>
+                        <li class="tt">교육신청</li>
+                        <li class="tt">온라인교육신청</li>
+                    </ul>
+                </div>
+                <div class="doc">
+                    <div class="box1">
+                        <!--설명 -->
+                        <div class="page_ex_box st1 mg1">
+                            <div class="inner txt">
+                                <div class="in">
+                                    <p class="in_tt t1"><strong class="c3">아래와 같이 교육 일정을 안내하오니 신청에 착오 없으시길 바랍니다.</strong></p>
+                                    <ul class="page_list dp3">
+                                        <li><p class="tt">교육일정은 사정에 따라 변경될 수 있습니다.</p></li>
+                                        <li><p class="tt">수료증 발행은 교육 이수시 출력할 수 있습니다.</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--설명 끝 -->
+                        <!--교육서치 시작-->
+                        <div class="page_search_wrap st1 flex">
+                            <div class="inner con_wrap">
+                                <div class="inp_row flex">
+                                    <div class="in flex">
+                                        <div class="tit"><strong class="icon">교육과정</strong></div>
+                                        <div class="inp">
+                                            <div class="page_cate">
+                                                <ul class="cate">
+                                                    <li class="on"><a href="javascript:void(0)"><span class="tt">전체</span></a></li>
+                                                    <li><a href="javascript:void(0)"><span class="tt">학부생</span></a></li>
+                                                    <li><a href="javascript:void(0)"><span class="tt">졸업 후 전문가</span></a></li>
+                                                    <li><a href="javascript:void(0)"><span class="tt">일반인</span></a></li>
+                                                    <li><a href="javascript:void(0)"><span class="tt">학술행사</span></a></li>
+                                                    <li><a href="javascript:void(0)"><span class="tt">기타</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>	
+                                    </div>
+                                    <div class="in flex in2">
+                                        <div class="tit"><strong class="icon">교육과목명</strong></div>
+                                        <div class="inp">
+                                            <input type="text" class="input_st inp_w100" placeholder="교육과목명을 입력하세요." name="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner btn_wrap">
+                                <div class="in">
+                                    <button class="input_st s2 c3"><i class="xi xi-search"></i><i class="tt">검색하기</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--교육서치 끝-->
+                        <div class="total_wrap"><i class="xi xi-bars"></i><span><i class="t1">Total.</i><i class="t2"><?=number_format($total)?></i></span></div>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_table list response listSt4">
+                            <col class="w_type6" />
+                            <col class="w_type6" />
+                            <col class="w_tit" />
+                            <col class="w_dateFull" />
+                            <col class="w_dateFull" />
+                            <col class="w_file" />
+                            <col class="w_state" />
+                            <col class="w_btn" />
+                            <thead>
+                                <tr>
+                                    <th class="w_type6">구분</th>
+                                    <th class="w_type6">과정</th>
+                                    <th class="w_tit">교육과목명</th>
+                                    <th class="w_dateFull">신청기간</th>
+                                    <th class="w_dateFull">교육기간</th>
+                                    <th class="w_file">첨부파일</th>
+                                    <th class="w_state">상태</th>
+                                    <th class="w_btn">신청</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="w_type6" data-th="구분">온라인교육</td>
+                                    <td class="w_type6" data-th="과정">학부과정</td>
+                                    <td class="w_tit" data-th="교육과목명"><strong class="bd_txt c4">노인공감 프로그램</strong></td>
+                                    <td class="w_dateFull" data-th="신청기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_dateFull" data-th="교육기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_file" data-th="첨부파일">
+                                        <a href="javascript:void(0)" class="board_icon file"><i class="xi"></i></a>
+                                    </td>
+                                    <td class="w_state" data-th="상태">
+                                        <span class="state full c2 re">접수중</span>
+                                        <!--<span class="state full c3 re">마감</span>-->
+                                    </td>
+                                    <td class="w_btn" data-th="사전등록">
+                                            <button type="button" class="input_st full c4" onClick="location.href='../sub_edu/edu_app.php'">사전등록</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w_type6" data-th="구분">온오프라인교육</td>
+                                    <td class="w_type6" data-th="과정">학부과정</td>
+                                    <td class="w_tit" data-th="교육과목명"><strong class="bd_txt c4">노인간호 역량증진 프로그램</strong></td>
+                                    <td class="w_dateFull" data-th="신청기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_dateFull" data-th="교육기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_file" data-th="첨부파일">
+                                        <a href="javascript:void(0)" class="board_icon file"><i class="xi"></i></a>
+                                    </td>
+                                    <td class="w_state" data-th="상태">
+                                        <span class="state full c2 re">접수중</span>
+                                        <!--<span class="state full c3 re">마감</span>-->
+                                    </td>
+                                    <td class="w_btn" data-th="사전등록">
+                                            <button type="button" class="input_st full c4" onClick="location.href='../sub_edu/edu_app.php'">사전등록</button>
+                                            <!--<button type="button" class="input_st full c4" disabled="disabled">신청</button>--><!--신청 마감 됐을때-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w_type6" data-th="구분">온라인교육</td>
+                                    <td class="w_type6" data-th="logo.jpg">졸업 후 전문가과정</td>
+                                    <td class="w_tit" data-th="교육과목명"><strong class="bd_txt c4">교육과목명이 들어갑니다</strong></td>
+                                    <td class="w_dateFull" data-th="신청기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_dateFull" data-th="교육기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_file" data-th="첨부파일">
+                                        <a href="javascript:void(0)" class="board_icon file"><i class="xi"></i></a>
+                                    </td>
+                                    <td class="w_state" data-th="상태">
+                                        <!--<span class="state full c2 re">접수중</span>-->
+                                        <span class="state full c3 re">마감</span>
+                                    </td>
+                                    <td class="w_btn" data-th="사전등록">
+                                            <button type="button" class="input_st full c4" disabled="disabled">사전등록</button><!--신청 마감 됐을때-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w_type6" data-th="구분">온라인교육</td>
+                                    <td class="w_type6" data-th="과정">지역사회 일반인과정</td>
+                                    <td class="w_tit" data-th="교육과목명"><strong class="bd_txt c4">교육과목명이 들어갑니다</strong></td>
+                                    <td class="w_dateFull" data-th="신청기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_dateFull" data-th="교육기간">2021.00.00~2021.00.00</td>
+                                    <td class="w_file" data-th="첨부파일">
+                                        <a href="javascript:void(0)" class="board_icon file"><i class="xi"></i></a>
+                                    </td>
+                                    <td class="w_state" data-th="상태">
+                                        <!--<span class="state full c2 re">접수중</span>-->
+                                        <span class="state full c3 re">마감</span>
+                                    </td>
+                                    <td class="w_btn" data-th="사전등록">
+                    <!--						<button type="button" class="input_st full c4" onClick="location.href='../sub_edu/edu_app_ori.php'">신청</button>-->
+                                            <button type="button" class="input_st full c4" disabled="disabled">사전등록</button><!--신청 마감 됐을때-->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--<div class="no_con">등록된 내역이 없습니다.</div>-->
+                        <!--paging start-->
+                        <div class="board_paging">
+                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi first"></i></button>
+                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi prev"></i></button>
+                            <button class="on">1</button>
+                            <button onclick="javascript:location.href='#'">2</button>
+                            <button onclick="javascript:location.href='#'">3</button>
+                            <button onclick="javascript:location.href='#'">4</button>
+                            <button onclick="javascript:location.href='#'">5</button>
+                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi next"></i></button>
+                            <button class="icon" onclick="javascript:location.href='#'"><i class="xi last"></i></button>
+                        </div>
+                        <!--paging end-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contents end-->
+
+    <!--footer 시작 -->
+    <div id="footer">
+        <a href="javascript:goTop();" class="goTop vm_wrap"><span class="vm_tt"><i class="xi xi-angle-up-thin"></i><i class="tt">TOP</i></span></a>
+        <div class="info_wrap">
+            <div class="box1">
+                <div class="inner">
+                    <ul class="menu fl_wrap">
+                        <li><a href="#" class="in">개인정보처리방침</a></li>
+                        <li><a href="#" class="in">이메일무단수집거부</a></li>
+                    </ul>
+                    <div class="info">
+                        <span class="tt">경상국립대학교 간호대학 노인건강연구센터 온라인교육시스템</span>
+                        <span class="tt">Add. (52727) 경상남도 진주시 진주대로 816번길 15 경상국립대학교 간호대학</span>
+                        <span class="tt">Tel. <a onclick="UI.Layout.telLink('055)772-8231',this)">055)772-8231</a></span>
+                        <span class="tt">Fax.  055-772-8210</span>
+                        <p class="copy en">COPYRIGHT (c) GYEONGSANG NATIONAL UNIVERSITY. ALL RIGHTS RESERVED.</p>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end -->
+</body>
+</html>
