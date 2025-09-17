@@ -25,7 +25,7 @@
     <body class="main">
         <div class="wrap">
             <header>
-                <div class="box0 gnb_wrap flex space vb" id="parallax_nav">
+                <div class="box0 gnb_wrap flex space vc" id="parallax_nav">
                     <h1 class="logo"><a href="index.html">Yeongseon</a></h1>
                     <ul class="gnb flex">
                         <li><a href="#section1" class="active">Home</a></li>
@@ -174,24 +174,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", () => {
             // -------------------------------
-            // 1. 텍스트 애니메이션
-            // -------------------------------
-            // gsClass(); // 기존 텍스트 애니 호출
-            // document.querySelectorAll(".gsSplit").forEach(text => {
-            //     const theText = text.innerText;
-            //     let newText = "";
-            //     for (let i = 0; i < text.innerText.length; i++) {
-            //     const ts = i * 0.05;
-            //     newText += "<i style='animation-delay:" + ts + "s'>";
-            //     newText += text.innerText[i] === " " ? " " : text.innerText[i];
-            //     newText += "</i>";
-            //     }
-            //     text.innerHTML = newText;
-            //     text.setAttribute("aria-label", theText);
-            // });
-
-            // -------------------------------
-            // 2. 부드러운 스크롤 (Lenis)
+            // 부드러운 스크롤
             // -------------------------------
             const lenis = new Lenis({
                 duration: 1.5,
@@ -205,7 +188,7 @@
             requestAnimationFrame(raf);
 
             // -------------------------------
-            // 3. 버튼 클릭 링크 이동
+            // 버튼 클릭 링크 이동
             // -------------------------------
             document.querySelectorAll(".link-btn").forEach(btn => {
                 btn.addEventListener("click", () => {
@@ -216,7 +199,7 @@
             });
 
             // -------------------------------
-            // 4. 기존 갤러리, 네비게이션, 스크롤 효과 등 초기화
+            // 기존 갤러리, 네비게이션, 스크롤 효과 등 초기화
             // -------------------------------
             if (typeof initNavigation === "function") initNavigation();
             if (typeof initSection1Pin === "function") initSection1Pin();
@@ -226,5 +209,5 @@
             if (typeof initSection5List === "function") initSection5List();
             });
         </script>
-    </body>
+</body>
 </html>
